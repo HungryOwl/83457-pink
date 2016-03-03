@@ -1,7 +1,7 @@
 ﻿# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Новикова](https://up.htmlacademy.ru/adaptive/6/user/83457).
-* Наставник: `Антон попов`.
+* Наставник: [Антон попов](https://up.htmlacademy.ru/adaptive/6/user/78239).
 
 ---
 
