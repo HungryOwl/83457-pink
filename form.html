@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a href="#" class="page-header__logo">
+        <img src="#" width="75" height="22" alt="Пинк">
+      </a>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="intro__wrapper">
+      <header class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</header>
+    </div>
+  </section>
+
+  <section class="contest-feedback">
+    <div class="contest-feedback__wrapper">
+      <form class="contest-feedback__form"action="/echo" method="post" >
+        <p class="contest-feedback__share">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
+        
+        <fieldset class="contest-feedback__representation-field">
+          <p>Имя:</p>
+          <input class="contest-feedback__name" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+          <p>Фамилия:</p>
+          <input class="contest-feedback__surname" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+          <p>Отчество:</p>
+          <input class="contest-feedback__middle-name" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+        </fieldset>
+
+        <fieldset class="contest-feedback__achievement-field">
+        <legend>Ваши безбашенные достижения в путешествии</legend>
+          <label class="contest-feedback__selfi-label"for="selfi"><input class="contest-feedback__selfi" type="checkbox" name="selfi" id="selfi" checked>Сделал селфи с акулой</label>
+          <label class="contest-feedback__beach-label"for="beach"><input class="contest-feedback__beach" type="checkbox" name="beach" id="beach" checked>Обгорел на пляже</label>
+          <label class="contest-feedback__norris-label" for="norris"><input class="contest-feedback__norris" type="checkbox" name="norris" id="norris">Видел Чака Норриса</label>
+          <label class="contest-feedback__souvenir-label" for="souvenir"><input class="contest-feedback__souvenir" type="checkbox" name="souvenir" id="souvenir">Накупил сувениров</label>
+          <label class="contest-feedback__tower-label" for="tower"><input class="contest-feedback__tower" type="checkbox" name="tower" id="tower" checked>Удержал башню</label>
+          <label class="contest-feedback__hotel-label" for="hotel"><input class="contest-feedback__hotel" type="checkbox" name="hotel" id="hotel">Разгромил отель</label>
+        </fieldset>
+
+        <fieldset class="contest-feedback__contacts-field">
+          <p class="contest-feedback__phone-text">Номерок телефончика</p>
+          <input class="contest-feedback__phone-number" type="tel" name="phone-number" id="phone-number" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
+
+          <p class="contest-feedback__email-text">Адресок почты</p>
+          <input class="contest-feedback__email" type="email" name="email" id="email" placeholder="E-mail, пожалуйста" required>
+        </fieldset>
+
+        <fieldset class="contest-feedback__app-field">
+          <label class="contest-feedback__ios-label" for="ios"><input class="contest-feedback__ios" type="radio" name="trip-app" id="ios" value="ios" checked>Pink для iOS</label>
+          <label class="contest-feedback__android-label" for="android"><input class="contest-feedback__abdroid" type="radio" name="trip-app" id="android" value="android">Pink на Android</label>
+          <label class="contest-feedback__win-phone-label" for="win-phone"><input class="contest-feedback__win-phone" type="radio" name="trip-app" id="win-phone" value="win-phone">Windows Phone</label>
+        </fieldset> 
+        
+        <fieldset class="contest-feedback__message-field">
+          <legend class="contest-feedback__message-title">Опишите свои эмоции</legend>
+          <textarea class="contest-feedback__message" name="feedback-emotion" id="feedback-emotion" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+
+        <input class="contest-feedback__submit" type="submit" value="Отправить форму">
+
+        <span class="contest-feedback__require">обязательные поля</span>
+      </form>
+
+      <a href="#" class="contest-feedback__logo">
+        <img src="#" width="147" height="40" alt="Пинк">
+      </a>
+
+      <div class="social-links">
+        <a href="#" class="social-links__link social-links__link_twitter"></a>
+        <a href="#" class="social-links__link social-links__link_facebook"></a>
+        <a href="#" class="social-links__link social-links__link_youtube"></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <section class="page-footer__copyright">
+      <a class="page-footer__copyright-link btn" href="#">Разработано</a>
+    </section>
+  </footer>
+</body>
+</html>

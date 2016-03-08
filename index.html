@@ -4,7 +4,197 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
+
   <body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a href="#" class="page-header__logo">
+        <img src="#" width="75" height="22" alt="Пинк">
+      </a>
+
+      <nav class="main-nav">
+        <span class="main-nav__toggle main-nav__toggle_closed">Открыть меню</span>
+        <div class="main-nav__wrapper main-nav__wrapper_closed">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#"></a>Возможности</li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#"></a>Отзывы</li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#"></a>Стоимость</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="intro__wrapper">
+      <header class="intro__header">Взгляните на жизнь иначе!</header>
+      <section class="intro__download">
+        <a href="#" class="btn">Скачать приложение</a>
+        <a href="#" class="intro__apple-logo"></a>
+        <a href="#" class="intro__android-logo"></a>
+        <a href="#" class="intro__microsoft-logo"></a>
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about__wrapper">
+      <header class="about__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</header>
+      <div class="about__items">
+        <article class="about__item">
+          <h1 class="about__title">Поднимает настроение</h1>
+          <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        </article>
+        <article class="about__item">
+          <h1 class="about__title">Меняет мир вокруг</h1>
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </article>
+        <article class="about__item">
+          <h1 class="about__title">Заводит новых друзей</h1>
+          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="reviews__wrapper">
+      <div class="reviews__items">
+        <input class="slider-items__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
+        <input class="slider-items__switcher" type="radio" name="reviews" id="reviews-radio-2" >
+        <input class="slider-items__switcher" type="radio" name="reviews" id="reviews-radio-3" >
+        
+          <blockquote class="reviews__item reviews__item_active">         
+            <cite class="reviews__title">Николай Петров</cite>
+            <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+
+          <blockquote class="reviews__item">         
+            <cite class="reviews__title">Николай Петров</cite>
+            <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+
+          <blockquote class="reviews__item">         
+            <cite class="reviews__title">Николай Петров</cite>
+            <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+
+          <div class="slider-items reviews__nav">
+            <label class="slider-items__btn" for="reviews-radio-1">1</label>
+            <label class="slider-items__btn" for="reviews-radio-2">2</label>
+            <label class="slider-items__btn" for="reviews-radio-3">3</label>
+          </div>
+      </div>
+    </div>
+    <a href="#" class="reviews__write btn">Оставить отзыв</a>
+  </section>
+
+  <section class="price">
+    <div class="price__wrapper">
+      <div class="price__items">
+        <input class="slider-price__switcher" type="radio" name="reviews" id="price-radio-1" checked>
+        <input class="slider-price__switcher" type="radio" name="reviews" id="price-radio-2" >
+        <input class="slider-price__switcher" type="radio" name="reviews" id="price-radio-3" >
+
+        <!--<table class="price__list">
+          <tr>
+            <th class="price__value">Стандарт<p>3,99 USD</p></th>
+            <th class="price__value">База<p>1,99 USD</p></th>
+            <th class="price__value">Анлим<p>9,99 USD</p></th>
+          </tr>
+          <tr>
+            <td class="price__field">Розовый фильтр</td>
+            <td class="price__field">Розовый фильтр</td>
+            <td class="price__field">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="price__field">Смайлики</td>
+            <td class="price__field">Смайлики</td>
+            <td class="price__field">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="price__field">Комментарии</td>
+            <td class="price__field">Комментарии</td>
+            <td class="price__field">Комментарии</td>
+          </tr>
+        </table>-->
+
+        <table class="price__list price__list_active">
+          <tr>
+            <th class="price__value">Стандарт<p>3,99 USD</p></th>
+          </tr>
+          <tr>
+            <td class="price__field">Розовый фильтр</td>
+          </tr>
+          <tr>       
+            <td class="price__field">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="price__field">Комментарии</td>
+          </tr>
+        </table>
+
+        <table class="price__list">
+          <tr>
+            <th class="price__value">База<p>1,99 USD</p></th>
+          </tr>
+          <tr>
+            <td class="price__field">Розовый фильтр</td>
+          </tr>
+          <tr>       
+            <td class="price__field">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="price__field">Комментарии</td>
+          </tr>
+        </table>
+
+        <table class="price__list">
+          <tr>
+            <th class="price__value">Анлим<p>9,99 USD</p></th>
+          </tr>
+          <tr>
+            <td class="price__field">Розовый фильтр</td>
+          </tr>
+          <tr>       
+            <td class="price__field">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="price__field">Комментарии</td>
+          </tr>
+        </table>
+
+        <div class="slider-items price__nav">
+          <label class="slider-items__btn" for="price-radio-1">1</label>
+            <label class="slider-items__btn" for="price-radio-2">2</label>
+            <label class="slider-items__btn" for="price-radio-3">3</label>
+        </div>
+      
+        <div class="price__flag">новинка</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <section class="page-footer__contacts">
+        <header class="page-footer__title">Остались вопросы? Свяжитесь с нами!</header>
+        <h1>Звоните:</h1>
+        <p>+7 (812) 555-66-66</p>
+        <h1>Пишите:</h1>
+        <a href="#">mail.htmlacademy.ru</a>
+        <h1>Приезжайте в гости:</h1>
+        <p>ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>   
+      </section>
+    </div>
+
+    <div class="page-footer__map">
+      <i class="page-footer__pointer"></i>
+    </div>
+    
+  </footer>
 
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
 
