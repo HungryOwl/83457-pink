@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+<header class="page-header">
+  <div class="wrapper">
+    <a href="#" class="page-header__logo">
+      <img src="#" width="75" height="22" alt="Пинк">
+    </a>
+    <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--closed">Открыть меню</button>
+        <div class="main-nav__wrapper main-nav__wrapper--closed">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Стоимость</a></li>
+          </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrapper">
+    <h1 class="intro__header">Фотографии пользователей</h1>
+  </div>
+</section>
+
+<section class="photo-section">
+  <div class="wrapper">
+    <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
+    <figure class="user-photo">
+      <img class="user-photo__image user-photo__image--one user-photo__image--of-the-day" src="#" alt="Фото" width="320" height="137">
+      <figcaption class="user-photo__caption">
+        <h3>Анна<span>5 минут назад</span></h3>
+        <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+        <footer>Нравится:</footer>
+      </figcaption>
+    </figure>
+
+    <figure class="user-photo">
+      <img class="user-photo__image user-photo__image--two" src="#" alt="Фото" width="280" height="180">
+      <figcaption class="user-photo__caption">
+        <h3>Левон<span>5 часов назад</span></h3>
+        <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+        <footer>Нравится:</footer>
+      </figcaption>
+    </figure>
+
+    <figure class="user-photo">
+      <img class="user-photo__image user-photo__image--three" src="#" alt="Фото" width="280" height="180">
+      <figcaption class="user-photo__caption">
+        <h3>Антон<span>15 часов назад</span></h3>
+        <p>Соседи будут рады!</p>
+        <footer>Нравится:</footer>
+      </figcaption>
+    </figure>
+
+    <figure class="user-photo">
+      <img class="user-photo__image user-photo__image--four" src="#" alt="Фото" width="280" height="180">
+      <figcaption class="user-photo__caption">
+        <h3>Борис<span>20 часов назад</span></h3>
+        <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+        <footer>Нравится:</footer>
+      </figcaption>
+    </figure>
+
+    <figure class="user-photo">
+      <img class="user-photo__image user-photo__image--five" src="#" alt="Фото" width="280" height="180">
+      <figcaption class="user-photo__caption">
+        <h3>Сергей<span>25 часов назад</span></h3>
+        <p>Самая кубанская в мире!</p>
+        <footer>Нравится:</footer>
+      </figcaption>
+    </figure>
+
+    <figure class="user-photo">
+      <img class="user-photo__image user-photo__image--six" src="#" alt="Фото" width="280" height="180">
+      <figcaption class="user-photo__caption">
+        <h3>Максим<span>40 часов назад</span></h3>
+        <p>Где снег-то?</p>
+        <footer>Нравится:</footer>
+      </figcaption>
+    </figure>
+
+    <figure class="user-photo">
+      <img class="user-photo__image user-photo__image--seven" src="#" alt="Фото" width="280" height="180">
+      <figcaption class="user-photo__caption">
+        <h3>Надежда<span>40 часов назад</span></h3>
+        <p>Всем GM и взаимные лайки!</p>
+        <footer>Нравится:</footer>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="photo-load">
+  <div class="wrapper">
+    <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+
+    <form class="photo-load__form" action="echo" method="post"></form>
+      <img class="photo-load__img" src="#" alt="Ваше фото" width="280" height="374">
+
+      <div class="photo-load__img-change">
+        <button class="photo-load__crop">кадрировать</button>
+        <button class="photo-load__fill">залить</button>
+        <button class="photo-load__black-white">черно-белое</button>
+      </div>
+
+      <div class="controls controls--size">
+        <div class="controls__scale">
+          <div class="controls__bar" style="width:70%"></div>
+        </div>
+
+        <div class="controls__toggle"></div>
+      </div>
+
+      <input class="photo-load__submit" type="submit" value="Запостить">
+      <input class="photo-load__reset" type="reset" value="Отмена" disabled>
+  </div>
+</section>
+
+<footer class="page-footer">
+    <div class="wrapper">
+      <a class="logo logo--contest-feedback" href="#">
+        <img src="#" width="147" height="40" alt="Пинк">
+      </a>
+
+      <div class="social-links">
+        <a class="social-links__link social-links__link_twitter" href="#">twitter</a>
+        <a class="social-links__link social-links__link_facebook" href="#">facebook</a>
+        <a class="social-links__link social-links__link_youtube" href="#">youtube</a>
+      </div>
+
+      <section class="page-footer__copyright">
+        <a class="page-footer__copyright-link btn" href="#">Разработано</a>
+      </section>
+    </div>
+</footer>
+</body>
+</html>

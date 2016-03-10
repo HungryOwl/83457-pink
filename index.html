@@ -1,12 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<body>
+  <header class="page-header">
+    <div class="wrapper">
+      <a class="logo logo--page-header" href="#">
+        <img src="#" width="75" height="22" alt="Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--closed">Открыть меню</button>
+        <div class="main-nav__wrapper main-nav__wrapper--closed">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Стоимость</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-  </body>
+  <section class="intro">
+    <div class="wrapper">
+      <h1 class="intro__header">Взгляните на жизнь иначе!</h1>
+      <section class="intro__download">
+        <a class="btn" href="#">Скачать приложение</a>
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrapper">
+      <h2 class="about__slogan">Устали от серости мегаполиса?</h2>
+      <h2> Нам есть, что вам предложить!</h2>
+      <div class="about__items">
+        <article class="about__item">
+          <h3 class="about__title">Поднимает настроение</h3>
+          <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        </article>
+        <article class="about__item">
+          <h3 class="about__title">Меняет мир вокруг</h3>
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </article>
+        <article class="about__item">
+          <h3 class="about__title">Заводит новых друзей</h3>
+          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="wrapper">
+      <div class="reviews__items">
+        <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
+        <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-2" >
+        <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-3" >
+
+          <article class="reviews__item reviews__item--active">
+            <h3 class="reviews__title">Николай Петров</h3>
+            <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </article>
+
+          <article class="reviews__item">
+            <h3 class="reviews__title">Николай Петров</h3>
+            <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </article>
+
+          <article class="reviews__item">
+            <h3 class="reviews__title">Николай Петров</h3>
+            <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </article>
+
+          <div class="slider-items reviews__nav">
+            <label class="slider-items__btn" for="reviews-radio-1">1</label>
+            <label class="slider-items__btn" for="reviews-radio-2">2</label>
+            <label class="slider-items__btn" for="reviews-radio-3">3</label>
+          </div>
+      </div>
+    </div>
+    <!-- <a href="#" class="reviews__write btn">Оставить отзыв</a> -->
+  </section>
+
+  <section class="price">
+    <div class="wrapper">
+      <div class="price__items">
+        <input class="price__switcher" type="radio" name="reviews" id="price-radio-1" checked>
+        <input class="price__switcher" type="radio" name="reviews" id="price-radio-2" >
+        <input class="price__switcher" type="radio" name="reviews" id="price-radio-3" >
+
+        <table class="price__list">
+          <thead>
+            <tr>
+              <th class="price__value">База<p>1,99 USD</p></th>
+              <th class="price__value price__value--flag">Стандарт<p>3,99 USD</p></th>
+              <th class="price__value">Анлим<p>9,99 USD</p></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="price__field">Розовый фильтр</td>
+              <td class="price__field">Розовый фильтр</td>
+              <td class="price__field">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="price__field price__field--ok">Смайлики</td>
+              <td class="price__field price__field--ok">Смайлики</td>
+              <td class="price__field price__field--cancel">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="price__field">Комментарии</td>
+              <td class="price__field">Комментарии</td>
+              <td class="price__field">Комментарии</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="slider-items price__nav">
+          <label class="slider-items__btn" for="price-radio-1">1</label>
+          <label class="slider-items__btn" for="price-radio-2">2</label>
+          <label class="slider-items__btn" for="price-radio-3">3</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="wrapper">
+      <section class="page-footer__contacts">
+        <h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <h3>Звоните:</h3>
+        <p>+7 (812) 555-66-66</p>
+        <h3>Пишите:</h3>
+        <a href="#">mail.htmlacademy.ru</a>
+        <h3>Приезжайте в гости:</h3>
+        <p>ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
+      </section>
+    </div>
+
+    <div class="page-footer__map page-footer__map--pointer">карта</div>
+  </footer>
+</body>
 </html>
