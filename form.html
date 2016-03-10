@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="wrapper">
       <a href="#" class="page-header__logo">
         <img src="#" width="75" height="22" alt="Пинк">
       </a>
@@ -14,16 +14,16 @@
   </header>
 
   <section class="intro">
-    <div class="intro__wrapper">
+    <div class="wrapper">
       <header class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</header>
     </div>
   </section>
 
   <section class="contest-feedback">
-    <div class="contest-feedback__wrapper">
+    <div class="wrapper">
       <form class="contest-feedback__form"action="/echo" method="post" >
         <p class="contest-feedback__share">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
-        
+
         <fieldset class="contest-feedback__representation-field">
           <p>Имя:</p>
           <input class="contest-feedback__name" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
@@ -35,7 +35,7 @@
 
         <fieldset class="contest-feedback__achievement-field">
         <legend>Ваши безбашенные достижения в путешествии</legend>
-          <label class="contest-feedback__selfi-label"for="selfi"><input class="contest-feedback__selfi" type="checkbox" name="selfi" id="selfi" checked>Сделал селфи с акулой</label>
+          <label class="подумать" for="selfi"><input class="сделать блоком" type="checkbox" name="selfi" id="selfi" checked>Сделал селфи с акулой</label>
           <label class="contest-feedback__beach-label"for="beach"><input class="contest-feedback__beach" type="checkbox" name="beach" id="beach" checked>Обгорел на пляже</label>
           <label class="contest-feedback__norris-label" for="norris"><input class="contest-feedback__norris" type="checkbox" name="norris" id="norris">Видел Чака Норриса</label>
           <label class="contest-feedback__souvenir-label" for="souvenir"><input class="contest-feedback__souvenir" type="checkbox" name="souvenir" id="souvenir">Накупил сувениров</label>
@@ -55,8 +55,8 @@
           <label class="contest-feedback__ios-label" for="ios"><input class="contest-feedback__ios" type="radio" name="trip-app" id="ios" value="ios" checked>Pink для iOS</label>
           <label class="contest-feedback__android-label" for="android"><input class="contest-feedback__abdroid" type="radio" name="trip-app" id="android" value="android">Pink на Android</label>
           <label class="contest-feedback__win-phone-label" for="win-phone"><input class="contest-feedback__win-phone" type="radio" name="trip-app" id="win-phone" value="win-phone">Windows Phone</label>
-        </fieldset> 
-        
+        </fieldset>
+
         <fieldset class="contest-feedback__message-field">
           <legend class="contest-feedback__message-title">Опишите свои эмоции</legend>
           <textarea class="contest-feedback__message" name="feedback-emotion" id="feedback-emotion" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
@@ -64,17 +64,17 @@
 
         <input class="contest-feedback__submit" type="submit" value="Отправить форму">
 
-        <span class="contest-feedback__require">обязательные поля</span>
+        <div class="contest-feedback__require">обязательные поля</div>
       </form>
 
-      <a href="#" class="contest-feedback__logo">
+      <a class="contest-feedback__logo" href="#">
         <img src="#" width="147" height="40" alt="Пинк">
       </a>
 
       <div class="social-links">
-        <a href="#" class="social-links__link social-links__link_twitter"></a>
-        <a href="#" class="social-links__link social-links__link_facebook"></a>
-        <a href="#" class="social-links__link social-links__link_youtube"></a>
+        <a href="#" class="social-links__link social-links__link_twitter">twitter</a>
+        <a href="#" class="social-links__link social-links__link_facebook">facebook</a>
+        <a href="#" class="social-links__link social-links__link_youtube">youtube</a>
       </div>
     </div>
   </section>
