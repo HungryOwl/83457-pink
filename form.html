@@ -24,7 +24,7 @@
       <form class="contest-feedback__form"action="/echo" method="post" >
         <p class="contest-feedback__share">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
 
-        <fieldset class="contest-feedback__representation-field">
+        <fieldset class="contest-feedback__field">
           <label class="label label--text" for="name">Имя:</label>
           <input class="text" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
           <label class="label label--text" for="surname">Фамилия:</label>
@@ -33,7 +33,7 @@
           <input class="text" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
         </fieldset>
 
-        <fieldset class="contest-feedback__achievement-field">
+        <fieldset class="contest-feedback__field">
           <legend>Ваши безбашенные достижения в путешествии</legend>
           <label class="label label--checkbox" for="selfi">Сделал селфи с акулой</label><input class="ckeckbox" type="checkbox" name="selfi" id="selfi" checked>
           <label class="label label--checkbox"for="beach">Обгорел на пляже</label><input class="ckeckbox" type="checkbox" name="beach" id="beach" checked>
@@ -43,7 +43,7 @@
           <label class="label label--checkbox" for="hotel">Разгромил отель</label><input class="ckeckbox" type="checkbox" name="hotel" id="hotel">
         </fieldset>
 
-        <fieldset class="contest-feedback__contacts-field">
+        <fieldset class="contest-feedback__field">
           <label class="label label--text">Номерок телефончика</label>
           <input class="tel" type="tel" name="phone-number" id="phone-number" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
 
@@ -51,13 +51,13 @@
           <input class="email" type="email" name="email" id="email" placeholder="E-mail, пожалуйста" required>
         </fieldset>
 
-        <fieldset class="contest-feedback__app-field">
+        <fieldset class="contest-feedback__field">
           <label class="label label--radio" for="ios"><input class="radio" type="radio" name="trip-app" id="ios" value="ios" checked>Pink для iOS</label>
           <label class="label label--radio" for="android"><input class="radio" type="radio" name="trip-app" id="android" value="android">Pink на Android</label>
           <label class="label label--radio" for="win-phone"><input class="radio" type="radio" name="trip-app" id="win-phone" value="win-phone">Windows Phone</label>
         </fieldset>
 
-        <fieldset class="contest-feedback__message-field">
+        <fieldset class="contest-feedback__field">
           <legend class="contest-feedback__message-title">Опишите свои эмоции</legend>
           <textarea class="contest-feedback__message" name="feedback-emotion" id="feedback-emotion" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
