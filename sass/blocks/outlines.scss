@@ -1,22 +1,47 @@
-.about {
-  outline: 2px solid yellow;
-}
+/*
 .contest-feedback {
-  outline: 2px solid orange;
-}
-.logo {
-  outline: 2px solid yellow;
-}
-.main-nav {
   outline: 2px solid orange;
 }
 .page-footer {
   outline: 2px solid #f9bc15;
 }
-.page-header {
-  outline: 2px solid #c71353;
+
+*/
+.intro {
+  outline: 2px solid green;
 }
-.photo-load {
+
+.main-nav {
+  outline: 2px solid orange;
+}
+
+.main-nav__wrapper {
+  outline: 2px solid red;
+}
+
+.main-nav__toggle {
+  outline: 2px solid yellow;
+}
+
+.page-header {
+  outline: 4px solid #c71353;
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+.logo {
+  outline: 2px solid yellow;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.page-header__wrapper {
+  outline: 5px solid blue;
+}
+
+.about__wrapper {
+  outline: 2px solid #d22856;
+}
+
+/* photo-load {
   outline: 2px solid blue;
 }
 .photo-section {
@@ -33,4 +58,4 @@
 }
 .wrapper {
   outline: 2px solid red;
-}
+} */

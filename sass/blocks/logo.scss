@@ -1,1 +1,23 @@
+.logo {
+  display: block;
+  height: 22px;
+  width: 75px;
+}
 
+.logo--big {
+  height: 40px;
+  width: 147px;
+}
+
+@media ($tablet-width) {
+  .logo {
+    height: 40px;
+    width: 147px;
+  }
+}
+
+@media ($desktop-width) {
+  .logo {
+    float: left;
+  }
+}

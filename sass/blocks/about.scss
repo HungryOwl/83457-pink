@@ -1,0 +1,96 @@
+.about__wrapper {
+  @include container;
+  @include clearfix;
+}
+
+.about__slogan {
+  text-align: center;
+}
+
+.about__item {
+  text-align: center;
+
+}
+
+.about__image {
+  width: 157px;
+  height: 278px;
+
+  background-image: url("../../img/iphone-screen-mobile.png");
+
+  margin: 0 auto;
+}
+
+.about__science {
+  display: none;
+}
+
+@media ($tablet-width) {
+  .about__items-wrapper {
+    @include clearfix;
+  }
+
+  .about__items {
+    width: 320px;
+
+    float: right;
+  }
+
+  .about__image {
+    float: left;
+
+    width: 268px;
+    height: 481px;
+
+    background-size: 100% auto;
+  }
+
+  .about__science {
+    display: block;
+
+    position: relative;
+
+    width: 320px;
+
+    padding-left: 300px;
+
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      width: 277px;
+      height: 277px;
+
+      left: 0;
+
+      background-color: #d22856;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .about__items {
+    width: auto;
+  }
+
+  .about__item {
+    display: block;
+
+    width: 300px;
+
+    float: left;
+  }
+
+  .about__item:nth-child(3) {
+
+    float: right;
+  }
+
+  .about__image {
+    display: none;
+  }
+}

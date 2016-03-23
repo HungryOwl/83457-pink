@@ -1,3 +1,37 @@
 .intro {
-  outline: 2px solid green;
+  height: 271px;
+  background-color: rgba(29, 38, 49, 0.5);
+
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+}
+
+.intro__header {
+  display: none;
+}
+
+@media ($tablet-width) {
+  .intro {
+    width: 300px;
+
+    position: static;
+
+    background-color: transparent;
+  }
+
+  .intro *:first-child {
+    margin-top: 0;
+  }
+
+  .intro__header {
+    display: block;
+  }
+}
+
+@media ($desktop-width) {
+  .intro {
+    width: 370px;
+  }
 }

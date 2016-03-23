@@ -1,11 +1,14 @@
 $bg-main: white;
+
 $bg-darkblue: #1d2631;
 
-$mobile-width-only: (max-width: 699px);
-$tablet-width: (min-width: 700px);
-$desktop-width: (min-width: 1200px);
+$mobile-width-only: "max-width: 699px";
+$tablet-width: "min-width: 700px";
+$desktop-width: "min-width: 1200px";
 
 $font-size: 18px;
 $line-height: $font-size + 12;
 $font-color-main: #283645;
+$font-color-header: white;
+
 $font-color-second: #d22856;

@@ -1,1 +1,28 @@
+.page-header {
+  min-height: 729px;
 
+  position: relative;
+
+  color: $font-color-header;
+  background-color: #1d2631;
+}
+
+@media ($tablet-width) {
+  .page-header {
+    min-height: 728px;
+  }
+
+  .page-header__wrapper {
+    @include container;
+  }
+}
+
+@media ($desktop-width) {
+  .page-header {
+    min-height: 853px;
+  }
+
+  .page-header__wrapper {
+    @include container;
+  }
+}
