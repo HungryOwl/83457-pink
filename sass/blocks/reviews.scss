@@ -1,0 +1,12 @@
+.reviews__wrapper {
+  @include container;
+}
+
+.reviews__item {
+  text-align: center;
+  display: none;
+}
+
+.reviews__item--active {
+  display: block;
+}

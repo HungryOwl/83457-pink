@@ -27,17 +27,20 @@
 
 @media ($tablet-width) {
   .about__items-wrapper {
-    @include clearfix;
+    position: relative;
   }
 
   .about__items {
     width: 320px;
 
-    float: right;
+    padding-left: 300px;
   }
 
   .about__image {
-    float: left;
+    position: absolute;
+
+    left: 0;
+    top: 0;
 
     width: 268px;
     height: 481px;
