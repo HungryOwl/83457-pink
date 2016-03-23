@@ -1,6 +1,18 @@
+.about {
+  padding-top: 59px;
+}
+
 .about__wrapper {
   @include container;
   @include clearfix;
+}
+
+.about__wrapper *:first-child {
+  margin-top: 0;
+}
+
+.about__wrapper *:last-child {
+  margin-bottom: 0;
 }
 
 .about__slogan {
@@ -76,6 +88,11 @@
 }
 
 @media ($desktop-width) {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 67px;
+  }
+
   .about__items {
     width: auto;
 

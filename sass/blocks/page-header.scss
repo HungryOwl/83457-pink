@@ -3,23 +3,39 @@
   min-height: 729px;
 
   color: $font-color-header;
-  background-color: #1d2631;
 
   &__wrapper {
     @include container;
 
     position: relative;
 
-    min-height: 729px;
+    min-height: 271px;
+
+    padding-top: 458px;
   }
 }
 
 @media ($tablet-width) {
   .page-header {
     min-height: 728px;
+
+    &__wrapper {
+      padding-top: 298px;
+    }
   }
 }
 
 @media ($desktop-width) {
+  .page-header {
 
+    min-height: 853px;
+
+    &__wrapper {
+      padding-top: 0;
+    }
+
+    &__nav-wrapper {
+      @include clearfix;
+    }
+  }
 }

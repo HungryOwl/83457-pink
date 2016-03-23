@@ -1,12 +1,20 @@
 .logo {
-  display: block;
   height: 22px;
   width: 75px;
-}
 
-.logo--big {
-  height: 40px;
-  width: 147px;
+  &--page-header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    z-index: 100;
+  }
+
+  &--big {
+    width: 147px;
+    height: 40px;
+  }
 }
 
 @media ($tablet-width) {
@@ -17,7 +25,5 @@
 }
 
 @media ($desktop-width) {
-  .logo {
-    float: left;
-  }
+
 }

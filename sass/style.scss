@@ -16,7 +16,6 @@
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-footer.scss";
-
 @import "blocks/photo-load.scss";
 @import "blocks/photo-section.scss";
 @import "blocks/price.scss";
@@ -30,28 +29,6 @@
 @import "blocks/user-photo.scss";
 @import "blocks/wrapper.scss";
 @import "blocks/outlines.scss";
-
-@font-face {
-  font-family: "Open Sans";
-    src: url ("../fonts/opensans.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-    src: url ("../fonts/opensansbold.woff") format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-    src: url ("../fonts/opensanslight.woff") format('woff');
-  font-weight: lighter;
-  font-style: normal;
-}
-
 
 body {
   margin: 0;

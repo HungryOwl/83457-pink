@@ -1,38 +1,34 @@
 .intro {
-  /* Прибиваем к низу относительно абсолютного позиционирования относительно */
+  min-height: 207px;
 
-  position: absolute;
+  padding-top: 28px;
+  padding-bottom: 36px;
 
-  height: 271px;
-  width: 280px;
+  text-align: center;
 
-  bottom: 0;
+  background-color: rgba(128, 0, 0, 0.3);
 
-  background-color: red;
+  &__header {
+    display: none;
 
-  /* &::before {
-    content: "";
+    font-size: 40px;
+    font-weight: lighter;
 
-    position: absolute;
-
-    width: 258px;
-    height: 286px;
-
-    top: 0;
-
-    background-image: url("../../img/iphone-hand-mobile.png");
-  } */
+    line-height: 56px;
+  }
 }
 
-.intro__header {
-  display: none;
+.intro *:first-child {
+  margin-top: 0;
+}
+
+.intro *:last-child {
+  margin-bottom: 0;
 }
 
 @media ($tablet-width) {
   .intro {
     width: 300px;
-
-    background-color: transparent;
   }
 
   .intro *:first-child {
@@ -47,5 +43,7 @@
 @media ($desktop-width) {
   .intro {
     width: 370px;
+
+    padding-top: 110px;
   }
 }
