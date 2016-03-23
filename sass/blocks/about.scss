@@ -9,7 +9,6 @@
 
 .about__item {
   text-align: center;
-
 }
 
 .about__image {
@@ -79,6 +78,7 @@
 @media ($desktop-width) {
   .about__items {
     width: auto;
+
     padding-left: 0;
   }
 
@@ -90,7 +90,7 @@
     float: left;
   }
 
-  .about__item:nth-child(3) {
+  .about__item:nth-child(3n) {
 
     float: right;
   }

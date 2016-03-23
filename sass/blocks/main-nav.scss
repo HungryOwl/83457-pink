@@ -1,8 +1,9 @@
 .main-nav {
   position: relative;
+
   top: -22px;
 
-  width: 320px;
+  width: auto;
 
   min-height: 70px;
 
@@ -10,10 +11,16 @@
 }
 
 .main-nav__items {
+  clear: both;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.main-nav__item {
+  text-align: center;
 }
 
 .main-nav__item a {
@@ -23,6 +30,8 @@
 }
 
 .main-nav__toggle {
+  display: block;
+
   float: right;
 }
 
