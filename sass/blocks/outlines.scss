@@ -28,13 +28,13 @@
   background-color: rgba(128, 128, 128, 0.7);
 }
 
+.page-header__wrapper {
+  outline: 5px solid blue;
+}
+
 .logo {
   outline: 2px solid yellow;
   background-color: rgba(128, 128, 128, 0.3);
-}
-
-.page-header__wrapper {
-  outline: 5px solid blue;
 }
 
 .about__wrapper {

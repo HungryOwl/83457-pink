@@ -1,13 +1,16 @@
 .page-header {
-  min-height: 729px;
 
-  position: relative;
+  min-height: 729px;
 
   color: $font-color-header;
   background-color: #1d2631;
 
   &__wrapper {
     @include container;
+
+    position: relative;
+
+    min-height: 729px;
   }
 }
 

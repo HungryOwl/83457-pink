@@ -1,11 +1,27 @@
 .intro {
-  height: 271px;
-  background-color: rgba(29, 38, 49, 0.5);
+  /* Прибиваем к низу относительно абсолютного позиционирования относительно */
 
   position: absolute;
+
+  height: 271px;
+  width: 280px;
+
   bottom: 0;
 
-  width: 100%;
+  background-color: red;
+
+  /* &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 258px;
+    height: 286px;
+
+    top: 0;
+
+    background-image: url("../../img/iphone-hand-mobile.png");
+  } */
 }
 
 .intro__header {
@@ -15,8 +31,6 @@
 @media ($tablet-width) {
   .intro {
     width: 300px;
-
-    position: static;
 
     background-color: transparent;
   }
