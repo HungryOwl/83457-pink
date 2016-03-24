@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <link href="./css/style.css" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
@@ -38,23 +37,23 @@
     <section class="about">
       <div class="about__wrapper">
         <h2 class="about__slogan">Устали от серости мегаполиса?</h2>
-        <h2 class="about__slogan"> Нам есть, что вам предложить!</h2>
-        <div class="about__items-wrapper">
-          <div class="about__items">
-            <article class="about__item">
-              <h4 class="about__title">Поднимает настроение</h4>
-              <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-            </article>
-            <article class="about__item">
-              <h4 class="about__title">Меняет мир вокруг</h4>
-              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </article>
-            <article class="about__item">
-              <h4 class="about__title">Заводит новых друзей</h4>
-              <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-            </article>
-          </div>
-          <div class="about__image"></div>
+        <h2 class="about__slogan"> Нам есть, что вам <br>предложить!</h2>
+        <div class="about__items">
+          <article class="about__item">
+            <div class="about__item-image"></div>
+            <h4 class="about__title">Поднимает настроение</h4>
+            <p class="about__content">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+          </article>
+          <article class="about__item">
+            <div class="about__item-image"></div>
+            <h4 class="about__title">Меняет мир вокруг</h4>
+            <p class="about__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </article>
+          <article class="about__item">
+            <div class="about__item-image"></div>
+            <h4 class="about__title">Заводит новых друзей</h4>
+            <p class="about__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </article>
         </div>
         <article class="about__science">
           <h3>Эффект на 24 часа!</h3>
@@ -74,16 +73,19 @@
 
             <article class="reviews__item reviews__item--active">
               <h4 class="reviews__title">Николай Петров</h4>
+              <p class="reviews__intro">25 лет, водитель трамвая</p>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
 
             <article class="reviews__item">
               <h4 class="reviews__title">Николай Петров</h4>
+              <p class="reviews__intro">25 лет, водитель трамвая</p>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
 
             <article class="reviews__item">
               <h4 class="reviews__title">Николай Петров</h4>
+              <p class="reviews__intro">25 лет, водитель трамвая</p>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
 
@@ -98,32 +100,36 @@
     </section>
 
     <section class="price">
-      <div class="wrapper">
+      <div class="price__wrapper">
         <div class="price__items">
           <input class="price__switcher" type="radio" name="reviews" id="price-radio-1" checked>
           <input class="price__switcher" type="radio" name="reviews" id="price-radio-2" >
           <input class="price__switcher" type="radio" name="reviews" id="price-radio-3" >
 
           <table class="price__list">
-            <thead>
+            <thead class="price__list-head">
               <tr>
+                <th class="price__value"></th>
                 <th class="price__value">База<p>1,99 USD</p></th>
                 <th class="price__value price__value--flag">Стандарт<p>3,99 USD</p></th>
                 <th class="price__value">Анлим<p>9,99 USD</p></th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="price__list-body">
               <tr>
+                <td class="price__field">Розовый фильтр</td>
                 <td class="price__field">Розовый фильтр</td>
                 <td class="price__field">Розовый фильтр</td>
                 <td class="price__field">Розовый фильтр</td>
               </tr>
               <tr>
+                <td class="price__field">Смайлики</td>
                 <td class="price__field price__field--ok">Смайлики</td>
                 <td class="price__field price__field--ok">Смайлики</td>
                 <td class="price__field price__field--cancel">Смайлики</td>
               </tr>
               <tr>
+                <td class="price__field">Комментарии</td>
                 <td class="price__field">Комментарии</td>
                 <td class="price__field">Комментарии</td>
                 <td class="price__field">Комментарии</td>
