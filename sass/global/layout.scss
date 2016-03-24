@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: "Open Sans","Arial","Helvetica","Garuda", sans-serif;
+
+  color: $font-color-main;
+  font-style: normal;
+  font-weight: normal;
+
+  background-color: $bg-main;
+}
+
+body {
+  padding: 6px;
+  /* background: $bg-main url("../img/pink-index-mobile.jpg") no-repeat center 6px scroll; */
+  min-height: 3423px;
+}
+
+@media ($tablet-width) {
+  body {
+    /* background: $bg-main url("../img/pink-index-tablet.jpg") no-repeat center 6px scroll; */
+    min-height: 2400px;
+  }
+}
+
+@media ($desktop-width) {
+  body {
+    /* background: $bg-main url("../img/pink-index-desktop.jpg") no-repeat center 6px scroll; */
+    min-height: 2250px;
+  }
+}

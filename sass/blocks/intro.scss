@@ -1,4 +1,6 @@
 .intro {
+  position: relative;
+
   min-height: 207px;
 
   padding-top: 28px;
@@ -16,6 +18,20 @@
 
     line-height: 56px;
   }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 258px;
+    height: 286px;
+
+    left: 0;
+    top: -286px;
+
+    background-image: url("../../img/iphone-hand-mobile.png");
+  }
 }
 
 .intro *:first-child {
@@ -29,6 +45,15 @@
 @media ($tablet-width) {
   .intro {
     width: 300px;
+
+    &::before {
+    position: static;
+
+    width: 0;
+    height: 0;
+
+    background-image: none;
+    }
   }
 
   .intro *:first-child {

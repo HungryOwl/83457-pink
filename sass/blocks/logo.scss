@@ -2,14 +2,27 @@
   height: 22px;
   width: 75px;
 
-  &--page-header {
+  position: absolute;
+
+  top: 22px;
+  left: 0;
+
+  z-index: 100;
+
+  font-size: 0;
+
+  background-image: url("../../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: $bg-darkblue;
+
+  /* &--page-header {
     position: absolute;
 
     top: 0;
     left: 0;
 
     z-index: 100;
-  }
+  }*/
 
   &--big {
     width: 147px;
@@ -21,9 +34,16 @@
   .logo {
     height: 40px;
     width: 147px;
+
+    background-image: url("../../img/logo-pink-blue-mobile.svg");
   }
 }
 
 @media ($desktop-width) {
+  .logo {
+    position: static;
+    float: left;
 
+    margin-top: 27px;
+  }
 }

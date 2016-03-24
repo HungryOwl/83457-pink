@@ -16,7 +16,7 @@
 }
 
 .main-nav__wrapper {
-  outline: 2px solid red;
+  outline: 3px solid #00bff3;
 }
 
 .main-nav__toggle {
@@ -27,17 +27,52 @@
   outline: 4px solid #c71353;
 }
 
+.about {
+  outline: 4px solid #c71353;
+
+  &__slogan {
+    outline: 2px solid yellow;
+  }
+}
+
+.reviews {
+   outline: 4px solid #c71353;
+}
+
 .page-header__wrapper {
-  outline: 5px solid blue;
+  outline: 5px solid #00bff3;
 }
 
 .logo {
   outline: 2px solid yellow;
-  background-color: rgba(128, 128, 128, 0.3);
 }
 
 .about__wrapper {
-  outline: 2px solid #d22856;
+  outline: 3px solid #00bff3;
+}
+
+.about__items-wrapper {
+  outline: 2px solid green;
+}
+
+.about__items {
+  outline: 5px solid red;
+}
+
+.about__item {
+  outline: 2px solid blue;
+}
+
+.reviews__wrapper {
+  outline: 3px solid #00bff3;
+}
+
+.price {
+  outline: 4px solid #c71353;
+
+  &__wrapper {
+    outline: 3px solid #00bff3;
+  }
 }
 
 /* photo-load {
