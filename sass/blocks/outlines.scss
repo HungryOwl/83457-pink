@@ -13,58 +13,46 @@
 
 .main-nav {
   outline: 2px solid orange;
-}
 
-.main-nav__wrapper {
-  outline: 3px solid #00bff3;
-}
+  &__wrapper {
+    outline: 3px solid #00bff3;
+  }
 
-.main-nav__toggle {
-  outline: 2px solid yellow;
+  &__ toggle {
+    outline: 2px solid yellow;
+  }
 }
 
 .page-header {
   outline: 4px solid #c71353;
+
+  &__wrapper {
+    outline: 5px solid #00bff3;
+  }
 }
 
 .about {
   outline: 4px solid #c71353;
 
+  &__wrapper {
+     outline: 3px solid #00bff3;
+  }
+
+  &__items-wrapper {
+    outline: 2px solid green;
+  }
+
+  &__items {
+    outline: 5px solid red;
+  }
+
+  &__item {
+    outline: 2px solid blue;
+  }
+
   &__slogan {
     outline: 2px solid yellow;
   }
-}
-
-.reviews {
-   outline: 4px solid #c71353;
-}
-
-.page-header__wrapper {
-  outline: 5px solid #00bff3;
-}
-
-.logo {
-  outline: 2px solid yellow;
-}
-
-.about__wrapper {
-  outline: 3px solid #00bff3;
-}
-
-.about__items-wrapper {
-  outline: 2px solid green;
-}
-
-.about__items {
-  outline: 5px solid red;
-}
-
-.about__item {
-  outline: 2px solid blue;
-}
-
-.reviews__wrapper {
-  outline: 3px solid #00bff3;
 }
 
 .price {
@@ -73,6 +61,26 @@
   &__wrapper {
     outline: 3px solid #00bff3;
   }
+}
+
+.reviews {
+   outline: 4px solid #c71353;
+
+   &__wrapper {
+    outline: 3px solid #00bff3;
+   }
+}
+
+.page-footer {
+  outline: 4px solid #c71353;
+
+  &__wrapper {
+    outline: 3px solid #00bff3;
+  }
+}
+
+.logo {
+  outline: 2px solid yellow;
 }
 
 /* photo-load {

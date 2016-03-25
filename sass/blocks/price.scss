@@ -74,10 +74,14 @@
     }
   }
 
+    &__list {
+      min-width: 620px;
+    }
+
     &__field {
 
       &:not(:first-child) {
-        min-width: 149px;
+        min-width: 148px;
 
         padding-top: 15px;
         padding-bottom: 15px;
@@ -119,10 +123,6 @@
     }
 
     &__field {
-
-      &:not(:first-child) {
-
-    }
 
       &:first-child {
         min-width: 230px;
