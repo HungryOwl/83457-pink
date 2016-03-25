@@ -72,11 +72,35 @@
 }
 
 .page-footer {
-  outline: 4px solid #c71353;
+  outline: 4px solid black;
 
   &__wrapper {
     outline: 3px solid #00bff3;
   }
+
+  &__call-us {
+      outline: 2px solid blue;
+  }
+
+  &__write-us {
+      outline: 2px solid blue;
+  }
+
+  &__visit-us {
+      outline: 2px solid blue;
+  }
+
+  &__developer {
+    outline: 2px solid blue;
+  }
+
+  &__copyright {
+    outline: 2px solid blue;
+  }
+}
+
+.social-links {
+  outline: 2px solid blue;
 }
 
 .logo {

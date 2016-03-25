@@ -2,40 +2,39 @@
   height: 22px;
   width: 75px;
 
-  position: absolute;
-
-  top: 22px;
-  left: 0;
-
-  z-index: 100;
-
   font-size: 0;
 
   background-image: url("../../img/logo-pink-white-mobile.svg");
   background-repeat: no-repeat;
   background-color: $bg-darkblue;
 
-  /* &--page-header {
+  &--page-header {
     position: absolute;
 
-    top: 0;
+    top: 22px;
     left: 0;
 
     z-index: 100;
-  }*/
+  }
 
   &--big {
     width: 147px;
     height: 40px;
+
+    background-image: url("../../img/logo-pink-blue-mobile.svg");
   }
 }
 
 @media ($tablet-width) {
   .logo {
-    height: 40px;
     width: 147px;
+    height: 40px;
 
     background-image: url("../../img/logo-pink-blue-mobile.svg");
+
+    &--copyright {
+      float: left;
+    }
   }
 }
 
@@ -45,5 +44,9 @@
     float: left;
 
     margin-top: 27px;
+
+    &--copyright {
+      margin-top: 0;
+    }
   }
 }

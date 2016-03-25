@@ -1,0 +1,29 @@
+.social-links {
+  float: left;
+
+  padding-top: 3px;
+  margin-left: 68px;
+
+  font-size: 0;
+
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 47px;
+    height: 47px;
+
+    margin: 0 6px;
+
+    background-color: white;
+
+    border: 2px solid #e9ebec;
+    border-radius: 50%;
+  }
+}
+
+@media ($desktop-width) {
+  .social-links {
+    margin-left: 228px;
+  }
+}
