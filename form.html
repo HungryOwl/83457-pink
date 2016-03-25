@@ -3,25 +3,22 @@
 <head>
   <meta charset="utf-8">
   <link href="./css/style.css" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
   <header class="page-header">
-    <div class="wrapper">
-      <a href="#" class="page-header__logo">
-        <img src="#" width="75" height="22" alt="Пинк">
+    <div class="page-header__wrapper">
+      <a class="logo logo--page-header" href="#">
+        Лого
       </a>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper main-nav__wrapper--closed">
-          <button class="main-nav__toggle main-nav__toggle--closed">Открыть меню</button>
-          <ul class="main-nav__items">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Стоимость</a></li>
-          </ul>
-        </div>
+      <button class="main-nav__toggle main-nav__toggle--closed">Открыть меню</button>
+      <nav class="main-nav main-nav--closed">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+        </ul>
       </nav>
       <section class="intro">
         <h1 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -83,8 +80,8 @@
   </main>
 
   <footer class="page-footer">
-    <div class="wrapper">
-      <a class="logo logo--big" href="#">
+    <section class="page-footer__copyright">
+      <a class="logo logo--copyright" href="#">
         Лого
       </a>
 
@@ -94,10 +91,10 @@
         <a class="social-links__link social-links__link--youtube" href="#">youtube</a>
       </div>
 
-      <section class="page-footer__copyright">
+      <section class="page-footer__developer">
         <a class="page-footer__copyright-link btn" href="#">Разработано</a>
       </section>
-    </div>
+    </section>
   </footer>
 </body>
 </html>
