@@ -113,10 +113,15 @@
 
 @media ($desktop-width) {
   .price {
+
+    &__list {
+      min-width: 940px;
+    }
+
     &__field {
 
       &:not(:first-child) {
-        min-width: 230px;
+
     }
 
       &:first-child {
