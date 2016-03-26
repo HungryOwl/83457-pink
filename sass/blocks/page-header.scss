@@ -65,9 +65,13 @@
 
 @media ($tablet-width) {
   .page-header {
-    min-height: 728px;
+    min-height: 440px;
 
-    &__wrapper {
+    &--index {
+      min-height: 729px;
+    }
+
+    &__wrapper--index {
       padding-top: 298px;
     }
   }
@@ -75,8 +79,11 @@
 
 @media ($desktop-width) {
   .page-header {
+    min-height: 394px;
 
-    min-height: 853px;
+    &--index {
+      min-height: 853px;
+    }
 
     &__wrapper {
       padding-top: 0;

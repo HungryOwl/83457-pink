@@ -107,6 +107,18 @@
   outline: 2px solid yellow;
 }
 
+.contest-feedback {
+  outline: 4px solid #c71353;
+
+  &__wrapper {
+    outline: 3px solid #00bff3;
+  }
+
+  &__field {
+    outline: 1px solid blue;
+  }
+}
+
 /* photo-load {
   outline: 2px solid blue;
 }

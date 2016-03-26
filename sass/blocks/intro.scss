@@ -57,21 +57,37 @@
 
 @media ($tablet-width) {
   .intro {
-    width: 300px;
+    padding-top: 185px;
+
+    &--index {
+      width: 300px;
+
+      padding-top: 28px;
+    }
 
     &::before {
-    position: static;
+      position: static;
 
-    width: 0;
-    height: 0;
+      width: 0;
+      height: 0;
 
-    background-image: none;
+      background-image: none;
     }
 
     &__header {
-      font-size: 40px;
-
+      font-size: 50px;
       line-height: 56px;
+
+      padding: 0 60px;
+
+      &--index {
+        font-size: 40px;
+        line-height: 56px;
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
 
       &--toggle {
         display: block;
@@ -86,9 +102,11 @@
 
 @media ($desktop-width) {
   .intro {
-    width: 370px;
     clear: both;
 
     padding-top: 110px;
+
+    &--index {
+      width: 370px;}
   }
 }

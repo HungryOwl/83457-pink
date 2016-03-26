@@ -1,1 +1,98 @@
+.contest-feedback {
+  &__wrapper {
+    @include container;
+  }
 
+  &__wrapper-color {
+    background-color: #e5e5e5;
+  }
+
+  &__form {
+    padding-top: 43px;
+    padding-bottom: 18px;
+
+    & *:first-child {
+      margin-top: 0;
+    }
+
+    & *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__share {
+    font-size: 14px;
+    line-height: 30px;
+
+    margin-top: 12px;
+    margin-bottom: 6px;
+
+    text-align: center;
+
+    span {
+      display: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  &__field {
+    margin: 0;
+    padding: 0;
+
+    padding-top: 40px;
+    padding-bottom: 42px;
+
+    &--info {
+      min-height: 326px;
+    }
+
+    &--achievements {
+      min-height: 519px;
+    }
+
+    &--contacts {
+      min-height: 205px;
+    }
+    &--app {
+      min-height: 248px;
+    }
+
+    &--emotion {
+      min-height: 393px;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+}
+
+@media ($tablet-width) {
+  .contest-feedback {
+    &__share {
+      font-size: 18px;
+
+      span {
+        display: inline;
+      }
+    }
+
+    &__form {
+      padding-top: 98px;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+@media ($desktop-width) {
+
+}
