@@ -1,3 +1,12 @@
+.contest-feedback__form *:first-child {
+  margin-top: 0;
+}
+
+.contest-feedback__form *:last-child {
+  margin-bottom: 0;
+}
+
+
 .contest-feedback {
 
   &__wrapper-inner {
@@ -10,17 +19,6 @@
     }
   }
 
-  &__wrapper-color {
-    background-color: #e5e5e5;
-    &--app {
-      order: 5;
-    }
-
-    &--achievements {
-      order: 3;
-    }
-  }
-
   &__form {
     display: flex;
 
@@ -28,14 +26,6 @@
 
     padding-top: 43px;
     padding-bottom: 18px;
-
-    & *:first-child {
-      margin-top: 0;
-    }
-
-    & *:last-child {
-      margin-bottom: 0;
-    }
   }
 
   &__share {
@@ -44,7 +34,6 @@
     font-size: 14px;
     line-height: 30px;
 
-    margin-top: 12px;
     margin-bottom: 6px;
 
     text-align: center;
@@ -74,7 +63,7 @@
     box-sizing: border-box;
 
     &--info {
-      min-height: 326px;
+      min-height: 403px;
 
       order: 2;
     }
@@ -84,7 +73,7 @@
     }
 
     &--contacts {
-      min-height: 205px;
+      min-height: 295px;
 
       order: 4;
     }
@@ -96,7 +85,34 @@
     &--emotion {
       min-height: 393px;
 
+      padding-top: 10px;
+
       order: 6;
+    }
+  }
+
+  &__wrapper-color {
+    background-color: #e5e5e5;
+    &--app {
+      box-sizing: border-box;
+      min-height: 337px;
+
+      padding-top: 40px;
+      padding-bottom: 42px;
+      margin-bottom: 52px;
+
+      order: 5;
+    }
+
+    &--achievements {
+
+      box-sizing: border-box;
+      min-height: 608px;
+
+      padding-top: 40px;
+      padding-bottom: 42px;
+
+      order: 3;
     }
   }
 
@@ -104,6 +120,8 @@
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
+
+    margin-top: 40px;
 
     &--close {
       display: none;
