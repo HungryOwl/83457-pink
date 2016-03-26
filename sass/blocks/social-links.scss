@@ -1,24 +1,37 @@
 .social-links {
-  float: left;
+    padding-top: 3px;
 
-  padding-top: 3px;
-  margin-left: 68px;
+    font-size: 0;
 
-  font-size: 0;
+    margin: 0 auto;
 
-  &__link {
+    &__link {
     display: inline-block;
     vertical-align: middle;
 
+    margin: 0 6px;
+
     width: 47px;
     height: 47px;
-
-    margin: 0 6px;
 
     background-color: white;
 
     border: 2px solid #e9ebec;
     border-radius: 50%;
+  }
+}
+
+@media ($tablet-width) {
+  .social-links {
+    width: auto;
+
+    float: left;
+
+    margin-left: 68px;
+
+    &__link {
+
+    }
   }
 }
 

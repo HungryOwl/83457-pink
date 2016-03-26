@@ -23,6 +23,11 @@
 
     background-image: url("../../img/logo-pink-blue-mobile.svg");
   }
+
+  &--copyright {
+    display: inline-block;
+    position: static;
+  }
 }
 
 @media ($tablet-width) {
