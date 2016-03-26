@@ -16,6 +16,7 @@
 
   &__wrapper {
     @include container;
+    @include clearfix;
 
     position: relative;
 

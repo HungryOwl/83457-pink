@@ -10,6 +10,12 @@
 
   background-color: rgba(128, 0, 0, 0.3);
 
+  &--inner-page {
+    position: static;
+
+    margin: 0 auto;
+  }
+
   &__header {
     &:first-child {
       padding-top: 70px;
@@ -53,8 +59,6 @@
   .intro {
     width: 300px;
 
-    clear: both;
-
     &::before {
     position: static;
 
@@ -83,6 +87,7 @@
 @media ($desktop-width) {
   .intro {
     width: 370px;
+    clear: both;
 
     padding-top: 110px;
   }
