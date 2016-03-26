@@ -1,7 +1,4 @@
 .contest-feedback {
-  &__wrapper {
-    @include container;
-  }
 
   &__wrapper-color {
     background-color: #e5e5e5;
@@ -42,7 +39,8 @@
   }
 
   &__field {
-    margin: 0;
+    @include container;
+
     padding: 0;
 
     padding-top: 40px;
