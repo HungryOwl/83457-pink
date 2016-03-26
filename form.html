@@ -29,63 +29,63 @@
 
   <main class="page-main">
     <section class="contest-feedback">
-      <div class="contest-feedback__wrapper">
-        <form class="contest-feedback__form" action="/echo" method="post">
-          <p class="contest-feedback__share">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
+      <form class="contest-feedback__form" action="/echo" method="post">
+        <p class="contest-feedback__share">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
 
-          <fieldset class="contest-feedback__field contest-feedback__field--info">
-            <ul class="contest-feedback__list">
-              <li><label class="label label--caption" for="name">Имя:</label><input class="text" type="text" name="name" id="name" placeholder="Введите ваше имя" required></li>
-              <li><label class="label label--caption" for="surname">Фамилия:</label><input class="text" type="text" name="surname" id="surname" placeholder="Укажите фамилию"></li>
-              <li><label class="label label--caption" for="middle-name">Отчество:</label><input class="text" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже"></li>
-            </ul>
+        <fieldset class="contest-feedback__field contest-feedback__field--info">
+          <ul class="contest-feedback__list">
+            <li><label class="label label--caption" for="name">Имя:</label><input class="text" type="text" name="name" id="name" placeholder="Введите ваше имя" required></li>
+            <li><label class="label label--caption" for="surname">Фамилия:</label><input class="text" type="text" name="surname" id="surname" placeholder="Укажите фамилию"></li>
+            <li><label class="label label--caption" for="middle-name">Отчество:</label><input class="text" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже"></li>
+          </ul>
+        </fieldset>
+
+        <div class="contest-feedback__wrapper-color contest-feedback__wrapper-color--app">
+          <fieldset class="contest-feedback__field contest-feedback__field--app">
+            <legend class="contest-feedback__title">С каким приложением путешествовали?</legend>
+              <ul class="contest-feedback__list">
+                <li><input class="radio" type="radio" name="trip-app" id="ios" value="ios" checked>
+              <label class="label label--radio" for="ios">Pink для iOS</label></li>
+                <li><input class="radio" type="radio" name="trip-app" id="android" value="android">
+              <label class="label label--radio" for="android">Pink на Android</label></li>
+                <li><input class="radio" type="radio" name="trip-app" id="win-phone" value="win-phone">
+              <label class="label label--radio" for="win-phone">Windows Phone</label></li>
+              </ul>
           </fieldset>
+        </div>
 
-          <div class="contest-feedback__wrapper-color">
-            <fieldset class="contest-feedback__field contest-feedback__field--achievements">
-              <legend class="contest-feedback__title">Ваши безбашенные достижения в путешествии</legend>
-                <ul class="contest-feedback__list">
-                  <li><input class="checkbox" type="checkbox" name="selfi" id="selfi" checked><label class="label label--checkbox" for="selfi">Сделал селфи с акулой</label></li>
-                  <li><input class="checkbox" type="checkbox" name="beach" id="beach" checked><label class="label label--checkbox" for="beach">Обгорел на пляже</label></li>
-                  <li><input class="checkbox" type="checkbox" name="norris" id="norris"><label class="label label--checkbox" for="norris">Видел Чака Норриса</label></li>
-                  <li><input class="checkbox" type="checkbox" name="souvenir" id="souvenir"><label class="label label--checkbox" for="souvenir">Накупил сувениров</label></li>
-                  <li> <input class="checkbox" type="checkbox" name="tower" id="tower" checked><label class="label label--checkbox" for="tower">Удержал башню</label></li>
-                  <li><input class="checkbox" type="checkbox" name="hotel" id="hotel"><label class="label label--checkbox" for="hotel">Разгромил отель</label></li>
-                </ul>
-            </fieldset>
-          </div>
+        <fieldset class="contest-feedback__field contest-feedback__field--contacts">
+          <legend class="contest-feedback__title contest-feedback__title--close">Контактная информация</legend>
+          <ul class="contest-feedback__list">
+            <li><label class="label label--caption">Номерок телефончика</label><input class="tel" type="tel" name="phone-number" id="phone-number" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста"></li>
+            <li><label class="label label--caption" for="email">Адресок почты</label><input class="email" type="email" name="email" id="email" placeholder="E-mail, пожалуйста" required></li>
+          </ul>
+        </fieldset>
 
-          <fieldset class="contest-feedback__field contest-feedback__field--contacts">
-            <legend class="contest-feedback__title">Контактная информация</legend>
-            <ul class="contest-feedback__list">
-              <li><label class="label label--caption">Номерок телефончика</label><input class="tel" type="tel" name="phone-number" id="phone-number" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста"></li>
-              <li><label class="label label--caption" for="email">Адресок почты</label><input class="email" type="email" name="email" id="email" placeholder="E-mail, пожалуйста" required></li>
-            </ul>
+        <div class="contest-feedback__wrapper-color contest-feedback__wrapper-color--achievements">
+          <fieldset class="contest-feedback__field contest-feedback__field--achievements">
+            <legend class="contest-feedback__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="contest-feedback__list">
+                <li><input class="checkbox" type="checkbox" name="selfi" id="selfi" checked><label class="label label--checkbox" for="selfi">Сделал селфи с акулой</label></li>
+                <li><input class="checkbox" type="checkbox" name="beach" id="beach" checked><label class="label label--checkbox" for="beach">Обгорел на пляже</label></li>
+                <li><input class="checkbox" type="checkbox" name="norris" id="norris"><label class="label label--checkbox" for="norris">Видел Чака Норриса</label></li>
+                <li><input class="checkbox" type="checkbox" name="souvenir" id="souvenir"><label class="label label--checkbox" for="souvenir">Накупил сувениров</label></li>
+                <li> <input class="checkbox" type="checkbox" name="tower" id="tower" checked><label class="label label--checkbox" for="tower">Удержал башню</label></li>
+                <li><input class="checkbox" type="checkbox" name="hotel" id="hotel"><label class="label label--checkbox" for="hotel">Разгромил отель</label></li>
+              </ul>
           </fieldset>
+        </div>
 
-          <div class="contest-feedback__wrapper-color">
-            <fieldset class="contest-feedback__field contest-feedback__field--app">
-              <legend class="contest-feedback__title">С каким приложением путешествовали?</legend>
-                <ul class="contest-feedback__list">
-                  <li><input class="radio" type="radio" name="trip-app" id="ios" value="ios" checked>
-                <label class="label label--radio" for="ios">Pink для iOS</label></li>
-                  <li><input class="radio" type="radio" name="trip-app" id="android" value="android">
-                <label class="label label--radio" for="android">Pink на Android</label></li>
-                  <li><input class="radio" type="radio" name="trip-app" id="win-phone" value="win-phone">
-                <label class="label label--radio" for="win-phone">Windows Phone</label></li>
-                </ul>
-            </fieldset>
-          </div>
-          <fieldset class="contest-feedback__field contest-feedback__field--emotion">
-            <legend class="contest-feedback__title">Опишите свои эмоции</legend>
-            <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </fieldset>
+        <fieldset class="contest-feedback__field contest-feedback__field--emotion">
+          <legend class="contest-feedback__title">Опишите свои эмоции</legend>
+          <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
 
+        <div class="contest-feedback__wrapper-inner contest-feedback__wrapper-inner--submit">
           <input class="contest-feedback__submit" type="submit" value="Отправить форму">
-
-          <div class="contest-feedback__require">обязательные поля</div>
-        </form>
-      </div>
+          <div class="contest-feedback__require">*-обязательные поля</div>
+        </div>
+      </form>
     </section>
   </main>
 

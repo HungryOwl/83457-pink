@@ -2,9 +2,23 @@
   width: 100%;
   box-sizing: border-box;
 
+  min-height: 201px;
+
   padding-left: 21px;
   padding-right: 21px;
 
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+}
+
+@media ($tablet-width) {
+  .textarea-text {
+    min-height: 193px;
+  }
+}
+
+@media ($desktop-width) {
+  .textarea-text {
+    min-height: 128px;
+  }
 }

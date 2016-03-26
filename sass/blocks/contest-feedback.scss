@@ -1,10 +1,31 @@
 .contest-feedback {
 
+  &__wrapper-inner {
+    @include container;
+
+    order: 7;
+
+    &--submit {
+      text-align: center;
+    }
+  }
+
   &__wrapper-color {
     background-color: #e5e5e5;
+    &--app {
+      order: 5;
+    }
+
+    &--achievements {
+      order: 3;
+    }
   }
 
   &__form {
+    display: flex;
+
+    flex-direction: column;
+
     padding-top: 43px;
     padding-bottom: 18px;
 
@@ -18,6 +39,8 @@
   }
 
   &__share {
+    @include container;
+
     font-size: 14px;
     line-height: 30px;
 
@@ -25,6 +48,8 @@
     margin-bottom: 6px;
 
     text-align: center;
+
+    order: 1;
 
     span {
       display: none;
@@ -46,8 +71,12 @@
     padding-top: 40px;
     padding-bottom: 42px;
 
+    box-sizing: border-box;
+
     &--info {
       min-height: 326px;
+
+      order: 2;
     }
 
     &--achievements {
@@ -56,13 +85,18 @@
 
     &--contacts {
       min-height: 205px;
+
+      order: 4;
     }
+
     &--app {
       min-height: 248px;
     }
 
     &--emotion {
       min-height: 393px;
+
+      order: 6;
     }
   }
 
@@ -71,13 +105,42 @@
     text-transform: uppercase;
     text-align: center;
 
+    &--close {
+      display: none;
+    }
   }
 }
 
 @media ($tablet-width) {
   .contest-feedback {
+    &__title {
+      &--close {
+        display: block;
+      }
+    }
+
+    &__field {
+      &--info {
+        order: 0;
+      }
+
+      &--contacts {
+        order: 0;
+      }
+
+      &--emotion {
+        order: 0;
+      }
+    }
+
     &__share {
       font-size: 18px;
+      box-sizing: border-box;
+
+      padding-left: 60px;
+      padding-right: 60px;
+
+      order: 0;
 
       span {
         display: inline;
@@ -88,9 +151,80 @@
       padding-top: 98px;
       padding-bottom: 50px;
     }
+
+    &__wrapper-inner {
+      display: flex;
+
+      justify-content: space-between;
+
+      &--submit {
+        order: 0;
+      }
+    }
+
+    &__wrapper-color {
+      background-color: white;
+
+      &--app {
+        order: 0;
+      }
+
+      &--achievements {
+        order: 0;
+      }
+    }
   }
 }
 
 @media ($desktop-width) {
+  .contest-feedback {
+    &__form {
+      @include container;
 
+      flex-direction: row;
+
+      flex-wrap: wrap;
+    }
+
+    &__field {
+      width: auto;
+      margin: 0;
+
+      box-sizing: border-box;
+
+      &--info {
+        min-height: 310px;
+        width: 470px;
+      }
+
+      &--app {
+        min-height: 310px;
+        width: 470px;
+      }
+
+      &--contacts {
+        min-height: auto;
+        width: 100%;
+      }
+
+      &--achievements {
+        min-height: auto;
+      }
+
+      &--emotion {
+        min-height: auto;
+        width: 100%;
+      }
+    }
+
+    &__wrapper-color {
+      &--app {
+        width: 470px;
+      }
+
+      &--achievements {
+        width: 100%;
+      }
+    }
+  }
 }
