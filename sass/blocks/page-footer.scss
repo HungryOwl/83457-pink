@@ -5,6 +5,11 @@
     @include container;
   }
 
+  &--inner {
+    padding-top: 40px;
+    padding-bottom: 46px;
+  }
+
   &__contacts {
     text-align: center;
 
@@ -48,7 +53,7 @@
   }
 
   &__copyright {
-    min-height: 290px;
+    min-height: 204px;
 
     text-align: center;
   }
@@ -60,10 +65,6 @@
   &__copyright--show {
     display: block;
   }
-
- /*  &__developer {
-   display: inline-block;
- } */
 
   &__copyright-link {
     display: inline-block;

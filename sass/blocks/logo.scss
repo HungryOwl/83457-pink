@@ -26,7 +26,11 @@
 
   &--copyright {
     display: inline-block;
+    vertical-align: middle;
+
     position: static;
+
+    margin-bottom: 37px;
   }
 }
 
@@ -39,6 +43,8 @@
 
     &--copyright {
       float: left;
+
+      margin-bottom: 0;
     }
   }
 }
