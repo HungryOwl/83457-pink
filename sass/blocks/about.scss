@@ -5,6 +5,10 @@
     @include container;
   }
 
+  &__items-wrapper {
+    @include container;
+  }
+
   &__slogan {
     font-size: 24px;
     line-height: 29px;
@@ -17,12 +21,12 @@
     margin-bottom: 28px;
 
     &:last-of-type {
-      margin-bottom: 65px;
+      margin-bottom: 33px;
     }
   }
 
   &__items {
-    padding-top: 49px;
+    padding-top: 81px;
 
     background-color: $bg-lightgray;
   }
@@ -81,7 +85,8 @@
     font-size: 14px;
     line-height: 24px;
 
-    margin-top: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
     margin-bottom: 38px;
 
     /*& :last-of-type {
@@ -113,7 +118,7 @@
       line-height: 50px;
 
       &:last-of-type {
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
 
       &--small {
@@ -123,13 +128,8 @@
     }
 
     &__items {
-      width: 320px;
-
-      min-height: 408px;
-
-      padding-top: 81px;
+      padding-top: 75px;
       padding-bottom: 20px;
-      padding-left: 300px;
 
       background-image: url("../img/iphone-screen-mobile.png");
       background-repeat: no-repeat;
@@ -139,6 +139,9 @@
     }
 
     &__item {
+
+      margin-left: 300px;
+      padding-left: 10px;
 
       text-align: left;
 
