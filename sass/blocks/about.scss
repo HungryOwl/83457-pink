@@ -18,7 +18,7 @@
 
     padding: 0;
     margin: 0;
-    margin-bottom: 28px;
+    margin-top: 38px;
 
     &:last-of-type {
       margin-bottom: 33px;
@@ -51,7 +51,7 @@
     }
   }
 
-  &__item:first-of-type .about__title {
+  &__item:first-of-type .about__title:first-of-type {
       margin-top: 0;
   }
 
@@ -87,7 +87,7 @@
 
     margin-top: 12px;
     margin-bottom: 12px;
-    margin-bottom: 38px;
+    margin-bottom: 12px;
 
     /*& :last-of-type {
       margin-bottom: 0;
