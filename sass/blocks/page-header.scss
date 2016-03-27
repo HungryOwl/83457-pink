@@ -26,41 +26,6 @@
   &__wrapper--index {
     padding-top: 458px;
   }
-
-  &__nav-toggle {
-    display: block;
-    position: absolute;
-
-    top: 0;
-
-    width: 100%;
-    min-height: 24px;
-
-    padding-top: 21px;
-    padding-bottom: 21px;
-
-    font-size: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-
-    &::after {
-      content:"";
-
-      position: absolute;
-
-      width: 23px;
-      height: 24px;
-
-      right: 0;
-
-      background-image: url("../../img/icon-menu-burger.svg");
-      background-repeat: no-repeat;
-    }
-
-    &--closed::after {
-      background-image: url("../../img/icon-menu-cross.svg");
-      background-repeat: no-repeat;
-    }
-  }
 }
 
 @media ($tablet-width) {
