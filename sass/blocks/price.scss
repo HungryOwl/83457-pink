@@ -1,4 +1,134 @@
 .price {
-  outline: 2px solid #84c441;
+    padding-top: 80px;
+    padding-bottom: 30px;
 
+  &__list {
+    margin: 0 auto;
+  }
+
+  &__list-head {
+    font-size: 18px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    color: white;
+    background-color: #283645;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      font-size: 24px;
+    }
+  }
+
+  &__list-body {
+    background-color: white;
+  }
+
+  &__value {
+
+    &:not(:first-child) {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+  }
+
+  &__field {
+
+    &:not(:first-child) {
+      min-width: 254px;
+
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 22px;
+
+      font-size: 14px;
+      line-height: 30px;
+
+      text-transform: uppercase;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &:first-child {
+      font-size: 0;
+      line-height: 0;
+    }
+  }
+}
+
+
+@media ($tablet-width) {
+  .price {
+    &__wrapper {
+      @include container;
+    }
+
+    &__list-head {
+      font-size: 16px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+    &__list {
+      min-width: 620px;
+    }
+
+    &__field {
+
+      &:not(:first-child) {
+        min-width: 148px;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0;
+
+        font-size: 0;
+        line-height: 0;
+
+        border: 2px solid #e5e5e5;
+    }
+
+      &:first-child {
+        min-width: 153px;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+
+        font-size: 14px;
+        line-height: 30px;
+
+        border: 2px solid #e5e5e5;
+      }
+    }
+
+    &__value {
+      &:first-child {
+        background-color: white;
+      }
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .price {
+
+    &__list {
+      min-width: 940px;
+    }
+
+    &__field {
+
+      &:first-child {
+        min-width: 230px;
+
+        font-size: 18px;
+      }
+    }
+  }
 }

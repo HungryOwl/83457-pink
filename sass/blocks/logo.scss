@@ -1,4 +1,63 @@
 .logo {
-  outline: 2px solid yellow;
+  height: 22px;
+  width: 75px;
 
+  font-size: 0;
+
+  background-image: url("../../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: $bg-darkblue;
+
+  &--page-header {
+    position: absolute;
+
+    top: 22px;
+    left: 0;
+
+    z-index: 100;
+  }
+
+  &--big {
+    width: 147px;
+    height: 40px;
+
+    background-image: url("../../img/logo-pink-blue-mobile.svg");
+  }
+
+  &--copyright {
+    display: inline-block;
+    vertical-align: middle;
+
+    position: static;
+
+    margin-bottom: 37px;
+  }
+}
+
+@media ($tablet-width) {
+  .logo {
+    width: 147px;
+    height: 40px;
+
+    background-image: url("../../img/logo-pink-blue-mobile.svg");
+
+    &--copyright {
+      float: left;
+
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .logo {
+    position: static;
+    float: left;
+
+    margin-top: 27px;
+
+    &--copyright {
+      margin-top: 0;
+    }
+  }
 }

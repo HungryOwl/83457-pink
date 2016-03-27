@@ -1,4 +1,151 @@
 .page-footer {
-  outline: 2px solid #f9bc15;
+  padding-top: 49px;
 
+  &__wrapper {
+    @include container;
+  }
+
+  &--inner {
+    padding-top: 40px;
+    padding-bottom: 46px;
+  }
+
+  &__contacts {
+    text-align: center;
+
+
+    padding-bottom: 68px;
+
+    *:first-child {
+      margin-top: 0;
+    }
+
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  h4 {
+    margin-top: 25px;
+    margin-bottom: 3px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  p {
+    margin-top: 3px;
+    margin-bottom: 25px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__map {
+    min-height: 438px;
+
+    background-color: #f2f2f2;
+  }
+
+  &__copyright {
+    min-height: 204px;
+
+    text-align: center;
+  }
+
+  &__copyright--toggle {
+    display: none;
+  }
+
+  &__copyright--show {
+    display: block;
+  }
+
+  &__copyright-link {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    padding-left: 22px;
+    padding-top: 25px;
+    padding-bottom: 11px;
+    padding-right: 42px;
+
+    text-decoration: none;
+  }
+}
+
+@media ($tablet-width) {
+  .page-footer {
+
+    padding-top: 59px;
+
+    &__developer {
+      display: block;
+
+      float: right;
+
+      text-align: left;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__call-us {
+      width: 300px;
+
+      margin-bottom: 51px;
+
+      float: left;
+    }
+
+    &__write-us {
+      width: 300px;
+
+      margin-bottom: 51px;
+
+      float: right;
+    }
+
+    &__visit-us {
+      clear: both;
+    }
+
+    &__contacts {
+      padding-bottom: 26px;
+    }
+
+    &__copyright {
+      display: block;
+      @include container;
+
+      min-height: 54px;
+
+      padding-top: 36px;
+      padding-bottom: 37px;
+
+      background-color: white;
+    }
+
+    &__copyright--toggle {
+      display: block;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .page-footer {
+    &__copyright-link {
+      font-size: 18px;
+    }
+  }
 }

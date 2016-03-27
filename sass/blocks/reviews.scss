@@ -1,4 +1,54 @@
 .reviews {
-  outline: 2px solid blue;
+  &__wrapper {
+    @include container;
+  }
 
+  &__item {
+    text-align: center;
+    display: none;
+  }
+
+  &__item--active {
+    display: block;
+  }
+
+  &__intro {
+    display: none;
+  }
+}
+
+@media ($tablet-width) {
+  .reviews {
+    &__title {
+      margin-bottom: 5px;
+    }
+
+    &__intro {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .reviews {
+    &__wrapper {
+      padding-top: 197px;
+
+      padding-bottom: 14px;
+    }
+
+    &__content {
+      padding: 0 60px;
+    }
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    &__intro {
+      display: block;
+      margin-top: 0;
+    }
+  }
 }

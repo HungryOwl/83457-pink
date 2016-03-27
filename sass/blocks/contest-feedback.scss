@@ -1,3 +1,285 @@
+.contest-feedback__form *:first-child {
+  margin-top: 0;
+}
+
+.contest-feedback__form *:last-child {
+  margin-bottom: 0;
+}
+
 .contest-feedback {
-  outline: 2px solid orange;
+  &__wrapper-inner {
+    @include container;
+
+    order: 7;
+
+    &--submit {
+      display: flex;
+
+      min-height: 126px;
+
+      flex-direction: column;
+      justify-content: space-between;
+
+      align-items: center;
+
+      text-align: center;
+    }
+  }
+
+  &__form {
+    display: flex;
+
+    flex-direction: column;
+
+    padding-top: 43px;
+    padding-bottom: 18px;
+  }
+
+  &__share {
+    @include container;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    margin-bottom: 6px;
+
+    text-align: center;
+
+    order: 1;
+
+    span {
+      display: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  &__field {
+    @include container;
+
+    padding: 0;
+
+    padding-top: 40px;
+    padding-bottom: 42px;
+
+    box-sizing: border-box;
+
+    &--info {
+      min-height: 403px;
+
+      order: 2;
+    }
+
+    &--achievements {
+      min-height: 519px;
+    }
+
+    &--contacts {
+      min-height: 295px;
+
+      order: 4;
+    }
+
+    &--app {
+      min-height: 248px;
+    }
+
+    &--emotion {
+      min-height: 290px;
+
+      padding-top: 10px;
+
+      order: 6;
+    }
+  }
+
+  &__wrapper-color {
+    background-color: #e5e5e5;
+    &--app {
+      box-sizing: border-box;
+      min-height: 337px;
+
+      padding-top: 40px;
+      padding-bottom: 42px;
+      margin-bottom: 52px;
+
+      order: 5;
+    }
+
+    &--achievements {
+
+      box-sizing: border-box;
+      min-height: 608px;
+
+      padding-top: 40px;
+      padding-bottom: 42px;
+
+      order: 3;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 40px;
+
+    &--close {
+      display: none;
+    }
+  }
+
+  &__require {
+      font-size: 14px;
+      line-height: 30px;
+
+      text-transform: uppercase;
+  }
+}
+
+@media ($tablet-width) {
+  .contest-feedback {
+    &__title {
+      &--close {
+        display: block;
+      }
+    }
+
+    &__field {
+      &--info {
+        min-height: 370px;
+
+        order: 0;
+      }
+
+      &--contacts {
+
+        min-height: 320px;
+
+        order: 0;
+      }
+
+      &--emotion {
+        min-height: 262px;
+
+        order: 0;
+
+        margin-bottom: 67px;
+      }
+
+      &--app {
+        min-height: 310px;
+      }
+
+      &--achievements {
+        min-height: 566px;
+      }
+    }
+
+    &__share {
+      font-size: 18px;
+      box-sizing: border-box;
+
+      padding-left: 60px;
+      padding-right: 60px;
+
+      order: 0;
+
+      span {
+        display: inline;
+      }
+    }
+
+    &__form {
+      padding-top: 95px;
+      padding-bottom: 50px;
+    }
+
+    &__wrapper-inner {
+
+      &--submit {
+        order: 0;
+
+        flex-direction: row;
+        min-height: 63px;
+      }
+    }
+
+    &__wrapper-color {
+      background-color: white;
+
+      &--app {
+        margin-bottom: 10px;
+
+        order: 0;
+      }
+
+      &--achievements {
+
+        margin-bottom: 10px;
+
+        padding-top: 55px;
+        order: 0;
+      }
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .contest-feedback {
+    &__form {
+      @include container;
+
+      flex-direction: row;
+
+      flex-wrap: wrap;
+    }
+
+    &__field {
+      width: auto;
+      margin: 0;
+
+      box-sizing: border-box;
+
+      &--info {
+        min-height: 310px;
+        width: 470px;
+      }
+
+      &--app {
+        min-height: 310px;
+        width: 470px;
+      }
+
+      &--contacts {
+        min-height: auto;
+        width: 100%;
+      }
+
+      &--achievements {
+        min-height: auto;
+      }
+
+      &--emotion {
+        min-height: auto;
+        width: 100%;
+      }
+    }
+
+    &__wrapper-color {
+      &--app {
+        width: 470px;
+      }
+
+      &--achievements {
+        width: 100%;
+      }
+    }
+  }
 }

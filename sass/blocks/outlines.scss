@@ -1,0 +1,139 @@
+/*
+.contest-feedback {
+  outline: 2px solid orange;
+}
+.page-footer {
+  outline: 2px solid #f9bc15;
+}
+
+*/
+.intro {
+  outline: 2px solid green;
+}
+
+.main-nav {
+  outline: 2px solid orange;
+
+  &__wrapper {
+    outline: 3px solid #00bff3;
+  }
+
+  &__ toggle {
+    outline: 2px solid yellow;
+  }
+}
+
+.page-header {
+  outline: 4px solid #c71353;
+
+  &__wrapper {
+    outline: 5px solid #00bff3;
+  }
+}
+
+.about {
+  outline: 4px solid #c71353;
+
+  &__wrapper {
+     outline: 3px solid #00bff3;
+  }
+
+  &__items-wrapper {
+    outline: 2px solid green;
+  }
+
+  &__items {
+    outline: 5px solid red;
+  }
+
+  &__item {
+    outline: 2px solid blue;
+  }
+
+  &__slogan {
+    outline: 2px solid yellow;
+  }
+}
+
+.price {
+  outline: 4px solid #c71353;
+
+  &__wrapper {
+    outline: 3px solid #00bff3;
+  }
+}
+
+.reviews {
+   outline: 4px solid #c71353;
+
+   &__wrapper {
+    outline: 3px solid #00bff3;
+   }
+}
+
+.page-footer {
+  outline: 4px solid black;
+
+  &__wrapper {
+    outline: 3px solid #00bff3;
+  }
+
+  &__call-us {
+      outline: 2px solid blue;
+  }
+
+  &__write-us {
+      outline: 2px solid blue;
+  }
+
+  &__visit-us {
+      outline: 2px solid blue;
+  }
+
+  &__developer {
+    outline: 2px solid blue;
+  }
+
+  &__copyright {
+    outline: 2px solid blue;
+  }
+}
+
+.social-links {
+  outline: 2px solid blue;
+}
+
+.logo {
+  outline: 2px solid yellow;
+}
+
+.contest-feedback {
+  outline: 4px solid #c71353;
+
+  &__wrapper {
+    outline: 3px solid #00bff3;
+  }
+
+  &__field {
+    outline: 1px solid blue;
+  }
+}
+
+/* photo-load {
+  outline: 2px solid blue;
+}
+.photo-section {
+  outline: 2px solid white;
+}
+.price {
+  outline: 2px solid #84c441;
+}
+.reviews {
+  outline: 2px solid blue;
+}
+.user-photo {
+  outline: 2px solid orange;
+}
+.wrapper {
+  outline: 2px solid red;
+} */

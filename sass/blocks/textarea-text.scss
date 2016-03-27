@@ -1,0 +1,28 @@
+.textarea-text {
+  width: 100%;
+  box-sizing: border-box;
+
+  min-height: 201px;
+
+  padding-left: 21px;
+  padding-right: 21px;
+
+  padding-top: 15px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+@media ($tablet-width) {
+  .textarea-text {
+    min-height: 213px;
+
+    padding-top: 35px;
+  }
+}
+
+@media ($desktop-width) {
+  .textarea-text {
+    min-height: 128px;
+  }
+}

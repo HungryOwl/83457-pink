@@ -1,5 +1,4 @@
-body { background: #808080; }
-
+@import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "global/fonts.scss";
@@ -14,10 +13,10 @@ body { background: #808080; }
 @import "blocks/email.scss";
 @import "blocks/intro.scss";
 @import "blocks/label.scss";
+@import "blocks/page-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/page-header.scss";
 @import "blocks/photo-load.scss";
 @import "blocks/photo-section.scss";
 @import "blocks/price.scss";
@@ -30,3 +29,5 @@ body { background: #808080; }
 @import "blocks/textarea-text.scss";
 @import "blocks/user-photo.scss";
 @import "blocks/wrapper.scss";
+/* @import "blocks/outlines.scss";
+ */
