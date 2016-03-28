@@ -59,7 +59,7 @@
   &__item {
     text-align: center;
 
-    &:last-of-type {
+    &--item-img {
       padding-bottom: 318px;
 
       background-image: url("../img/iphone-screen-mobile.png");
@@ -72,10 +72,10 @@
       margin-top: 0;
   }
 
-  &__item:last-of-type .about__content:last-of-type,
+  /* &__item:last-of-type .about__content:last-of-type,
   &__item:last-of-type .about__title:last-of-type {
       margin-bottom: 0;
-  }
+  } */
 
   &__image {
     width: 157px;

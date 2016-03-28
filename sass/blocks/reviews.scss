@@ -3,6 +3,14 @@
     @include container;
   }
 
+  &__items {
+    padding-top: 42px;
+  }
+
+  &__item:first-of-type .reviews__title:first-of-type {
+    margin-top: 0;
+  }
+
   &__item {
     text-align: center;
     display: none;
@@ -14,6 +22,22 @@
 
   &__intro {
     display: none;
+  }
+
+  &__switcher {
+    display: none;
+  }
+
+  &__title {
+    margin-bottom: 13px;
+  }
+
+  &__content {
+    font-size: 14px;
+    line-height: 30px;
+
+    margin-top: 13px;
+    margin-bottom: 13px;
   }
 }
 
