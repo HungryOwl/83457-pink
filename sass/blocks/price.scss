@@ -1,8 +1,12 @@
 .price {
-    padding-top: 91px;
-    padding-bottom: 20px;
+  padding-top: 91px;
+  padding-bottom: 20px;
 
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
+
+  &__wrapper {
+
+  }
 
   &__switcher {
     display: none;
@@ -10,6 +14,10 @@
 
   &__list {
     margin: 0 auto;
+
+    position: relative;
+    width: 840px;
+    transform: translateX(-240px);
   }
 
   &__list-head {
@@ -35,16 +43,30 @@
   }
 
   &__value {
+    padding-top: 16px;
+    padding-bottom: 20px;
 
-    &:not(:first-child) {
-      padding-top: 16px;
-      padding-bottom: 20px;
+    border: 2px solid #e5e5e5;
+
+    /* &--content {
+      // border-left: 2px solid #f2f2f2;
+    } */
+
+    &--empty {
+      min-width: 0;
+
+      margin: 0;
+      padding: 0;
+
+      font-size: 0;
+      line-height: 0;
+
+      background-color: transparent;
+      border: none;
     }
   }
 
   &__field {
-
-    &:not(:first-child) {
       min-width: 254px;
 
       padding-top: 13px;
@@ -57,11 +79,35 @@
       text-transform: uppercase;
 
       border: 2px solid #e5e5e5;
+      border-top: 0;
+
+    &--content {
+      /* min-width: 254px;
+
+      padding-top: 13px;
+      padding-bottom: 15px;
+      padding-left: 22px;
+
+      font-size: 14px;
+      line-height: 30px;
+
+      text-transform: uppercase;
+
+      border: 2px solid #e5e5e5;
+      border-top: 0; */
     }
 
-    &:first-child {
+    &--empty {
+      min-width: 0;
+
+      margin: 0;
+      padding: 0;
+
       font-size: 0;
       line-height: 0;
+
+      background-color: transparent;
+      border: none;
     }
   }
 }
@@ -69,38 +115,23 @@
 
 @media ($tablet-width) {
   .price {
+
+    padding-top: 88px;
+
     &__wrapper {
       @include container;
     }
 
     &__list-head {
       font-size: 16px;
-
-    p {
-      font-size: 18px;
     }
-  }
 
     &__list {
       min-width: 620px;
     }
 
     &__field {
-
-      &:not(:first-child) {
-        min-width: 148px;
-
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 0;
-
-        font-size: 0;
-        line-height: 0;
-
-        border: 2px solid #e5e5e5;
-    }
-
-      &:first-child {
+      &--empty {
         min-width: 153px;
 
         padding-top: 15px;
@@ -112,11 +143,45 @@
 
         border: 2px solid #e5e5e5;
       }
+
+      &--content {
+        min-width: 148px;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        border: 2px solid #e5e5e5;
+      }
+
+      &--ok {
+        padding-left: 0;
+
+        font-size: 0;
+        line-height: 0;
+      }
+
+      &--cancel {
+        padding-left: 0;
+
+        font-size: 0;
+        line-height: 0;
+      }
     }
 
     &__value {
-      &:first-child {
-        background-color: white;
+      p {
+        margin-top: 0;
+        font-size: 18px;
+      }
+
+      &--content {
+        padding-top: 12px;
+        padding-bottom: 5px;
+      }
+
+      &--empty {
+        background-color: #f2f2f2;
+        border: none;
       }
     }
   }

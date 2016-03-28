@@ -39,13 +39,15 @@
     font-size: 14px;
     line-height: 30px;
 
-    margin-top: 13px;
+    margin-top: 12px;
     margin-bottom: 13px;
   }
 }
 
 @media ($tablet-width) {
   .reviews {
+    padding-top: 1px;
+
     &__item--active {
       display: flex;
 
@@ -56,17 +58,28 @@
       order: 1;
     }
 
-    &__title {
-      margin-bottom: 5px;
+    &__item:first-of-type .reviews__title:first-of-type {
+      margin-top: 22px;
     }
 
-    &__content {
-      order: 0;
+    &__title {
+      margin-bottom: 0;
     }
 
     &__intro {
       display: block;
-      margin-top: 5px;
+      margin-top: 2px;
+
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    &__content {
+      font-size: 18px;
+    }
+
+    &__content {
+      order: 0;
     }
   }
 }

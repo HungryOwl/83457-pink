@@ -9,10 +9,6 @@
     padding-top: 10px;
     padding-bottom: 20px;
 
-  &.reviews__nav {
-
-  }
-
   &.price__nav{
     margin-top: 20px;
   }
@@ -37,6 +33,19 @@
     &--active {
       background-color: transparent;
       border: 3px solid #283645;
+    }
+  }
+}
+
+@media ($tablet-width) {
+  .slider-items {
+    &__btn {
+
+    }
+
+    &.reviews__nav {
+      padding-bottom: 0;
+      padding-top: 9px;
     }
   }
 }
