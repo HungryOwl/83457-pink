@@ -191,11 +191,9 @@
 
       text-align: left;
 
-      &:last-of-type {
-
-      padding-bottom: 0;
-
-      background-image: none;
+      &--item-img {
+        padding-bottom: 0;
+        background-image: none;
       }
     }
 

@@ -46,8 +46,22 @@
 
 @media ($tablet-width) {
   .reviews {
+    &__item--active {
+      display: flex;
+
+      flex-direction: column;
+    }
+
+    &__inner-wrapper {
+      order: 1;
+    }
+
     &__title {
       margin-bottom: 5px;
+    }
+
+    &__content {
+      order: 0;
     }
 
     &__intro {

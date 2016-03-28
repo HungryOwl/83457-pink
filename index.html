@@ -57,7 +57,7 @@
             <h4 class="about__title">Меняет мир вокруг</h4>
             <p class="about__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </article>
-          <article class="about__item">
+          <article class="about__item about__item--item-img">
             <div class="about__item-image"></div>
             <h4 class="about__title">Заводит новых друзей</h4>
             <p class="about__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -81,25 +81,31 @@
           <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-3" >
 
             <article class="reviews__item reviews__item--active">
-              <h4 class="reviews__title">Николай Петров</h4>
-              <p class="reviews__intro">25 лет, водитель трамвая</p>
+              <div class="reviews__inner-wrapper">
+                <h4 class="reviews__title">Николай Петров</h4>
+                <p class="reviews__intro">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
 
             <article class="reviews__item">
-              <h4 class="reviews__title">Николай Петров</h4>
-              <p class="reviews__intro">25 лет, водитель трамвая</p>
+              <div class="reviews__inner-wrapper">
+                <h4 class="reviews__title">Николай Петров</h4>
+                <p class="reviews__intro">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
 
             <article class="reviews__item">
-              <h4 class="reviews__title">Николай Петров</h4>
-              <p class="reviews__intro">25 лет, водитель трамвая</p>
+              <div class="reviews__inner-wrapper">
+                <h4 class="reviews__title">Николай Петров</h4>
+                <p class="reviews__intro">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
 
             <div class="slider-items reviews__nav">
-              <label class="slider-items__btn" for="reviews-radio-1">1</label>
+              <label class="slider-items__btn slider-items__btn--active" for="reviews-radio-1">1</label>
               <label class="slider-items__btn" for="reviews-radio-2">2</label>
               <label class="slider-items__btn" for="reviews-radio-3">3</label>
             </div>
@@ -148,7 +154,7 @@
 
           <div class="slider-items price__nav">
             <label class="slider-items__btn" for="price-radio-1">1</label>
-            <label class="slider-items__btn" for="price-radio-2">2</label>
+            <label class="slider-items__btn slider-items__btn--active" for="price-radio-2">2</label>
             <label class="slider-items__btn" for="price-radio-3">3</label>
           </div>
         </div>
