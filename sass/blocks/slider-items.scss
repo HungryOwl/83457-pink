@@ -39,8 +39,8 @@
 
 @media ($tablet-width) {
   .slider-items {
-    &__btn {
-
+    &--none {
+      display: none;
     }
 
     &.reviews__nav {
