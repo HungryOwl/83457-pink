@@ -1,6 +1,12 @@
 .price {
-    padding-top: 80px;
-    padding-bottom: 30px;
+    padding-top: 91px;
+    padding-bottom: 20px;
+
+    background-color: #f2f2f2;
+
+  &__switcher {
+    display: none;
+  }
 
   &__list {
     margin: 0 auto;
@@ -16,10 +22,11 @@
     background-color: #283645;
 
     p {
-      margin-top: 0;
+      margin-top: 2px;
       margin-bottom: 0;
 
       font-size: 24px;
+      font-weight: lighter;
     }
   }
 
@@ -30,8 +37,8 @@
   &__value {
 
     &:not(:first-child) {
-      padding-top: 18px;
-      padding-bottom: 18px;
+      padding-top: 16px;
+      padding-bottom: 20px;
     }
   }
 
@@ -40,7 +47,7 @@
     &:not(:first-child) {
       min-width: 254px;
 
-      padding-top: 15px;
+      padding-top: 13px;
       padding-bottom: 15px;
       padding-left: 22px;
 

@@ -1,13 +1,14 @@
 .reviews {
+  padding-top: 42px;
+  padding-bottom: 14px;
+
   &__wrapper {
     @include container;
   }
 
-  &__items {
-    padding-top: 42px;
-
+  /* &__items {
     text-align: center;
-  }
+  } */
 
   &__item:first-of-type .reviews__title:first-of-type {
     margin-top: 0;
