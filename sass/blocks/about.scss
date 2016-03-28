@@ -115,6 +115,13 @@
   &__science {
      display: none;
   }
+
+  &__link {
+    font-size: 14px;
+    line-height: 24px;
+
+    color: $font-color-second;
+  }
 }
 
 .about__wrapper *:first-child {
@@ -151,15 +158,30 @@
       }
     }
 
+    &__items-wrapper {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+
+        width: 268px;
+        height: 481px;
+
+        left: 0;
+        top: -70px;
+
+        background-image: url("../img/iphone-screen-mobile.png");
+        background-repeat: no-repeat;
+        background-position: 25% 0;
+
+        background-size: 268px auto;
+      }
+    }
+
     &__items {
       padding-top: 75px;
       padding-bottom: 43px;
-
-      background-image: url("../img/iphone-screen-mobile.png");
-      background-repeat: no-repeat;
-      background-position: 0 90px;
-
-      background-size: 268px auto;
     }
 
     &__item {
@@ -185,27 +207,32 @@
       min-height: 183px;
       width: 320px;
 
-      padding-top: 100px;
-      padding-left: 300px;
+      padding-top: 139px;
+      padding-left: 310px;
       padding-bottom: 67px;
 
       margin: 0 auto;
 
       background-image: url("../img/icon-editor-diagram-fill.svg");
       background-repeat: no-repeat;
-      background-position: 0 50%;
+      background-position: 0 80px;
 
       h3 {
         font-size: 30px;
-        line-height: 34px;
+        line-height: 36px;
 
-        margin-bottom: 24px;
+        margin-bottom: 10px;
+
+        width: 168px;
       }
+    }
 
-      p {
+    &__science .about__content {
         font-size: 14px;
         line-height: 24px;
-      }
+
+        margin-top: 10px;
+        margin-bottom: 6px;
     }
   }
 }
@@ -240,15 +267,24 @@
     &__items-wrapper {
       display: flex;
       justify-content: space-between;
+
+      flex-wrap: wrap;
+
+      &::before {
+        position: static;
+        width: 0;
+        height: 0;
+        background-image: none;
+      }
     }
 
     &__item {
       text-align: center;
 
-      max-width: 300px;
+
+      flex-basis: 300px;
 
       margin-left: 0;
-      padding: 0 42px;
     }
 
      &__title {
@@ -301,6 +337,17 @@
     &__content {
       font-size: 18px;
       line-height: 30px;
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__science {
+      h3 {
+        width: auto;
+      }
     }
   }
 }
