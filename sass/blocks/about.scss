@@ -215,7 +215,7 @@
 
       background-image: url("../img/icon-editor-diagram-fill.svg");
       background-repeat: no-repeat;
-      background-position: 0 80px;
+      background-position: 0 125px;
 
       h3 {
         font-size: 30px;
@@ -339,15 +339,30 @@
       line-height: 30px;
     }
 
-    &__link {
-      font-size: 18px;
-      line-height: 30px;
-    }
-
     &__science {
+      padding-top: 153px;
+      width: auto;
+
       h3 {
         width: auto;
       }
+
+      .about__content {
+        width: auto;
+
+        margin-top: 20px;
+        margin-bottom: 31px;
+
+        padding-right: 45px;
+
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 30px;
     }
   }
 }
