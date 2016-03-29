@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 49px;
+  padding-top: 41px;
 
   &__wrapper {
     @include container;
@@ -13,8 +13,7 @@
   &__contacts {
     text-align: center;
 
-
-    padding-bottom: 68px;
+    padding-bottom: 44px;
 
     *:first-child {
       margin-top: 0;
@@ -26,30 +25,42 @@
   }
 
   &__title {
+    margin-bottom: 33px;
+
     font-size: 24px;
-    line-height: 32px;
+    line-height: 30px;
+
+    font-weight: lighter;
   }
 
   h4 {
     margin-top: 25px;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 
     font-size: 18px;
-    line-height: 30px;
+    line-height: 24px;
   }
 
-  p {
-    margin-top: 3px;
+  p,
+  a {
+    margin-top: 0;
     margin-bottom: 25px;
+
+    color: #d22856;
 
     font-size: 24px;
     line-height: 30px;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   &__map {
-    min-height: 438px;
+    min-height: 200px;
 
     background-color: #f2f2f2;
+    background-image: url("../img/bg-map.png");
   }
 
   &__copyright {
@@ -79,6 +90,12 @@
     padding-right: 42px;
 
     text-decoration: none;
+  }
+
+  &__call-us,
+  &__write-us,
+  &__visit-us {
+    margin-bottom: 21px;
   }
 }
 
