@@ -256,6 +256,7 @@
     &__items {
       padding-left: 0;
       padding-top: 0;
+      padding-bottom: 46px;
 
       width: auto;
 
@@ -338,11 +339,12 @@
     }
 
     &__science {
-      padding-top: 153px;
       width: auto;
+      padding-top: 157px;
 
       h3 {
         width: auto;
+        margin-bottom: 21px;
       }
 
       .about__content {
