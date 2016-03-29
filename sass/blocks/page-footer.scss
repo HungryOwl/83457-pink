@@ -25,7 +25,7 @@
   }
 
   &__title {
-    margin-bottom: 33px;
+    margin-bottom: 35px;
 
     font-size: 24px;
     line-height: 30px;
@@ -38,7 +38,7 @@
     margin-bottom: 2px;
 
     font-size: 18px;
-    line-height: 24px;
+    line-height: 21px;
   }
 
   p,
@@ -49,7 +49,7 @@
     color: #d22856;
 
     font-size: 24px;
-    line-height: 30px;
+    line-height: 29px;
   }
 
   a{
@@ -57,10 +57,15 @@
   }
 
   &__map {
-    min-height: 200px;
+    height: 200px;
 
     background-color: #f2f2f2;
     background-image: url("../img/bg-map.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    font-size: 0;
+    line-height: 0;
   }
 
   &__copyright {
@@ -95,14 +100,17 @@
   &__call-us,
   &__write-us,
   &__visit-us {
-    margin-bottom: 21px;
+    margin-bottom: 23px;
+  }
+
+  &__map {
+    height: 378px;
   }
 }
 
 @media ($tablet-width) {
   .page-footer {
-
-    padding-top: 59px;
+    padding-top: 46px;
 
     &__developer {
       display: block;
@@ -114,7 +122,15 @@
 
     &__title {
       font-size: 40px;
-      line-height: 50px;
+      line-height: 48px;
+
+      margin-bottom: 45px;
+
+      &--narrow {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     &__call-us {
@@ -155,6 +171,27 @@
 
     &__copyright--toggle {
       display: block;
+    }
+
+    h4 {
+      margin-bottom: 4px;
+    }
+
+    p,
+    a {
+      line-height: 30px;
+    }
+
+    &__call-us,
+    &__write-us {
+      margin-bottom: 47px;
+    }
+
+    &__visit-us {
+      width: 320px;
+
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
