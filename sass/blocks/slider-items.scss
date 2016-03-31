@@ -49,3 +49,12 @@
     }
   }
 }
+
+@media ($desktop-width) {
+  .slider-items {
+    &.reviews__nav {
+      display: none;
+    }
+  }
+
+}
