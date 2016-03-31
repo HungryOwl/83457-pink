@@ -3,14 +3,8 @@
 
   background-color: rgba(0, 0, 0, 0.5);
 
-  position: absolute;
-
   min-height: 70px;
   width: 100%;
-
-  z-index: 10;
-
-  top: 0;
 
   &__logo-wrapper {
     @include container;
@@ -21,7 +15,8 @@
     position: absolute;
     width: 100%;
 
-    top: 66px;
+    top: 0;
+    z-index: 10;
   }
 
   &__toggle {
@@ -89,6 +84,10 @@
     background-color: #283645;
     border-bottom: 1px solid #010101;
     border-top: 1px solid #485461;
+
+    &--nav-height {
+      height: 66px;
+    }
   }
 
   &__link {
@@ -117,13 +116,12 @@
     min-height: 110px;
 
     margin: 0;
-    top: 0;
 
     &__wrapper {
       position: absolute;
       width: 100%;
 
-      top: 110px;
+      top: 0;
     }
 
     &__toggle {
@@ -132,6 +130,12 @@
       &::after {
         right: 0;
       }
+    }
+
+    &__item {
+      &--nav-height {
+      height: 110px;
+    }
     }
   }
 }
@@ -153,10 +157,6 @@
 
     text-align: right;
     }
-
-    /* &--closed {
-      display: block;
-    } */
 
     &__item {
       overflow: hidden;

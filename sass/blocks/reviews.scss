@@ -6,10 +6,6 @@
     @include container;
   }
 
-  /* &__items {
-    text-align: center;
-  } */
-
   &__item:first-of-type .reviews__title:first-of-type {
     margin-top: 0;
   }
