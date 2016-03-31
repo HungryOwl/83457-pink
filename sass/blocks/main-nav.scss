@@ -130,8 +130,13 @@
 
     &__item {
       &--nav-height {
-      height: 110px;
+        height: 110px;
+      }
     }
+
+    &__link {
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
   }
 }
