@@ -1,11 +1,3 @@
-.contest-feedback__form *:first-child {
-  margin-top: 0;
-}
-
-.contest-feedback__form *:last-child {
-  margin-bottom: 0;
-}
-
 .contest-feedback {
   &__wrapper-inner {
     @include container;
@@ -31,7 +23,7 @@
 
     flex-direction: column;
 
-    padding-top: 43px;
+    padding-top: 45px;
     padding-bottom: 18px;
   }
 
@@ -41,14 +33,16 @@
     font-size: 14px;
     line-height: 30px;
 
-    margin-bottom: 6px;
-
     text-align: center;
 
     order: 1;
 
     span {
       display: none;
+    }
+
+    &:last-of-type {
+      margin-bottom: 6px;
     }
   }
 
@@ -64,13 +58,13 @@
 
     padding: 0;
 
-    padding-top: 40px;
-    padding-bottom: 42px;
+    padding-top: 28px;
+    padding-bottom: 30px;
 
     box-sizing: border-box;
 
     &--info {
-      min-height: 403px;
+      border: none;
 
       order: 2;
     }
@@ -136,10 +130,10 @@
   }
 
   &__require {
-      font-size: 14px;
-      line-height: 30px;
+    font-size: 14px;
+    line-height: 30px;
 
-      text-transform: uppercase;
+    text-transform: uppercase;
   }
 }
 
@@ -194,10 +188,21 @@
       span {
         display: inline;
       }
+
+      &:last-of-type {
+        margin-bottom: 43px;
+      }
+    }
+
+    &__list-item {
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 52px;
     }
 
     &__form {
-      padding-top: 95px;
+      padding-top: 92px;
       padding-bottom: 50px;
     }
 
@@ -246,15 +251,18 @@
       margin: 0;
 
       box-sizing: border-box;
+      padding-top: 42px;
+
 
       &--info {
-        min-height: 310px;
-        width: 470px;
+        width: 50%;
+
+        padding-right: 35px;
       }
 
       &--app {
         min-height: 310px;
-        width: 470px;
+        width: 100%;
       }
 
       &--contacts {
@@ -274,7 +282,9 @@
 
     &__wrapper-color {
       &--app {
-        width: 470px;
+        width: 50%;
+
+        padding-left: 35px;
       }
 
       &--achievements {

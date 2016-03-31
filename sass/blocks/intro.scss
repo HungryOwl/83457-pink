@@ -58,8 +58,6 @@
 
 @media ($tablet-width) {
   .intro {
-    padding-top: 185px;
-
     &--index {
       min-height: 555px;
       width: 300px;
@@ -78,7 +76,7 @@
 
     &__header {
       font-size: 50px;
-      line-height: 56px;
+      line-height: 60px;
 
       padding: 0 36px;
 
@@ -88,7 +86,7 @@
       }
 
       &:first-child {
-        padding-top: 0;
+        padding-top: 70px;
       }
 
       &--toggle {
@@ -106,7 +104,9 @@
   .intro {
     clear: both;
 
-    padding-top: 110px;
+    &__header:first-child {
+      padding-top: 63px;
+    }
 
     &--index {
       width: 370px;}
