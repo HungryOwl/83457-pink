@@ -71,6 +71,8 @@
 
     &--achievements {
       min-height: 519px;
+
+      border: none;
     }
 
     &--contacts {
@@ -106,11 +108,10 @@
     }
 
     &--achievements {
-
       box-sizing: border-box;
       min-height: 608px;
 
-      padding-top: 40px;
+      padding-top: 36px;
       padding-bottom: 42px;
 
       order: 3;
@@ -119,10 +120,13 @@
 
   &__title {
     font-size: 14px;
+    line-height: 18px;
+
     text-transform: uppercase;
     text-align: center;
 
-    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     &--close {
       display: none;
@@ -140,6 +144,8 @@
 @media ($tablet-width) {
   .contest-feedback {
     &__title {
+      line-height: 30px;
+
       &--close {
         display: block;
       }
