@@ -94,6 +94,9 @@
     display: block;
     overflow: hidden;
 
+    padding-top: 18px;
+    padding-bottom: 18px;
+
     text-decoration: none;
 
     color: $font-color-header;
@@ -101,13 +104,6 @@
     font-size: 18px;
     line-height: 32px;
     text-transform: uppercase;
-
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
-
-  &__link:first-child {
-    border: none;
   }
 }
 
@@ -158,19 +154,24 @@
     text-align: right;
     }
 
+    &__items {
+      display: flex;
+      flex-direction: row;
+
+      justify-content: flex-end;
+      align-items: center;
+    }
+
     &__item {
       overflow: hidden;
 
-      display: inline-block;
-      vertical-align: middle;
-
-      background-color: #283645;
+      background-color: transparent;
+      border: none;
     }
 
     &__link {
-      display: inline-block;
-
-      vertical-align: middle;
+      padding-left: 41px;
+      padding-right: 41px;
 
       text-transform: none;
     }
