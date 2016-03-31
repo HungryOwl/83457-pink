@@ -33,7 +33,7 @@
     font-weight: lighter;
   }
 
-  h4 {
+  &__sub-title {
     margin-top: 25px;
     margin-bottom: 2px;
 
@@ -41,8 +41,8 @@
     line-height: 21px;
   }
 
-  p,
-  a {
+  &__info,
+  &__mail-link {
     margin-top: 0;
     margin-bottom: 25px;
 
@@ -52,7 +52,7 @@
     line-height: 29px;
   }
 
-  a{
+  &__mail-link {
     text-decoration: none;
   }
 
@@ -70,21 +70,12 @@
 
   &__copyright {
     min-height: 204px;
-
-    text-align: center;
-  }
-
-  &__copyright--toggle {
     display: none;
   }
 
-  &__copyright--show {
-    display: block;
-  }
-
   &__copyright-link {
-    display: inline-block;
-    vertical-align: middle;
+   /*  display: inline-block;
+   vertical-align: middle; */
 
     font-size: 14px;
     line-height: 18px;
@@ -158,7 +149,6 @@
     }
 
     &__copyright {
-      display: block;
       @include container;
 
       min-height: 54px;
@@ -169,16 +159,12 @@
       background-color: white;
     }
 
-    &__copyright--toggle {
-      display: block;
-    }
-
-    h4 {
+    &__sub-title {
       margin-bottom: 4px;
     }
 
-    p,
-    a {
+    &__info,
+    &__mail-link {
       line-height: 30px;
     }
 
@@ -193,13 +179,63 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    &__map {
+      background-repeat: repeat;
+    }
+
+    &__copyright--show {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      align-items: flex-start;
+    }
+
   }
 }
 
 @media ($desktop-width) {
   .page-footer {
+      padding-top: 63px;
+
     &__copyright-link {
       font-size: 18px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+
+      margin-bottom: 58px;
+
+      &--narrow {
+        width: 640px;
+      }
+    }
+
+    &__call-us,
+    &__write-us,
+    &__visit-us {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &__contacts {
+      padding-bottom: 20px;
+    }
+
+    &__sub-title {
+      margin-bottom: 24px;
+    }
+
+    &__map {
+      height: 501px;
+    }
+
+    &__copyright {
+      padding-top: 70px;
+      padding-bottom: 72px;
     }
   }
 }

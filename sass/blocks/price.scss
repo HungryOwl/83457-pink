@@ -115,7 +115,7 @@
 
 @media ($tablet-width) {
   .price {
-    padding-top: 86px;
+    padding-top: 88px;
     padding-bottom: 70px;
 
     &__wrapper {
@@ -186,7 +186,8 @@
 
 @media ($desktop-width) {
   .price {
-    padding-top: 145px;
+    padding-top: 147px;
+    padding-bottom: 95px;
 
     &__list {
       min-width: 940px;
