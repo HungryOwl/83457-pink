@@ -1,19 +1,15 @@
 .intro {
   position: relative;
 
-  min-height: 173px;
-
-  padding-top: 28px;
-  padding-bottom: 36px;
-
   text-align: center;
 
   background-color: rgba(128, 0, 0, 0.3);
 
-  &--inner-page {
-    position: static;
+  &--index {
+    min-height: 207px;
 
-    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 36px;
   }
 
   &__header {
@@ -60,6 +56,7 @@
     padding-top: 185px;
 
     &--index {
+      min-height: 555px;
       width: 300px;
 
       padding-top: 28px;

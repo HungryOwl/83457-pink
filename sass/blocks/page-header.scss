@@ -20,11 +20,11 @@
 
     position: relative;
 
-    min-height: 237px;
+    /* min-height: 237px; */
   }
 
   &__wrapper--index {
-    padding-top: 420px;
+    padding-top: 388px;
   }
 }
 
@@ -37,7 +37,7 @@
     }
 
     &__wrapper--index {
-      padding-top: 254px;
+      padding-top: 0;
     }
   }
 }
