@@ -69,14 +69,13 @@
   }
 
   &__copyright {
+    @include container;
+
     min-height: 204px;
     display: none;
   }
 
   &__copyright-link {
-   /*  display: inline-block;
-   vertical-align: middle; */
-
     font-size: 14px;
     line-height: 18px;
 
@@ -85,6 +84,7 @@
     padding-bottom: 11px;
     padding-right: 42px;
 
+    color: #283645;
     text-decoration: none;
   }
 
@@ -149,14 +149,16 @@
     }
 
     &__copyright {
-      @include container;
-
       min-height: 54px;
 
       padding-top: 36px;
       padding-bottom: 37px;
 
       background-color: white;
+    }
+
+    &__copyright-link {
+      font-size: 18px;
     }
 
     &__sub-title {
