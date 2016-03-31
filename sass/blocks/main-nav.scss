@@ -162,6 +162,8 @@
     &__items {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      flex-grow: 1;
 
       justify-content: flex-end;
       align-items: center;
@@ -174,9 +176,20 @@
       border: none;
     }
 
+    &__item--wrapped {
+      background-color: rgba(0, 0, 0, 0.5);
+
+      .main-nav__link {
+        padding-left: 41px;
+        padding-right: 41px;
+
+        text-align: center;
+      }
+    }
+
     &__link {
-      padding-left: 41px;
-      padding-right: 41px;
+      padding-left: 0;
+      padding-left: 82px;
 
       text-transform: none;
     }
