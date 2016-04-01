@@ -125,6 +125,10 @@
     &--checkbox,
     &--radio {
       margin-right: 21px;
+
+      &::before {
+        margin-right: 22px;
+      }
     }
   }
 }

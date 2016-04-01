@@ -309,12 +309,16 @@
       flex-wrap: wrap;
     }
 
+    &__share:last-of-type {
+      margin-bottom: 65px;
+    }
+
     &__field {
       width: auto;
       margin: 0;
 
       box-sizing: border-box;
-      padding-top: 42px;
+      padding-top: 20px;
 
 
       &--info {
@@ -324,13 +328,44 @@
       }
 
       &--app {
-        min-height: 310px;
         width: 100%;
+
+        padding-bottom: 51px;
+
+        .contest-feedback__list {
+          margin-left: 16px;
+        }
+
+        li:first-child {
+          padding-top: 22px;
+        }
       }
 
       &--contacts {
-        min-height: auto;
         width: 100%;
+
+        .contest-feedback__list {
+          display: flex;
+          flex-wrap: wrap;
+
+          justify-content: space-between;
+        }
+
+        .contest-feedback__list-item {
+          margin-top: 8px;
+          margin-bottom: 13px;
+
+          flex-grow: 1;
+
+          &:first-child {
+            margin-right: 35px;
+          }
+
+          &:last-child {
+            margin-left: 35px;
+            margin-bottom: 13px;
+          }
+        }
       }
 
       &--achievements {
@@ -341,6 +376,11 @@
         min-height: auto;
         width: 100%;
       }
+    }
+
+    &__title {
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &__wrapper-color {
