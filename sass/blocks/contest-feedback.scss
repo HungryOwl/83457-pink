@@ -73,6 +73,14 @@
       min-height: 519px;
 
       border: none;
+
+      li {
+        padding-top: 43px;
+
+        &:first-child {
+          padding-top: 12px;
+        }
+      }
     }
 
     &--contacts {
@@ -95,7 +103,7 @@
   }
 
   &__wrapper-color {
-    background-color: #e5e5e5;
+    background-color: #f2f2f2;
     &--app {
       box-sizing: border-box;
       min-height: 337px;
@@ -112,7 +120,7 @@
       min-height: 608px;
 
       padding-top: 36px;
-      padding-bottom: 42px;
+      padding-bottom: 18px;
 
       order: 3;
     }
@@ -127,6 +135,8 @@
 
     padding-left: 30px;
     padding-right: 30px;
+
+    color: #d22856;
 
     &--close {
       display: none;
