@@ -99,6 +99,11 @@
     margin-bottom: 0;
   }
 
+  .tel,
+  .email {
+    margin-bottom: 10px;
+  }
+
   .label {
     &--caption {
       flex-shrink: 0;
