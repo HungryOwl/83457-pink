@@ -331,14 +331,21 @@
       &--app {
         width: 100%;
 
+        padding-left: 0;
+        padding-right: 0;
         padding-bottom: 51px;
 
         .contest-feedback__list {
-          margin-left: 16px;
+          margin-left: 74px;
         }
 
         .contest-feedback__list-item:first-child {
           padding-top: 22px;
+        }
+
+        .contest-feedback__title {
+          padding-left: 25px;
+          padding-right: 25px;
         }
       }
 
@@ -399,12 +406,12 @@
 
         margin-bottom: 65px;
         padding-bottom: 35px;
-      }
-    }
 
-    &__title {
-      padding-left: 0;
-      padding-right: 0;
+        .contest-feedback__title {
+          padding-left: 38px;
+          padding-right: 38px;
+        }
+      }
     }
 
     &__wrapper-color {
