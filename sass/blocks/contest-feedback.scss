@@ -7,7 +7,7 @@
     &--submit {
       display: flex;
 
-      min-height: 126px;
+      min-height: 128px;
 
       flex-direction: column;
       justify-content: space-between;
@@ -24,7 +24,7 @@
     flex-direction: column;
 
     padding-top: 45px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
   }
 
   &__share {
@@ -62,10 +62,9 @@
     padding-bottom: 30px;
 
     box-sizing: border-box;
+    border: none;
 
     &--info {
-      border: none;
-
       order: 2;
     }
 
@@ -83,20 +82,27 @@
       }
     }
 
+    &--app {
+      border: none;
+
+      li {
+        padding-top: 36px;
+
+        &:first-child {
+          padding-top: 9px;
+        }
+      }
+    }
+
     &--contacts {
-      min-height: 295px;
+      padding-bottom: 39px;
 
       order: 4;
     }
 
-    &--app {
-      min-height: 248px;
-    }
-
     &--emotion {
-      min-height: 290px;
-
       padding-top: 10px;
+      padding-bottom: 40px;
 
       order: 6;
     }
@@ -108,9 +114,8 @@
       box-sizing: border-box;
       min-height: 337px;
 
-      padding-top: 40px;
-      padding-bottom: 42px;
-      margin-bottom: 52px;
+      padding-top: 36px;
+      margin-bottom: 58px;
 
       order: 5;
     }
@@ -149,6 +154,21 @@
 
     text-transform: uppercase;
   }
+
+  &__submit {
+    padding: 14px 44px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: white;
+
+    border: 3px solid #2aab6d;
+    border-radius: 3px;
+    background-color: #2aab6d;
+  }
 }
 
 @media ($tablet-width) {
@@ -162,8 +182,18 @@
     }
 
     &__field {
+      padding-left: 58px;
+      padding-right: 58px;
+
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+
       &--info {
-        min-height: 370px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+        border: none;
 
         order: 0;
       }
@@ -184,7 +214,7 @@
       }
 
       &--app {
-        min-height: 310px;
+
       }
 
       &--achievements {
@@ -236,6 +266,7 @@
       background-color: white;
 
       &--app {
+        padding-top: 0;
         margin-bottom: 10px;
 
         order: 0;
