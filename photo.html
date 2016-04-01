@@ -23,17 +23,14 @@
             <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
-            <li class="main-nav__item main-nav__item--wrapped"><a class="main-nav__link" href="#">тест на переполнение</a></li>
-            <li class="main-nav__item main-nav__item--wrapped"><a class="main-nav__link" href="#">еще один тест</a></li>
           </ul>
         </div>
       </div>
     </nav>
-      <div class="page-header__wrapper">
-        <section class="intro">
-          <h1 class="intro__header">Фотографии пользователей</h1>
-        </section>
-      </div>
+    <div class="page-header__wrapper">
+      <section class="intro">
+        <h1 class="intro__header">Фотографии пользователей</h1>
+      </section>
     </div>
   </header>
 
@@ -41,73 +38,102 @@
     <section class="photo-section">
       <div class="photo-section__main-wrapper">
         <div class="photo-section__slogan-wrapper">
-          <p class="photo-section__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="photo-section__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает ваших?</p>
         </div>
 
-        <img src="#" alt="Панорама дня">
+        <section class="user-photo user-photo--of-the-day">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="#">
+            <source media="(min-width: 768px)" srcset="#">
+            <img class="user-photo__image user-photo__image--one user-photo__image--of-the-day" src="../img/panorama-mobile.jpg" alt="Фото" width="320" height="137">
+          </picture>
+          <article class="user-photo__caption user-photo__caption--wrapper">
+            <h4 class="user-photo__title">Анна <span>(5 минут назад)</span></h4>
+            <p class="user-photo__content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+            <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">215</span></footer>
+          </article>
+        </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--one user-photo__image--of-the-day" src="#" alt="Фото" width="320" height="137">
-          <figcaption class="user-photo__caption">
-            <h4>Анна<span>5 минут назад</span></h4>
-            <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+        <div class="photo-section__wrapper-inner">
+          <section class="user-photo">
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--two" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Левон<span>5 часов назад</span></h4>
-            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__image user-photo__image--two" src="../img/photo-1-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Левон <span>(5 часов назад)</span></h4>
+              <p class="user-photo__content">Вчера он на луну летал, сегодня в&nbsp;руки к нам попал.</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">356</span></footer>
+            </article>
+          </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--three" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Антон<span>15 часов назад</span></h4>
-            <p>Соседи будут рады!</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+          <section class="user-photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__image user-photo__image--three" src="../img/photo-2-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Антон <span>(15 часов назад)</span></h4>
+              <p class="user-photo__content">Соседи будут рады!</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">666</span></footer>
+            </article>
+          </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--four" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Борис<span>20 часов назад</span></h4>
-            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+          <section class="user-photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__image user-photo__image--four" src="../img/photo-3-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Борис <span>(20 часов назад)</span></h4>
+              <p class="user-photo__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">215</span></footer>
+            </article>
+          </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--five" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Сергей<span>25 часов назад</span></h4>
-            <p>Самая кубанская в мире!</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+          <section class="user-photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__image user-photo__image--five" src="../img/photo-4-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Сергей <span>(25 часов назад)</span></h4>
+              <p class="user-photo__content">Самая кубанская в мире!</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">4</span></footer>
+            </article>
+          </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--six" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Максим<span>40 часов назад</span></h4>
-            <p>Где снег-то?</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+          <section class="user-photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__image user-photo__image--six" src="../img/photo-5-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Максим <span>(40 часов назад)</span></h4>
+              <p class="user-photo__content">Где снег-то?</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">150</span></footer>
+            </article>
+          </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--seven" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Надежда<span>40 часов назад</span></h4>
-            <p>Всем GM и взаимные лайки!</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+          <section class="user-photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__image user-photo__image--seven" src="../img/photo-6-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Надежда <span>(40 часов назад)</span></h4>
+              <p class="user-photo__content">Всем GM и взаимные лайки!</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">2560</span></footer>
+            </article>
+          </section>
+        </div>
       </div>
     </section>
 

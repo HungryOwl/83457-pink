@@ -1,0 +1,45 @@
+.photo-section {
+  &__slogan-wrapper {
+    @include container;
+
+    padding-top: 45px;
+    margin-bottom: 49px;
+  }
+
+  &__slogan {
+    font-size: 14px;
+    line-height: 30px;
+
+    text-align: center;
+  }
+
+  &__slogan-wrapper *:first-child {
+    margin-top: 0;
+  }
+
+  &__slogan-wrapper *:last-child {
+    margin-bottom: 0;
+  }
+
+  &__view-of-the-day {
+    position: absolute;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    padding-top: 7px;
+    padding-bottom: 8px;
+
+    font-size: 12px;
+    line-height: 24px;
+
+    color: white;
+    text-transform: uppercase;
+
+    background-color: #d22856;
+  }
+
+  &__wrapper-inner {
+    @include container;
+  }
+}
