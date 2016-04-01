@@ -226,11 +226,11 @@
       }
 
       &--emotion {
-        min-height: 262px;
+        margin-bottom: 67px;
+
+        padding-bottom: 43px;
 
         order: 0;
-
-        margin-bottom: 67px;
       }
 
       &--app {
@@ -238,7 +238,7 @@
       }
 
       &--achievements {
-        min-height: 566px;
+        padding-bottom: 46px;
       }
     }
 
@@ -267,7 +267,7 @@
 
     &__form {
       padding-top: 92px;
-      padding-bottom: 50px;
+      padding-bottom: 3px;
     }
 
     &__wrapper-inner {
@@ -291,10 +291,8 @@
       }
 
       &--achievements {
-
-        margin-bottom: 10px;
-
-        padding-top: 55px;
+        padding-top: 51px;
+        padding-bottom: 51px;
         order: 0;
       }
     }

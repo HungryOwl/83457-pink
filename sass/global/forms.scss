@@ -104,6 +104,14 @@
     margin-bottom: 10px;
   }
 
+  .textarea-text {
+    min-height: 193px;
+
+    margin-top: 21px;
+
+    padding-top: 15px;
+  }
+
   .label {
     &--caption {
       flex-shrink: 0;
@@ -118,12 +126,6 @@
     &--radio {
       margin-right: 21px;
     }
-  }
-
-  .textarea-text {
-    min-height: 213px;
-
-    padding-top: 35px;
   }
 }
 
