@@ -131,6 +131,7 @@
 
 @media ($tablet-width) {
   .user-photo {
+
     flex-basis: 300px;
 
     &--of-the-day {
@@ -161,7 +162,6 @@
       justify-content: flex-start;
 
       min-height: 111px;
-
       padding-top: 24px;
 
       padding-left: 29px;
@@ -226,3 +226,22 @@
   }
 }
 
+@media ($desktop-width) {
+  .user-photo {
+    padding-bottom: 0;
+
+    &--of-the-day {
+      padding-bottom: 50px;
+    }
+
+    &__mobile-image {
+      height: 400px;
+    }
+
+    &__mobile-panoram {
+      height: 506px;
+    }
+
+
+  }
+}

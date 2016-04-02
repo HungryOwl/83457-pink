@@ -46,3 +46,22 @@
     }
   }
 }
+
+@media ($desktop-width) {
+  .photo-section {
+    &__slogan-wrapper {
+      padding-bottom: 88px;
+    }
+
+    &__slogan {
+      padding-left: 187px;
+      padding-right: 187px;
+    }
+
+    &__wrapper-inner {
+      min-height: 1164px;
+
+      align-content: space-between;
+    }
+  }
+}
