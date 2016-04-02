@@ -225,4 +225,27 @@
 
     margin-top: 8px;
   }
+
+  .controls {
+    &__scale {
+      width: 410px;
+
+      padding-right: 30px;
+      padding-left: 92px;
+
+    }
+
+    &__toggle--crop {
+      left: 95px;
+    }
+
+    &__toggle--fill {
+      left: 155px;
+    }
+
+    &__toggle--contrast {
+      left: 295px;
+    }
+
+  }
 }

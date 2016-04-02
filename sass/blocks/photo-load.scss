@@ -87,6 +87,10 @@
     display: block;
   }
 
+  &__tool--active + .controls .controls__toggle {
+    background-color: #d22856;
+  }
+
   &__tool--crop {
     background-image: url("../img/icon-editor-crop.svg");
     background-repeat: no-repeat;
@@ -186,6 +190,8 @@
       flex-direction: column;
 
       min-height: 400px;
+
+      background-size: cover;
     }
 
     &__tools-list {
@@ -208,18 +214,29 @@
       width: 24px;
       height: 22px;
       background-size: 24px 22px;
+
+      opacity: 1;
     }
 
     &__tool--crop {
       top: 10px;
+      left: 4px;
     }
 
     &__tool--fill {
       top: 85px;
+      left: 4px;
     }
 
     &__tool--contrast {
-      top: 150px;
+      width: 17px;
+      height: 17px;
+
+      top: 155px;
+      left: 8px;
+
+      background-position: 50% 50%;
+      background-size: 15px 15px;
     }
 
     &__button {
@@ -248,5 +265,86 @@
 
   .photo-load__content:last-of-type {
     padding-bottom: 69px;
+  }
+}
+
+@media ($desktop-width) {
+  .photo-load {
+    &__form {
+      background-color: white;
+      padding-bottom: 28px;
+    }
+
+    &__form-wrapper {
+      background-color: #f2f2f2;
+
+      justify-content: flex-start;
+
+      padding-bottom: 57px;
+    }
+
+    &__img {
+      margin-left: 80px;
+    }
+
+    &__tools {
+      flex-direction: row;
+
+      justify-content: flex-start;
+      align-content: space-between;
+
+      margin-left: 90px;
+    }
+
+    &__tool {
+      width: 48px;
+      height: 44px;
+
+      background-size: cover;
+    }
+
+    &__tool--crop {
+      top: -5px;
+      left: -2px;
+    }
+
+    &__tool--fill {
+      top: 70px;
+      left: -2px;
+    }
+
+    &__tool--contrast {
+      width: 32px;
+      height: 32px;
+
+      top: 147px;
+      left: 5px;
+    }
+
+    &__button {
+      width: 183px;
+
+      margin: 0;
+    }
+
+    &__button--submit {
+      margin-right: 44px;
+
+      padding-left: 42px;
+      padding-right: 37px;
+    }
+
+    &__button--reset {
+      padding-left: 55px;
+      padding-right: 51px;
+    }
+  }
+
+  .photo-load__content:first-of-type {
+    padding-top: 58px;
+  }
+
+  .photo-load__content:last-of-type {
+    padding-bottom: 66px;
   }
 }
