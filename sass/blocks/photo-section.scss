@@ -37,5 +37,12 @@
       font-size: 18px;
       line-height: 30px;
     }
+
+    &__wrapper-inner {
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: space-between;
+    }
   }
 }

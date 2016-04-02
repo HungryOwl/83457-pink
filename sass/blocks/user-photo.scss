@@ -131,16 +131,97 @@
 
 @media ($tablet-width) {
   .user-photo {
+    flex-basis: 300px;
+
+    &--of-the-day {
+      padding-bottom: 50px;
+    }
+
     &__image--of-the-day {
 
     }
 
     &__mobile-image {
+      width: 300px;
+      height: 300px;
+    }
+
+    &__mobile-panoram {
+      width: 100%;
       height: 509px;
     }
 
     &__view-of-the-day {
       top: -452px;
+    }
+
+    &__caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      min-height: 111px;
+
+      padding-top: 24px;
+
+      padding-left: 29px;
+      padding-right: 29px;
+    }
+
+    &__caption--wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      min-height: auto;
+
+      padding-top: 24px;
+      padding-bottom: 15px;
+
+      flex-direction: row;
+      align-content: flex-start;
+    }
+
+    &__caption--wrapper .user-photo__content {
+      order: 1;
+    }
+
+    &__footer {
+      margin-top: auto;
+
+      padding-left: 0;
+
+      &::before {
+        position: static;
+
+        width: 0;
+        height: 0;
+
+        background-image: none;
+      }
+    }
+
+    &__footer--panoram {
+      margin-top: 0;
+      margin-left: auto;
+    }
+
+    &__counter-like {
+      padding-right: 32px;
+
+      &::after {
+        position: absolute;
+        content: "";
+
+        width: 14px;
+        height: 14px;
+
+        right: 0;
+        top: 4px;
+
+        background-image: url("../img/icon-heart.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
     }
   }
 }
