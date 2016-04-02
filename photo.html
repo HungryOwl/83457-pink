@@ -140,48 +140,60 @@
     <section class="photo-load">
       <div class="photo-load__wrapper">
         <div class="photo-load__content-wrapper">
-          <p class="photo-load__content">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в&nbsp;телефоне!</p>
+          <p class="photo-load__content">Затмите их всех!<br>Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в&nbsp;телефоне!</p>
         </div>
 
         <form class="photo-load__form" action="echo" method="post">
-          <picture class="photo-load__img">
-            <source media="(min-width: 1200px)" srcset="#">
-            <source media="(min-width: 768px)" srcset="#">
-            <img class="user-photo__mobile-image" src="../img/photo-7-mobile.jpg" alt="Ваше фото" width="280" height="374">
-          </picture>
+          <div class="photo-load__form-wrapper">
+            <picture class="photo-load__img">
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="photo-load__picture " src="../img/photo-7-mobile.jpg" alt="Ваше фото" width="280" height="374">
+            </picture>
 
-          <div class="photo-load__tools">
-            <!-- <div class="photo-load__img-change"> -->
-              <button class="photo-load__crop-edit">кадрировать</button>
-              <button class="photo-load__fill-edit">залить</button>
-              <button class="photo-load__contrast-edit">черно-белое</button>
-            <!--  </div> -->
+            <div class="photo-load__tools">
+              <!-- <div class="photo-load__img-change"> -->
 
-            <div class="controls controls--size">
-              <div class="controls__scale">
-                <div class="controls__bar" style="width:100%"></div>
+              <!--  </div> -->
+
+              <div class="controls controls--size">
+                <button class="photo-load__crop-edit">кадрировать</button>
+                <button class="photo-load__fill-edit">залить</button>
+                <button class="photo-load__contrast-edit">черно-белое</button>
+
+                <div class="controls__scale">
+                  <div class="controls__bar" style="width:100%"></div>
+                  <div class="controls__toggle"></div>
+                </div>
+              </div>
+
+              <div class="controls controls--hidden controls--size">
+                <button class="photo-load__crop-edit">кадрировать</button>
+                <button class="photo-load__fill-edit">залить</button>
+                <button class="photo-load__contrast-edit">черно-белое</button>
+
+                <div class="controls__scale">
+                  <div class="controls__bar" style="width:100%"></div>
+                </div>
+
                 <div class="controls__toggle"></div>
               </div>
-            </div>
 
-            <div class="controls controls--hidden controls--size">
-              <div class="controls__scale">
-                <div class="controls__bar" style="width:100%"></div>
+              <div class="controls controls--hidden controls--size">
+                <button class="photo-load__crop-edit">кадрировать</button>
+                <button class="photo-load__fill-edit">залить</button>
+                <button class="photo-load__contrast-edit">черно-белое</button>
+
+                <div class="controls__scale">
+                  <div class="controls__bar" style="width:100%"></div>
+                </div>
+
+                <div class="controls__toggle"></div>
               </div>
 
-              <div class="controls__toggle"></div>
+              <input class="photo-load__submit" type="submit" value="Запостить">
+              <input class="photo-load__reset" type="reset" value="Отмена" disabled>
             </div>
-
-            <div class="controls controls--hidden controls--size">
-              <div class="controls__scale">
-                <div class="controls__bar" style="width:100%"></div>
-              </div>
-
-              <div class="controls__toggle"></div>
-            </div>
-
-            <input class="photo-load__submit" type="submit" value="Запостить">
-            <input class="photo-load__reset" type="reset" value="Отмена" disabled>
           </div>
         </form>
       </div>

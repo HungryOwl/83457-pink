@@ -94,8 +94,6 @@
     display: inline-block;
     vertical-align: middle;
 
-    margin-top: 42px;
-    margin-bottom: 33px;
     margin-right: 17px;
     margin-left: 17px;
 
@@ -125,5 +123,52 @@
     background-image: url("../img/icon-editor-contrast.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+}
+
+@media ($tablet-width) {
+  .photo-load {
+    &__content {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__form {
+      padding-top: 0;
+    }
+
+    &__form-wrapper {
+      @include container;
+
+      display: flex;
+      justify-content: space-between;
+
+      padding-top: 57px;
+    }
+
+    &__picture {
+      width: 300px;
+      height: 400px;
+    }
+
+    &__crop-edit,
+    &__fill-edit,
+    &__contrast-edit {
+      margin-top: 0;
+    }
+
+    &__tools {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+  }
+
+  .photo-load__content:first-of-type {
+    padding-top: 45px;
+  }
+
+  .photo-load__content:last-of-type {
+    padding-bottom: 70px;
   }
 }
