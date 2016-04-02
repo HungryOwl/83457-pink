@@ -47,33 +47,6 @@
     text-align: center;
   }
 
-  &__submit,
-  &__reset {
-    display: block;
-    margin: 0 auto;
-
-    box-sizing: border-box;
-    width: 280px;
-
-    margin-bottom: 12px;
-
-    padding-left: 88px;
-    padding-right: 88px;
-    padding-top: 14px;
-    padding-bottom: 17px;
-
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: bold;
-
-    text-align: center;
-
-    outline: none;
-
-    border: none;
-    background-color: #f2f2f2;
-  }
-
   &__tools-list {
     position: relative;
 
@@ -132,14 +105,40 @@
     background-position: 50% 5px;
   }
 
-  &__submit {
+  &__button {
+    display: block;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    width: 280px;
+
+    margin-bottom: 12px;
+
+    padding-left: 88px;
+    padding-right: 88px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+
+    text-align: center;
+
+    outline: none;
+
+    border: none;
+    background-color: #f2f2f2;
+  }
+
+  &__button--submit {
     color: #d22856;
 
     border: 3px solid #d22856;
     border-radius: 30px;
   }
 
-  &__reset {
+  &__button--reset {
     color: rgba(0, 0, 0, 0.1);
 
     border: 3px solid rgba(0, 0, 0, 0.1);
@@ -149,6 +148,13 @@
 
 @media ($tablet-width) {
   .photo-load {
+
+    &__img {
+      width: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
     &__content {
       font-size: 18px;
       line-height: 30px;
@@ -156,6 +162,7 @@
 
     &__form {
       padding-top: 0;
+      padding-bottom: 54px;
     }
 
     &__form-wrapper {
@@ -190,7 +197,7 @@
     &__tool {
       position: absolute;
 
-      left: 5px;
+      left: 0;
 
       margin-top: 0;
       margin-left: 0;
@@ -203,11 +210,33 @@
       background-size: 24px 22px;
     }
 
-    &__submit {
+    &__tool--crop {
+      top: 10px;
+    }
+
+    &__tool--fill {
+      top: 85px;
+    }
+
+    &__tool--contrast {
+      top: 150px;
+    }
+
+    &__button {
+      width: 260px;
+
+      margin-left: 0;
+
+      padding-left: 77px;
+      padding-right: 77px;
+    }
+
+    &__button--submit {
       margin-top: auto;
     }
 
-    &__reset {
+    &__button--reset {
+      margin-top: 12px;
       margin-bottom: 0;
     }
 
