@@ -3,7 +3,7 @@
     @include container;
 
     padding-top: 45px;
-    margin-bottom: 49px;
+    padding-bottom: 49px;
   }
 
   &__slogan {
@@ -23,5 +23,19 @@
 
   &__wrapper-inner {
     @include container;
+  }
+}
+
+@media ($tablet-width) {
+  .photo-section {
+    &__slogan-wrapper {
+      padding-top: 92px;
+      padding-bottom: 76px;
+    }
+
+    &__slogan {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 }
