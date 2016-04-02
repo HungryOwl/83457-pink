@@ -26,10 +26,32 @@
 
   &__caption--wrapper {
     @include container;
+    position: relative;
 
     box-sizing: border-box;
 
     background-color: #f2f2f2;
+  }
+
+  &__view-of-the-day {
+    position: absolute;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    padding-top: 7px;
+    padding-bottom: 8px;
+
+    right: 0;
+    top: -137px;
+
+    font-size: 12px;
+    line-height: 24px;
+
+    color: white;
+    text-transform: uppercase;
+
+    background-color: #d22856;
   }
 
   &__caption {

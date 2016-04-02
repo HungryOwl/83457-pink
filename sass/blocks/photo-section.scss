@@ -21,24 +21,6 @@
     margin-bottom: 0;
   }
 
-  &__view-of-the-day {
-    position: absolute;
-
-    padding-left: 20px;
-    padding-right: 20px;
-
-    padding-top: 7px;
-    padding-bottom: 8px;
-
-    font-size: 12px;
-    line-height: 24px;
-
-    color: white;
-    text-transform: uppercase;
-
-    background-color: #d22856;
-  }
-
   &__wrapper-inner {
     @include container;
   }
