@@ -95,6 +95,8 @@
   position: absolute;
   overflow: hidden;
 
+  display: none;
+
   top: 119px;
 
   width: 100%;
@@ -131,12 +133,24 @@
     height: 10px;
 
     top: -6px;
-    left: 55px;
+    left: 14px;
 
 
     background-color: #f2f2f2;
     border: 2px solid #cd2856;
     border-radius: 50%;
+  }
+
+  &__toggle--crop {
+    left: 55px;
+  }
+
+  &__toggle--fill {
+    left: 76px;
+  }
+
+  &__toggle--contrast {
+    left: 120px;
   }
 }
 

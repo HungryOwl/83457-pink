@@ -97,6 +97,21 @@
     line-height: 0;
 
     border: 0;
+
+    opacity: 0.3;
+  }
+
+  &__tool:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &__tool--active {
+    opacity: 1;
+  }
+
+  &__tool--active + .controls {
+    display: block;
   }
 
   &__tool--crop {
