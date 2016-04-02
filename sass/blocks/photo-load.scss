@@ -172,13 +172,43 @@
       height: 400px;
     }
 
-    &__tool {
-      margin-top: 0;
-    }
-
     &__tools {
       display: flex;
       flex-wrap: wrap;
+
+      flex-direction: column;
+
+      min-height: 400px;
+    }
+
+    &__tools-list {
+      padding-top: 13px;
+
+      margin-bottom: 0;
+    }
+
+    &__tool {
+      position: absolute;
+
+      left: 5px;
+
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+
+      padding-bottom: 0;
+
+      width: 24px;
+      height: 22px;
+      background-size: 24px 22px;
+    }
+
+    &__submit {
+      margin-top: auto;
+    }
+
+    &__reset {
+      margin-bottom: 0;
     }
 
   }
@@ -188,6 +218,6 @@
   }
 
   .photo-load__content:last-of-type {
-    padding-bottom: 70px;
+    padding-bottom: 69px;
   }
 }
