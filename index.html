@@ -8,23 +8,30 @@
 </head>
 <body>
   <header class="page-header page-header--index">
-    <div class="page-header__wrapper page-header__wrapper--index">
-      <a class="logo logo--page-header" href="#">
-        Лого
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--closed">Открыть меню</button>
+    <nav class="main-nav">
+      <div class="main-nav__main-wrapper">
+        <div class="main-nav__logo-wrapper">
+          <a class="logo logo--page-header" href="#">
+            Лого
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--closed">Открыть меню</button>
+        </div>
         <div class="main-nav__wrapper main-nav__wrapper--closed">
           <ul class="main-nav__items">
+            <li class="main-nav__item main-nav__item--nav-height"></li>
             <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+            <!-- <li class="main-nav__item main-nav__item--wrapped"><a class="main-nav__link" href="#">тест на переполнение</a></li>
+            <li class="main-nav__item main-nav__item--wrapped"><a class="main-nav__link" href="#">еще один тест</a></li> -->
           </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <div class="page-header__wrapper page-header__wrapper--index">
       <section class="intro intro--index intro--image">
-        <h1 class="intro__header intro__header--index intro__header--toggle">Взгляните <br>на жизнь<br> иначе!</h1>
+        <h1 class="intro__header intro__header--index intro__header--toggle">Взгляните на жизнь иначе!</h1>
         <section class="intro__download">
           <a class="btn" href="#">Скачать приложение</a>
           <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -34,12 +41,14 @@
   </header>
 
   <main class="page-main">
-
     <section class="about">
       <div class="about__wrapper">
         <h2 class="about__slogan">Устали от серости мегаполиса?</h2>
-        <h2 class="about__slogan"> Нам есть, что вам <br>предложить!</h2>
-        <div class="about__items">
+        <h2 class="about__slogan about__slogan--small"> Нам есть, что вам предложить!</h2>
+      </div>
+
+      <div class="about__items">
+        <div class="about__items-wrapper">
           <article class="about__item">
             <div class="about__item-image"></div>
             <h4 class="about__title">Поднимает настроение</h4>
@@ -50,18 +59,19 @@
             <h4 class="about__title">Меняет мир вокруг</h4>
             <p class="about__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </article>
-          <article class="about__item">
+          <article class="about__item about__item--item-img">
             <div class="about__item-image"></div>
             <h4 class="about__title">Заводит новых друзей</h4>
             <p class="about__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </article>
+
+          <article class="about__science">
+            <h3>Эффект на&nbsp;24 часа!</h3>
+            <p class="about__content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="about__link" href="#">Узнать больше об исследовании</a>
+          </article>
         </div>
-        <article class="about__science">
-          <h3>Эффект на 24 часа!</h3>
-          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-          </p>
-          <a href="#">Узнать больше об исследовании</a>
-        </article>
       </div>
     </section>
 
@@ -72,23 +82,32 @@
           <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-2" >
           <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-3" >
 
-            <article class="reviews__item reviews__item--active">
-              <h4 class="reviews__title">Николай Петров</h4>
-              <p class="reviews__intro">25 лет, водитель трамвая</p>
+            <article class="reviews__item reviews__item--review-peter">
+              <div class="reviews__inner-wrapper">
+                <h4 class="reviews__title">Николай Петров</h4>
+                <p class="reviews__intro">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
 
-            <article class="reviews__item">
-              <h4 class="reviews__title">Николай Петров</h4>
-              <p class="reviews__intro">25 лет, водитель трамвая</p>
+            <article class="reviews__item reviews__item--review-vasya">
+              <div class="reviews__inner-wrapper">
+                <h4 class="reviews__title">Вася Николаев</h4>
+                <p class="reviews__intro">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
 
-            <article class="reviews__item">
-              <h4 class="reviews__title">Николай Петров</h4>
-              <p class="reviews__intro">25 лет, водитель трамвая</p>
+            <article class="reviews__item reviews__item--review-kolya">
+              <div class="reviews__inner-wrapper">
+                <h4 class="reviews__title">Коля Васечкин</h4>
+                <p class="reviews__intro">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
+
+            <button class="reviews__toggle reviews__toggle--prev">Следующий отзыв</button>
+            <button class="reviews__toggle reviews__toggle--next">предыдущий отзыв</button>
 
             <div class="slider-items reviews__nav">
               <label class="slider-items__btn" for="reviews-radio-1">1</label>
@@ -103,14 +122,14 @@
     <section class="price">
       <div class="price__wrapper">
         <div class="price__items">
-          <input class="price__switcher" type="radio" name="reviews" id="price-radio-1" checked>
+          <input class="price__switcher" type="radio" name="reviews" id="price-radio-1">
           <input class="price__switcher" type="radio" name="reviews" id="price-radio-2" >
           <input class="price__switcher" type="radio" name="reviews" id="price-radio-3" >
 
           <table class="price__list">
             <thead class="price__list-head">
               <tr>
-                <th class="price__value"></th>
+                <th class="price__value price__value--empty"></th>
                 <th class="price__value">База<p>1,99 USD</p></th>
                 <th class="price__value price__value--flag">Стандарт<p>3,99 USD</p></th>
                 <th class="price__value">Анлим<p>9,99 USD</p></th>
@@ -118,29 +137,29 @@
             </thead>
             <tbody class="price__list-body">
               <tr>
-                <td class="price__field">Розовый фильтр</td>
-                <td class="price__field">Розовый фильтр</td>
-                <td class="price__field">Розовый фильтр</td>
-                <td class="price__field">Розовый фильтр</td>
+                <td class="price__field price__field--empty price__field--fill">Розовый фильтр</td>
+                <td class="price__field price__field--ok">Розовый фильтр</td>
+                <td class="price__field price__field--ok">Розовый фильтр</td>
+                <td class="price__field price__field--ok">Розовый фильтр</td>
               </tr>
               <tr>
-                <td class="price__field">Смайлики</td>
+                <td class="price__field price__field--empty price__field--fill">Смайлики</td>
                 <td class="price__field price__field--ok">Смайлики</td>
                 <td class="price__field price__field--ok">Смайлики</td>
                 <td class="price__field price__field--cancel">Смайлики</td>
               </tr>
               <tr>
-                <td class="price__field">Комментарии</td>
-                <td class="price__field">Комментарии</td>
-                <td class="price__field">Комментарии</td>
-                <td class="price__field">Комментарии</td>
+                <td class="price__field price__field--empty price__field--fill">Комментарии</td>
+                <td class="price__field price__field--ok">Комментарии</td>
+                <td class="price__field price__field--ok">Комментарии</td>
+                <td class="price__field price__field--ok">Комментарии</td>
               </tr>
             </tbody>
           </table>
 
-          <div class="slider-items price__nav">
+          <div class="slider-items slider-items--none price__nav">
             <label class="slider-items__btn" for="price-radio-1">1</label>
-            <label class="slider-items__btn" for="price-radio-2">2</label>
+            <label class="slider-items__btn slider-items__btn--active" for="price-radio-2">2</label>
             <label class="slider-items__btn" for="price-radio-3">3</label>
           </div>
         </div>
@@ -151,28 +170,28 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <section class="page-footer__contacts">
-        <h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <h2 class="page-footer__title page-footer__title--narrow">Остались вопросы? Свяжитесь с&nbsp;нами!</h2>
 
         <article class="page-footer__call-us">
-          <h4>Звоните:</h4>
-          <p>+7 (812) 555-66-66</p>
+          <h4 class="page-footer__sub-title">Звоните:</h4>
+          <p class="page-footer__info">+7 (812) 555-66-66</p>
         </article>
 
         <article class="page-footer__write-us">
-          <h4>Пишите:</h4>
-          <a href="#">mail.htmlacademy.ru</a>
+          <h4 class="page-footer__sub-title">Пишите:</h4>
+          <a class="page-footer__mail-link" href="#">mail.htmlacademy.ru</a>
         </article>
 
         <article class="page-footer__visit-us">
-          <h4>Приезжайте в гости:</h4>
-          <p>ул.&nbsp;Большая Конюшенная, 19/8</p>
+          <h4 class="page-footer__sub-title">Приезжайте в гости:</h4>
+          <p class="page-footer__info">ул.&nbsp;Большая Конюшенная,&nbsp;19/8</p>
         </article>
       </section>
     </div>
 
       <div class="page-footer__map page-footer__map--pointer">карта</div>
 
-    <section class="page-footer__copyright page-footer__copyright--toggle">
+    <section class="page-footer__copyright page-footer__copyright--hide">
       <a class="logo logo--big logo--copyright" href="#">
         Лого
       </a>
@@ -188,5 +207,6 @@
       </section>
     </section>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>

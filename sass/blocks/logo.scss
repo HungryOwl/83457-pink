@@ -4,9 +4,8 @@
 
   font-size: 0;
 
-  background-image: url("../../img/logo-pink-white-mobile.svg");
+  background-image: url("../img/logo-pink-white-mobile.svg");
   background-repeat: no-repeat;
-  background-color: $bg-darkblue;
 
   &--page-header {
     position: absolute;
@@ -21,7 +20,7 @@
     width: 147px;
     height: 40px;
 
-    background-image: url("../../img/logo-pink-blue-mobile.svg");
+    background-image: url("../img/logo-pink-blue-mobile.svg");
   }
 
   &--copyright {
@@ -39,11 +38,9 @@
     width: 147px;
     height: 40px;
 
-    background-image: url("../../img/logo-pink-blue-mobile.svg");
+    background-image: url("../img/logo-pink-blue-mobile.svg");
 
     &--copyright {
-      float: left;
-
       margin-bottom: 0;
     }
   }

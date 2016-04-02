@@ -1,9 +1,22 @@
 .price {
-    padding-top: 80px;
-    padding-bottom: 30px;
+  padding-top: 89px;
+  padding-bottom: 19px;
+
+  background-color: #f2f2f2;
+
+  &__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__switcher {
+    display: none;
+  }
 
   &__list {
-    margin: 0 auto;
+    width: 840px;
+    box-sizing: border-box;
+    transform: translateX(-240px);
   }
 
   &__list-head {
@@ -16,10 +29,11 @@
     background-color: #283645;
 
     p {
-      margin-top: 0;
+      margin-top: 2px;
       margin-bottom: 0;
 
       font-size: 24px;
+      font-weight: lighter;
     }
   }
 
@@ -28,20 +42,37 @@
   }
 
   &__value {
+    box-sizing: border-box;
+    min-width: 278px;
 
-    &:not(:first-child) {
-      padding-top: 18px;
-      padding-bottom: 18px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    border-left: 2px solid #e5e5e5;
+
+    &:nth-child(2) {
+       border-left: none;
+    }
+
+    &--empty {
+      min-width: 0;
+
+      margin: 0;
+      padding: 0;
+
+      font-size: 0;
+      line-height: 0;
+
+      background-color: transparent;
+      border: none;
     }
   }
 
   &__field {
+      box-sizing: border-box;
 
-    &:not(:first-child) {
-      min-width: 254px;
-
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 16px;
+      padding-bottom: 13px;
       padding-left: 22px;
 
       font-size: 14px;
@@ -50,66 +81,104 @@
       text-transform: uppercase;
 
       border: 2px solid #e5e5e5;
-    }
+      border-top: none;
 
-    &:first-child {
+    /* &--empty {
+      min-width: 0;
+
+      margin: 0;
+      padding: 0;
+
       font-size: 0;
       line-height: 0;
-    }
+
+      background-color: transparent;
+      border: none;
+    } */
   }
 }
 
+@media ($mobile-width-only) {
+  .price__field--empty {
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 0;
+    line-height: 0;
+
+    background-color: transparent;
+    border: none;
+  }
+}
 
 @media ($tablet-width) {
   .price {
+    padding-top: 88px;
+    padding-bottom: 70px;
+
     &__wrapper {
       @include container;
     }
 
     &__list-head {
       font-size: 16px;
-
-    p {
-      font-size: 18px;
     }
-  }
 
     &__list {
-      min-width: 620px;
+      transform: none;
+      width: 620px;
+    }
+
+    &__value {
+      min-width: auto;
+
+      padding-top: 12px;
+      padding-bottom: 7px;
+
+      p {
+        margin-top: 0;
+
+        font-size: 18px;
+      }
+
+      &--content {
+        padding-top: 12px;
+        padding-bottom: 5px;
+      }
+
+      &--empty {
+        background-color: #f2f2f2;
+        border: none;
+
+        border-bottom: 2px solid #e5e5e5;
+      }
     }
 
     &__field {
+      min-width: 154px;
 
-      &:not(:first-child) {
-        min-width: 148px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 15px;
+      padding-right: 15px;
 
-        padding-top: 15px;
-        padding-bottom: 15px;
+      &--empty {
+        text-transform: none;
+      }
+
+      &--ok,
+      &--none {
+        font-size: 0;
+        line-height: 0;
+      }
+
+      &--cancel {
         padding-left: 0;
 
         font-size: 0;
         line-height: 0;
-
-        border: 2px solid #e5e5e5;
-    }
-
-      &:first-child {
-        min-width: 153px;
-
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-
-        font-size: 14px;
-        line-height: 30px;
-
-        border: 2px solid #e5e5e5;
-      }
-    }
-
-    &__value {
-      &:first-child {
-        background-color: white;
       }
     }
   }
@@ -117,16 +186,32 @@
 
 @media ($desktop-width) {
   .price {
+    padding-top: 147px;
+    padding-bottom: 95px;
 
     &__list {
       min-width: 940px;
     }
 
+    &__value {
+      font-size: 18px;
+
+      padding-top: 16px;
+      padding-bottom: 22px;
+
+      p {
+        font-size: 24px;
+      }
+    }
+
     &__field {
+      min-width: 233px;
 
-      &:first-child {
-        min-width: 230px;
+      padding-top: 13px;
+      padding-bottom: 16px;
+      padding-left: 24px;
 
+      &--empty {
         font-size: 18px;
       }
     }

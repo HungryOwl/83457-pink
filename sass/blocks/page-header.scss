@@ -4,7 +4,7 @@
 
   color: $font-color-header;
 
-  background-image: url("../../img/bg-back-mobile.jpg");
+  background-image: url("../img/bg-back-mobile.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 
@@ -20,11 +20,11 @@
 
     position: relative;
 
-    min-height: 237px;
+    /* min-height: 237px; */
   }
 
   &__wrapper--index {
-    padding-top: 458px;
+    padding-top: 388px;
   }
 }
 
@@ -37,7 +37,7 @@
     }
 
     &__wrapper--index {
-      padding-top: 298px;
+      padding-top: 0;
     }
   }
 }

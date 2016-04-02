@@ -14,21 +14,19 @@ body {
 }
 
 body {
-  padding: 6px;
   /* background: $bg-main url("../img/pink-index-mobile.jpg") no-repeat center 6px scroll; */
-  min-height: 3423px;
 }
 
 @media ($tablet-width) {
   body {
     /* background: $bg-main url("../img/pink-index-tablet.jpg") no-repeat center 6px scroll; */
-    min-height: 2400px;
+
   }
 }
 
 @media ($desktop-width) {
   body {
     /* background: $bg-main url("../img/pink-index-desktop.jpg") no-repeat center 6px scroll; */
-    min-height: 2250px;
+
   }
 }

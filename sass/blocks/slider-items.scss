@@ -1,0 +1,60 @@
+.slider-items {
+    display: block;
+
+    width: 100px;
+    min-height: 12px;
+
+    margin: 0 auto;
+
+    padding-top: 9px;
+    padding-bottom: 21px;
+
+  &.price__nav{
+    margin-top: 20px;
+  }
+
+  &__btn {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: 0;
+    line-height: 0;
+
+    width: 6px;
+    height: 6px;
+
+    margin-left: 9px;
+    margin-right: 9px;
+
+    background-color: #bec2c7;
+
+    border-radius: 50%;
+
+    /* &--active {
+      background-color: transparent;
+      border: 3px solid #283645;
+    } */
+  }
+}
+
+@media ($tablet-width) {
+  .slider-items {
+    &--none {
+      display: none;
+    }
+
+    &.reviews__nav {
+      padding-bottom: 0;
+      padding-top: 9px;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .slider-items {
+    &.reviews__nav {
+      display: none;
+    }
+  }
+
+}
