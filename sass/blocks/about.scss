@@ -29,23 +29,10 @@
     padding-top: 81px;
 
     background-color: $bg-lightgray;
-    /* СВГ треугольничек
-
-    position: relative;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-
-      width: 100%;
-      height: 32px;
-
-      top: 0;
-
-      background-image: url("../img/bg-triangle-white.svg");
-
-    } */
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
   }
 
   &__items *:first-child {
@@ -64,18 +51,21 @@
 
       background-image: url("../img/iphone-screen-mobile.png");
       background-repeat: no-repeat;
-      background-position: 50% 140px;
+      background-position: 50% 148px;
+      background-size: 157px auto;
+
+      @media
+        (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+          background-image: url("../img/iphone-screen-mobile@2x.png");
+          background-size: 157px auto;
+      }
     }
   }
 
   &__item:first-of-type .about__title:first-of-type {
       margin-top: 0;
   }
-
-  /* &__item:last-of-type .about__content:last-of-type,
-  &__item:last-of-type .about__title:last-of-type {
-      margin-bottom: 0;
-  } */
 
   &__image {
     width: 157px;
@@ -106,10 +96,6 @@
     margin-top: 12px;
     margin-bottom: 12px;
     margin-bottom: 12px;
-
-    /*& :last-of-type {
-      margin-bottom: 0;
-    } */
   }
 
   &__science {
@@ -127,10 +113,6 @@
 .about__wrapper *:first-child {
   margin-top: 0;
 }
-
-/* .about__wrapper *:last-child {
-  margin-bottom: 0;
-} */
 
 @media ($tablet-width) {
   .about {
@@ -259,8 +241,6 @@
       padding-bottom: 46px;
 
       width: auto;
-
-      background-image: none;
     }
 
     &__items-wrapper {

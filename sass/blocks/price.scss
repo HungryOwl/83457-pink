@@ -1,8 +1,12 @@
 .price {
-  padding-top: 89px;
+  padding-top: 91px;
   padding-bottom: 19px;
 
   background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 0;
 
   &__wrapper {
     width: 100%;

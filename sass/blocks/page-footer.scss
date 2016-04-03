@@ -60,9 +60,16 @@
     height: 200px;
 
     background-color: #f2f2f2;
-    background-image: url("../img/bg-map.png");
+    background-image: url("../img/bg-triangle-white-footer.svg"),
+                      url("../img/bg-map.png");
+
     background-repeat: no-repeat;
-    background-position: 50% 0;
+
+    background-size: 100% auto,
+                     320px auto;
+
+    background-position: 50% 0,
+                         50% 0;
 
     font-size: 0;
     line-height: 0;
@@ -96,10 +103,6 @@
   &__write-us,
   &__visit-us {
     margin-bottom: 23px;
-  }
-
-  &__map {
-    height: 378px;
   }
 }
 
@@ -197,7 +200,10 @@
     }
 
     &__map {
-      background-repeat: repeat;
+      height: 378px;
+
+      background-repeat: no-repeat,
+                         repeat;
     }
   }
 }
