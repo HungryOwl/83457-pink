@@ -43,12 +43,12 @@
 
         <section class="user-photo user-photo--of-the-day">
           <picture class="user-photo__image user-photo__image--one user-photo__image--of-the-day">
-            <source media="(min-width: 1200px)" srcset="#">
-            <source media="(min-width: 768px)" srcset="#">
-            <img class="user-photo__mobile-image user-photo__mobile-panoram" src="#" alt="Фото" height="137">
+            <div class="user-photo__view-of-the-day">Панорама дня</div>
+            <source media="(min-width: 1200px)" srcset="../img/panorama-desktop.jpg 1200w, ../img/panorama-desktop@2x.jpg 2400w">
+            <source media="(min-width: 700px)" srcset="../img/panorama-tablet.jpg 700w, ../img/panorama-tablet@2x.jpg 1400w">
+            <img class="user-photo__mobile-image user-photo__mobile-panoram" width=100% src="../img/panorama-mobile.jpg" srcset="../img/panorama-mobile@2x.jpg 640w" alt="Фото" ;>
           </picture>
           <article class="user-photo__caption user-photo__caption--wrapper">
-            <div class="user-photo__view-of-the-day">Панорама дня</div>
             <h4 class="user-photo__title">Анна <span>(5 минут назад)</span></h4>
             <p class="user-photo__content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
             <footer class="user-photo__footer user-photo__footer--panoram">Нравится: <span class="user-photo__counter-like">215</span></footer>
