@@ -1,15 +1,19 @@
 .intro {
-  position: relative;
-
   text-align: center;
 
-  background-color: rgba(128, 0, 0, 0.3);
+  background-color: $bg-darkblue;
+
+  &__wrapper {
+    @include container;
+
+    position: relative;
+  }
 
   &--index {
     min-height: 207px;
 
     padding-top: 28px;
-    padding-bottom: 36px;
+    padding-bottom: 30px;
   }
 
   &__header {
@@ -31,20 +35,18 @@
     }
   }
 
-  &--image {
-    &::before {
-      content: "";
+  &__download {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 
-      position: absolute;
+    min-height: 213px;
+  }
 
-      width: 258px;
-      height: 286px;
-
-      left: 0;
-      top: -286px;
-
-      background-image: url("../img/iphone-hand-mobile.png");
-    }
+  &__content {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -58,6 +60,8 @@
 
 @media ($tablet-width) {
   .intro {
+    background-color: transparent;
+
     &--index {
       min-height: 555px;
       width: 300px;
