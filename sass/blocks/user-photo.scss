@@ -8,19 +8,14 @@
     position: relative;
   }
 
-  &__image {
-
-  }
-
-  &__image--of-the-day {
-
-  }
-
   &__mobile-image {
     display: block;
   }
 
   &__mobile-panoram {
+    display: block;
+
+    width: 100%;
 
     background-color: #e5e5e5;
   }
@@ -134,20 +129,6 @@
       padding-bottom: 50px;
     }
 
-    &__image--of-the-day {
-
-    }
-
-    &__mobile-image {
-      width: 300px;
-      height: 300px;
-    }
-
-    &__mobile-panoram {
-      width: auto;
-      height: auto;
-    }
-
     &__view-of-the-day {
       top: 57px;
     }
@@ -228,15 +209,6 @@
 
     &--of-the-day {
       padding-bottom: 50px;
-    }
-
-    &__mobile-image {
-      height: 400px;
-    }
-
-    &__mobile-panoram {
-      width: auto;
-      height: auto;
     }
 
     &__view-of-the-day {
