@@ -180,6 +180,11 @@
 }
 
 @media ($tablet-width) {
+  .btn {
+    padding-left: 46px;
+    padding-right: 45px;
+  }
+
   .text {
     width: auto;
     flex-grow: 1;
@@ -239,6 +244,13 @@
 }
 
 @media ($desktop-width) {
+  .btn {
+    padding-left: 29px;
+    padding-right: 28px;
+
+    font-size: 21px;
+  }
+
   .textarea-text {
     min-height: 128px;
 
