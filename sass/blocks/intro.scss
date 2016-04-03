@@ -42,6 +42,16 @@
     justify-content: space-between;
 
     min-height: 213px;
+
+    background-image: url("../img/logo-microsoft.svg"),
+                      url("../img/logo-android.svg"),
+                      url("../img/logo-apple.svg");
+
+    background-repeat: no-repeat;
+
+    background-position: 200px 100px,
+                         120px 95px,
+                         38px 87px;
   }
 
   &__content {
