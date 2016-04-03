@@ -107,6 +107,11 @@
   .page-footer {
     padding-top: 46px;
 
+    &--photo {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
     &__developer {
       padding-top: 12px;
 

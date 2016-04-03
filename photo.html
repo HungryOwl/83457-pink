@@ -19,21 +19,18 @@
         <div class="main-nav__wrapper main-nav__wrapper--closed">
           <ul class="main-nav__items">
             <li class="main-nav__item main-nav__item--nav-height"></li>
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
-            <li class="main-nav__item main-nav__item--wrapped"><a class="main-nav__link" href="#">тест на переполнение</a></li>
-            <li class="main-nav__item main-nav__item--wrapped"><a class="main-nav__link" href="#">еще один тест</a></li>
           </ul>
         </div>
       </div>
     </nav>
-      <div class="page-header__wrapper">
-        <section class="intro">
-          <h1 class="intro__header">Фотографии пользователей</h1>
-        </section>
-      </div>
+    <div class="page-header__wrapper">
+      <section class="intro">
+        <h1 class="intro__header intro__header--photo">Фотографии пользователей</h1>
+      </section>
     </div>
   </header>
 
@@ -41,104 +38,156 @@
     <section class="photo-section">
       <div class="photo-section__main-wrapper">
         <div class="photo-section__slogan-wrapper">
-          <p class="photo-section__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="photo-section__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает ваших?</p>
         </div>
 
-        <img src="#" alt="Панорама дня">
+        <section class="user-photo user-photo--of-the-day">
+          <picture class="user-photo__image user-photo__image--one user-photo__image--of-the-day">
+            <source media="(min-width: 1200px)" srcset="#">
+            <source media="(min-width: 768px)" srcset="#">
+            <img class="user-photo__mobile-image user-photo__mobile-panoram" src="#" alt="Фото" height="137">
+          </picture>
+          <article class="user-photo__caption user-photo__caption--wrapper">
+            <div class="user-photo__view-of-the-day">Панорама дня</div>
+            <h4 class="user-photo__title">Анна <span>(5 минут назад)</span></h4>
+            <p class="user-photo__content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+            <footer class="user-photo__footer user-photo__footer--panoram">Нравится: <span class="user-photo__counter-like">215</span></footer>
+          </article>
+        </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--one user-photo__image--of-the-day" src="#" alt="Фото" width="320" height="137">
-          <figcaption class="user-photo__caption">
-            <h4>Анна<span>5 минут назад</span></h4>
-            <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+        <div class="photo-section__wrapper-inner">
+          <section class="user-photo">
+            <picture class="user-photo__image user-photo__image--two">
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__mobile-image" src="../img/photo-1-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Левон <span>(5 часов назад)</span></h4>
+              <p class="user-photo__content">Вчера он на луну летал, сегодня в&nbsp;руки к нам попал.</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">356</span></footer>
+            </article>
+          </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--two" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Левон<span>5 часов назад</span></h4>
-            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+          <section class="user-photo">
+            <picture class="user-photo__image user-photo__image--three">
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__mobile-image" src="../img/photo-2-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Антон <span>(15 часов назад)</span></h4>
+              <p class="user-photo__content">Соседи будут рады!</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">666</span></footer>
+            </article>
+          </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--three" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Антон<span>15 часов назад</span></h4>
-            <p>Соседи будут рады!</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+          <section class="user-photo">
+            <picture class="user-photo__image user-photo__image--four">
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__mobile-image" src="../img/photo-3-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Борис <span>(20 часов назад)</span></h4>
+              <p class="user-photo__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">215</span></footer>
+            </article>
+          </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--four" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Борис<span>20 часов назад</span></h4>
-            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+          <section class="user-photo">
+            <picture class="user-photo__image user-photo__image--five">
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__mobile-image" src="../img/photo-4-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Сергей <span>(25 часов назад)</span></h4>
+              <p class="user-photo__content">Самая кубанская в мире!</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">4</span></footer>
+            </article>
+          </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--five" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Сергей<span>25 часов назад</span></h4>
-            <p>Самая кубанская в мире!</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+          <section class="user-photo">
+            <picture class="user-photo__image user-photo__image--six">
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__mobile-image" src="../img/photo-5-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Максим <span>(40 часов назад)</span></h4>
+              <p class="user-photo__content">Где снег-то?</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">150</span></footer>
+            </article>
+          </section>
 
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--six" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Максим<span>40 часов назад</span></h4>
-            <p>Где снег-то?</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
-
-        <figure class="user-photo">
-          <img class="user-photo__image user-photo__image--seven" src="#" alt="Фото" width="280" height="180">
-          <figcaption class="user-photo__caption">
-            <h4>Надежда<span>40 часов назад</span></h4>
-            <p>Всем GM и взаимные лайки!</p>
-            <footer>Нравится:</footer>
-          </figcaption>
-        </figure>
+          <section class="user-photo">
+            <picture class="user-photo__image user-photo__image--seven">
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="user-photo__mobile-image" src="../img/photo-6-mobile.jpg" alt="Фото" width="280" height="180">
+            </picture>
+            <article class="user-photo__caption">
+              <h4 class="user-photo__title">Надежда <span>(40 часов назад)</span></h4>
+              <p class="user-photo__content">Всем GM и взаимные лайки!</p>
+              <footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">2560</span></footer>
+            </article>
+          </section>
+        </div>
       </div>
     </section>
 
     <section class="photo-load">
-      <div class="wrapper">
-        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="photo-load__wrapper">
+        <div class="photo-load__content-wrapper">
+          <p class="photo-load__content">Затмите их всех!<br>Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в&nbsp;телефоне!</p>
+        </div>
 
-        <form class="photo-load__form" action="echo" method="post"></form>
-          <img class="photo-load__img" src="#" alt="Ваше фото" width="280" height="374">
+        <form class="photo-load__form" action="echo" method="post">
+          <div class="photo-load__form-wrapper">
+            <picture class="photo-load__img">
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img class="photo-load__picture " src="../img/photo-7-mobile.jpg" alt="Ваше фото" width="280" height="374">
+            </picture>
 
-          <div class="photo-load__img-change">
-            <button class="photo-load__crop">кадрировать</button>
-            <button class="photo-load__fill">залить</button>
-            <button class="photo-load__black-white">черно-белое</button>
-          </div>
+            <div class="photo-load__tools">
+              <dl class="photo-load__tools-list">
+                <dt class="photo-load__tool photo-load__tool--crop">кадрировать</dt>
+                  <dd class="controls controls--size">
+                    <div class="controls__scale">
+                      <div class="controls__bar" style="width:100%"></div>
+                      <div class="controls__toggle controls__toggle--crop"></div>
+                    </div>
+                  </dd>
 
-          <div class="controls controls--size">
-            <div class="controls__scale">
-              <div class="controls__bar" style="width:70%"></div>
+                <dt class="photo-load__tool photo-load__tool--fill photo-load__tool--active">залить</dt>
+                  <dd class="controls controls--size">
+                    <div class="controls__scale">
+                      <div class="controls__bar" style="width:100%"></div>
+                      <div class="controls__toggle controls__toggle--fill"></div>
+                    </div>
+                  </dd>
+
+                <dt class="photo-load__tool photo-load__tool--contrast">контрастность</dt>
+                  <dd class="controls controls--size">
+                    <div class="controls__scale">
+                      <div class="controls__bar" style="width:100%"></div>
+                      <div class="controls__toggle controls__toggle--contrast"></div>
+                    </div>
+                  </dd>
+              </dl>
+
+              <input class="photo-load__button photo-load__button--submit" type="submit" value="Запостить">
+              <input class="photo-load__button photo-load__button--reset" type="reset" value="Отмена" disabled>
             </div>
-
-            <div class="controls__toggle"></div>
           </div>
-
-          <input class="photo-load__submit" type="submit" value="Запостить">
-          <input class="photo-load__reset" type="reset" value="Отмена" disabled>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer class="page-footer page-footer--inner">
+  <footer class="page-footer page-footer--photo page-footer--inner">
     <section class="page-footer__copyright page-footer__copyright--show">
       <a class="logo logo--big logo--copyright" href="#">
         Лого
@@ -155,5 +204,6 @@
       </section>
     </section>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>

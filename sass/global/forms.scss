@@ -91,6 +91,77 @@
   border-radius: 2px;
 }
 
+.controls {
+  position: absolute;
+  overflow: hidden;
+
+  display: none;
+
+  top: 119px;
+
+  width: 100%;
+  height: 14px;
+
+  margin-left: 0;
+  padding-bottom: 28px;
+
+  border-bottom: 1px solid #dddfe0;
+
+  &__scale {
+    position: relative;
+    @include container;
+
+    box-sizing: border-box;
+
+    margin-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    z-index: 1;
+  }
+
+  &__bar {
+    height: 2px;
+    background-color: #283645;
+  }
+
+  &__toggle {
+    position: absolute;
+    z-index: 10;
+
+    cursor: pointer;
+
+    width: 10px;
+    height: 10px;
+
+    top: -6px;
+    left: 14px;
+
+
+    background-color: #f2f2f2;
+    border: 2px solid #cd2856;
+    border-radius: 50%;
+  }
+
+  &__toggle--crop {
+    left: 55px;
+  }
+
+  &__toggle--fill {
+    left: 76px;
+  }
+
+  &__toggle--contrast {
+    left: 120px;
+  }
+}
+
+@media ($mobile-width-only) {
+  .controls--hidden {
+    display: none;
+  }
+}
+
 @media ($tablet-width) {
   .text {
     width: auto;
@@ -131,6 +202,23 @@
       }
     }
   }
+
+  .controls {
+    position: static;
+    display: block;
+    margin-bottom: 30px;
+
+    &__scale {
+      width: 275px;
+
+      padding-left: 55px;
+      padding-right: 18px;
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 27px;
+    }
+  }
 }
 
 @media ($desktop-width) {
@@ -138,5 +226,28 @@
     min-height: 128px;
 
     margin-top: 8px;
+  }
+
+  .controls {
+    &__scale {
+      width: 410px;
+
+      padding-right: 30px;
+      padding-left: 92px;
+
+    }
+
+    &__toggle--crop {
+      left: 95px;
+    }
+
+    &__toggle--fill {
+      left: 155px;
+    }
+
+    &__toggle--contrast {
+      left: 295px;
+    }
+
   }
 }

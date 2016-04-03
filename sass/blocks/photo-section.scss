@@ -1,0 +1,67 @@
+.photo-section {
+  &__slogan-wrapper {
+    @include container;
+
+    padding-top: 45px;
+    padding-bottom: 49px;
+  }
+
+  &__slogan {
+    font-size: 14px;
+    line-height: 30px;
+
+    text-align: center;
+  }
+
+  &__slogan-wrapper *:first-child {
+    margin-top: 0;
+  }
+
+  &__slogan-wrapper *:last-child {
+    margin-bottom: 0;
+  }
+
+  &__wrapper-inner {
+    @include container;
+  }
+}
+
+@media ($tablet-width) {
+  .photo-section {
+    &__slogan-wrapper {
+      padding-top: 92px;
+      padding-bottom: 76px;
+    }
+
+    &__slogan {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__wrapper-inner {
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: space-between;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .photo-section {
+    &__slogan-wrapper {
+      padding-bottom: 88px;
+    }
+
+    &__slogan {
+      padding-left: 187px;
+      padding-right: 187px;
+    }
+
+    &__wrapper-inner {
+      min-height: 1164px;
+
+      align-content: space-between;
+    }
+  }
+}
