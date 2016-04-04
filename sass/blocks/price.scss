@@ -59,6 +59,38 @@
        border-left: none;
     }
 
+    &__value--flag {
+    .price__hit {
+      display: block;
+
+      top: 0;
+      left: -2px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "хит";
+
+      height: 10px;
+      width: 28px;
+
+      top: 20px;
+      left: 9px;
+
+      font-size: 14px;
+      line-height: 14px;
+
+      text-align: center;
+      vertical-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #d22856;
+      transform: rotate(-45deg);
+
+      z-index: 10;
+    }
+  }
+
     &--empty {
       min-width: 0;
 
@@ -92,38 +124,6 @@
   &__hit {
     position: absolute;
     display: none;
-  }
-
-  &__value--flag {
-    .price__hit {
-      display: block;
-
-      top: 0;
-      left: -2px;
-    }
-
-    &::before {
-      position: absolute;
-      content: "хит";
-
-      height: 10px;
-      width: 28px;
-
-      top: 20px;
-      left: 9px;
-
-      font-size: 14px;
-      line-height: 14px;
-
-      text-align: center;
-      vertical-align: center;
-      text-transform: uppercase;
-      color: #fff;
-      background-color: #d22856;
-      transform: rotate(-45deg);
-
-      z-index: 10;
-    }
   }
 }
 
@@ -208,6 +208,20 @@
       }
     }
 
+    &__value--flag {
+      .price__hit {
+        display: block;
+
+        top: -10px;
+        left: -2px;
+      }
+
+      &::before {
+        top: 13px;
+        left: 2px;
+      }
+    }
+
     &__field {
       min-width: 154px;
 
@@ -236,7 +250,7 @@
 
 @media ($desktop-width) {
   .price {
-    padding-top: 147px;
+    padding-top: 141px;
     padding-bottom: 95px;
 
     &__list {
@@ -251,6 +265,20 @@
 
       p {
         font-size: 24px;
+      }
+    }
+
+    &__value--flag {
+      .price__hit {
+        display: block;
+
+        top: 0px;
+        left: -2px;
+      }
+
+      &::before {
+        top: 20px;
+        left: 9px;
       }
     }
 
