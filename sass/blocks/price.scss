@@ -45,6 +45,11 @@
     background-color: white;
   }
 
+  &__hit {
+    position: absolute;
+    display: none;
+  }
+
   &__value {
     position: relative;
     box-sizing: border-box;
@@ -59,7 +64,7 @@
        border-left: none;
     }
 
-    &__value--flag {
+    &--flag {
     .price__hit {
       display: block;
 
@@ -119,11 +124,6 @@
 
     border: 2px solid #e5e5e5;
     border-top: none;
-  }
-
-  &__hit {
-    position: absolute;
-    display: none;
   }
 }
 
