@@ -1,8 +1,6 @@
 .intro {
   text-align: center;
 
-  background-color: $bg-darkblue;
-
   &__wrapper {
     @include container;
 
@@ -14,6 +12,8 @@
 
     padding-top: 28px;
     padding-bottom: 30px;
+
+    background-color: $bg-darkblue;
   }
 
   &__header {
