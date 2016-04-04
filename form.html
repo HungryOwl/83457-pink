@@ -7,6 +7,35 @@
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
+  <svg version="1.1" style="display: none">
+    <symbol viewBox="0 0 49.945 24.007" id="icon-menu-burger">
+      <g id="miu">
+        <g id="editor_list_view_hambuger_menu_glyph">
+          <g>
+            <path id="path-1" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671
+            c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98
+            c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z
+             M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01
+            v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+          </g>
+          <g>
+            <path id="path-1_1_" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671
+            c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98
+            c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z
+             M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01
+            v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+          </g>
+        </g>
+      </g>
+    </symbol>
+    <symbol viewBox="0 0 23.867 23.867" id="icon-menu-cross">
+      <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0
+    c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313
+    c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094
+    c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22
+    c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+    </symbol>
+  </svg>
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__main-wrapper ">
@@ -14,7 +43,7 @@
           <a class="logo logo--page-header" href="#">
             Лого
           </a>
-          <button class="main-nav__toggle main-nav__toggle--closed">Открыть меню</button>
+          <button class="main-nav__toggle"><svg class="icon-menu icon-menu--burger" width="50" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-burger"></use></svg><svg class="icon-menu icon-menu--cross" width="24" height="23"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-cross"></use></svg>Открыть меню</button>
         </div>
         <div class="main-nav__wrapper main-nav__wrapper--closed">
           <ul class="main-nav__items">
@@ -27,11 +56,10 @@
         </div>
       </div>
     </nav>
-      <div class="page-header__wrapper">
-        <section class="intro">
-          <h1 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        </section>
-      </div>
+    <div class="page-header__wrapper">
+      <section class="intro">
+        <h1 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
     </div>
   </header>
 
