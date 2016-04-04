@@ -1,5 +1,12 @@
-.logo-pink-white-mobile {
+.logo-pink-white-mobile,
+.logo-pink-white-tablet,
+.logo-pink-white-desktop {
   fill: #ffffff;
+}
+
+.logo-pink-white-tablet,
+.logo-pink-white-desktop {
+  display: none;
 }
 
 .arrow {
@@ -67,5 +74,23 @@
     display: block;
     width: 31px;
     margin: 0 auto;
+  }
+
+  .logo-pink-white-mobile {
+    display: none;
+  }
+
+  .logo-pink-white-tablet {
+    display: block;
+  }
+}
+
+@media ($desktop-width) {
+  .logo-pink-white-tablet {
+    display: none;
+  }
+
+  .logo-pink-white-desktop {
+    display: block;
   }
 }
