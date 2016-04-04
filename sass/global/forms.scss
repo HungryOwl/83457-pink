@@ -33,6 +33,15 @@
   padding-top: 14px;
   padding-bottom: 15px;
   margin-bottom: 16px;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+    outline: none;
+  }
 }
 
 .checkbox,
@@ -159,6 +168,15 @@
 
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+    outline: none;
+  }
 }
 
 .controls {
