@@ -56,6 +56,17 @@
     position: static;
 
     margin-bottom: 37px;
+
+    &:hover .logo-pink-blue-mobile {
+      fill: #d22856;
+      transition: 0.2s;
+    }
+
+    &:active .logo-pink-blue-mobile {
+      fill: #283645;
+      opacity: 0.3;
+      transition: 0.1s;
+    }
   }
 }
 
@@ -65,6 +76,8 @@
     height: 40px;
 
     &--page-header {
+      top: 27px;
+
       &:hover .logo-pink-white-tablet {
         fill: #d22856;
         transition: 0.1s;
@@ -92,6 +105,17 @@
 
     &--copyright {
       margin-top: 0;
+
+      &:hover .logo-pink-blue-desktop {
+        fill: #d22856;
+        transition: 0.1s;
+      }
+
+      &:active .logo-pink-blue-desktop {
+        fill: #283645;
+        opacity: 0.3;
+        transition: 0.1s;
+      }
     }
 
     &--page-header {

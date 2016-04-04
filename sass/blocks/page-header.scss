@@ -101,12 +101,12 @@
     background-size: 2560px auto;
     background-position: 50% 0;
 
-    @media
+    /* @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
-        background-image: url("../img/bg-back-desktop@2x.jpg");
+        background-image: url("../img/bg-back-desktop@.jpg");
         background-size: 2560px auto;
-      }
+    } */
 
     &--index {
       min-height: 853px;

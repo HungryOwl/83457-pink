@@ -4,12 +4,18 @@
   fill: #ffffff;
 }
 
-.logo-pink-blue-mobile {
+.logo-htmlacademy {
+  fill: #d22856;
+}
+
+.logo-pink-blue-mobile,
+.logo-pink-blue-desktop {
   fill: #283645;
 }
 
 .logo-pink-white-tablet,
-.logo-pink-white-desktop {
+.logo-pink-white-desktop,
+.logo-pink-blue-desktop {
   display: none;
 }
 
@@ -64,11 +70,11 @@
   display: none;
 }
 
-.icon-yes {
+.price .icon-yes {
   fill: #3dc644;
 }
 
-.icon-no {
+.price .icon-no {
   fill: #f25b26;
 }
 
@@ -90,11 +96,13 @@
 }
 
 @media ($desktop-width) {
-  .logo-pink-white-tablet {
+  .logo-pink-white-tablet,
+  .logo-pink-blue-mobile {
     display: none;
   }
 
-  .logo-pink-white-desktop {
+  .logo-pink-white-desktop,
+  .logo-pink-blue-desktop {
     display: block;
   }
 }
