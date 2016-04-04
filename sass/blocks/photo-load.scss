@@ -83,6 +83,13 @@
     opacity: 1;
   }
 
+  &__tool--active .crop,
+  &__tool--active .fill,
+  &__tool--active .contrast {
+    opacity: 1;
+    fill: #d22856;
+  }
+
   &__tool--active + .controls {
     display: block;
   }
@@ -92,21 +99,15 @@
   }
 
   &__tool--crop {
-    background-image: url("../img/icon-editor-crop.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 0;
+
   }
 
   &__tool--fill {
-    background-image: url("../img/icon-editor-fill.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
+
   }
 
   &__tool--contrast {
-    background-image: url("../img/icon-editor-contrast.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 5px;
+     position: relative;
   }
 
   &__button {
