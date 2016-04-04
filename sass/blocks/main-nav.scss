@@ -38,41 +38,35 @@
 
     z-index: 100;
 
-    .icon-menu-burger {
+    .icon-menu {
       position: absolute;
 
       top: 21px;
       right: 0;
 
       fill: #ffffff;
-
-      &:hover {
-        fill: #d22856;
-      }
     }
 
-    .icon-menu-cross {
-      position: absolute;
+    .icon-menu--cross {
       display: none;
-
-      top: 21px;
-      right: 0;
-
-      fill: #ffffff;
-
-      &:hover {
-        fill: #d22856;
-      }
     }
 
     &--closed {
-      .icon-menu-burger {
+      .icon-menu--burger {
         display: none;
       }
 
-      .icon-menu-cross {
+      .icon-menu--cross {
         display: block;
       }
+    }
+
+    &:hover .icon-menu {
+      fill: #d22856;
+    }
+
+    &:active .icon-menu {
+      opacity: 0.3;
     }
   }
 
@@ -131,6 +125,10 @@
 
       &::after {
         right: 0;
+      }
+
+      .icon-menu {
+        top: 44px;
       }
     }
 
