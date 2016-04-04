@@ -1,3 +1,28 @@
+.arrow {
+  position: absolute;
+
+  fill: #bec2c7;
+  top: 0;
+
+  z-index: 10;
+}
+
+.reviews__toggle--prev .arrow {
+  left: 0;
+}
+
+.reviews__toggle--next .arrow {
+  right: 0;
+}
+
+.reviews__toggle .arrow:hover {
+  fill: #7e868f;
+}
+
+.reviews__toggle:active .arrow {
+  opacity: 0.1;
+}
+
 .icon-yes,
 .icon-no {
   display: none;

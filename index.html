@@ -76,6 +76,12 @@
     <symbol viewBox="0 0 26.752 26.752" id="icon-no">
       <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
     </symbol>
+    <symbol viewBox="0 0 21.706 41.719" id="icon-arrow-right">
+      <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+    </symbol>
+    <symbol viewBox="0 0 21.706 41.719" id="icon-arrow-left">
+      <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+    </symbol>
   </svg>
   <header class="page-header page-header--index">
     <nav class="main-nav">
@@ -184,8 +190,8 @@
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </article>
 
-            <button class="reviews__toggle reviews__toggle--prev">Следующий отзыв</button>
-            <button class="reviews__toggle reviews__toggle--next">предыдущий отзыв</button>
+            <button class="reviews__toggle reviews__toggle--prev"><svg class="arrow" width="22" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use>предыдущий отзыв</button>
+            <button class="reviews__toggle reviews__toggle--next"><svg class="arrow" width="22" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use>следующий отзыв</button>
 
             <div class="slider-items reviews__nav">
               <label class="slider-items__btn" for="reviews-radio-1">1</label>
