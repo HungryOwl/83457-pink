@@ -1,3 +1,25 @@
+.logo-apple,
+.logo-android,
+.logo-microsoft {
+  display: inline-block;
+  vertical-align: middle;
+
+ align-self: baseline;
+
+  margin-top: 20px;
+}
+
+.logo-android {
+    margin-left: 34px;
+    margin-right: 37px;
+}
+
+.logo-apple {
+  margin-top: 32px;
+}
+
+
+
 .logo {
   height: 22px;
   width: 75px;

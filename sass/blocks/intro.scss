@@ -38,21 +38,11 @@
   &__download {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
 
     min-height: 213px;
-
-    background-image: url("../img/logo-microsoft.svg"),
-                      url("../img/logo-android.svg"),
-                      url("../img/logo-apple.svg");
-
-    background-repeat: no-repeat;
-
-    background-position: 200px 100px,
-                         120px 95px,
-                         38px 87px;
   }
 
   &__content {
@@ -122,10 +112,6 @@
 
     &__download {
       min-height: 240px;
-
-      background-position: 210px 113px,
-                         130px 108px,
-                         48px 100px;
     }
   }
 
@@ -157,10 +143,6 @@
 
     &__download {
       min-height: 280px;
-
-      background-position: 210px 133px,
-                         130px 128px,
-                         48px 120px;
     }
   }
 }
