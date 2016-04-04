@@ -90,14 +90,18 @@
 
       padding: 0 36px;
 
+      &:first-child {
+        padding-top: 70px;
+        margin-bottom: 31px;
+      }
+
       &--index {
         font-size: 40px;
         line-height: 48px;
       }
 
-      &:first-child {
+      &--index:first-child {
         padding-top: 65px;
-        margin-bottom: 31px;
       }
 
       &--toggle {
@@ -124,9 +128,15 @@
   .intro {
     clear: both;
 
-    &__header:first-child {
-      padding-top: 80px;
-      margin-bottom: 52px;
+    &__header {
+      &:first-child {
+        padding-top: 64px;
+      }
+
+      &--index:first-child {
+        padding-top: 80px;
+        margin-bottom: 52px;
+      }
     }
 
     &__header--photo {
