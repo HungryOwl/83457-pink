@@ -1,12 +1,17 @@
 .slider-items {
-    display: block;
+    display: flex;
 
-    width: 100px;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 59px;
     min-height: 12px;
 
     margin: 0 auto;
 
-    padding-top: 9px;
+    padding-top: 20px;
     padding-bottom: 21px;
 
   &.price__nav{
@@ -22,9 +27,6 @@
 
     width: 6px;
     height: 6px;
-
-    margin-left: 9px;
-    margin-right: 9px;
 
     background-color: #bec2c7;
 
@@ -56,5 +58,4 @@
       display: none;
     }
   }
-
 }

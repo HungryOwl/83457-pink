@@ -5,7 +5,7 @@
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 105% auto;
   background-position: 50% 0;
 
   &__wrapper {
@@ -20,7 +20,7 @@
   &__list {
     width: 840px;
     box-sizing: border-box;
-    transform: translateX(-240px);
+    transform: translateX(-280px);
   }
 
   &__list-head {
@@ -46,6 +46,7 @@
   }
 
   &__value {
+    position: relative;
     box-sizing: border-box;
     min-width: 278px;
 
@@ -73,33 +74,87 @@
   }
 
   &__field {
-      box-sizing: border-box;
+    box-sizing: border-box;
 
-      padding-top: 16px;
-      padding-bottom: 13px;
-      padding-left: 22px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    border: 2px solid #e5e5e5;
+    border-top: none;
+  }
+
+  &__hit {
+    position: absolute;
+    display: none;
+  }
+
+  &__value--flag {
+    .price__hit {
+      display: block;
+
+      top: 0;
+      left: -2px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "хит";
+
+      height: 10px;
+      width: 28px;
+
+      top: 20px;
+      left: 9px;
 
       font-size: 14px;
-      line-height: 30px;
+      line-height: 14px;
 
+      text-align: center;
+      vertical-align: center;
       text-transform: uppercase;
+      color: #fff;
+      background-color: #d22856;
+      transform: rotate(-45deg);
 
-      border: 2px solid #e5e5e5;
-      border-top: none;
-
-    /* &--empty {
-      min-width: 0;
-
-      margin: 0;
-      padding: 0;
-
-      font-size: 0;
-      line-height: 0;
-
-      background-color: transparent;
-      border: none;
-    } */
+      z-index: 10;
+    }
   }
+}
+
+#price-radio-1:checked ~ .price__list {
+  transform: translateX(0px);
+  transition: 0.5s;
+}
+
+#price-radio-1:checked ~ .price__nav label[for="price-radio-1"] {
+  background-color: white;
+  border: 3px solid #283645;
+}
+
+#price-radio-2:checked ~ .price__list {
+  transform: translateX(-280px);
+  transition: 0.5s;
+}
+
+#price-radio-2:checked ~ .price__nav label[for="price-radio-2"] {
+  background-color: white;
+  border: 3px solid #283645;
+}
+
+#price-radio-3:checked ~ .price__list {
+  transform: translateX(-560px);
+  transition: 0.5s;
+}
+
+#price-radio-3:checked ~ .price__nav label[for="price-radio-3"] {
+  background-color: white;
+  border: 3px solid #283645;
 }
 
 @media ($mobile-width-only) {
