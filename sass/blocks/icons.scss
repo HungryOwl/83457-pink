@@ -65,8 +65,8 @@
   }
 }
 
-.icon-yes,
-.icon-no {
+.price .icon-yes,
+.price .icon-no {
   display: none;
 }
 
@@ -77,6 +77,12 @@
 .price .icon-no {
   fill: #f25b26;
 }
+
+
+/* .checkbox + .label--checkbox::before {
+  background-image: url("");
+} */
+
 
 @media ($tablet-width) {
   .icon-yes,

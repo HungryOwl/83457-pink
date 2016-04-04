@@ -60,6 +60,8 @@
     display: inline-block;
     vertical-align: middle;
 
+    position: relative;
+
     font-size: 18px;
     line-height: 30px;
 
@@ -76,6 +78,15 @@
       background-color: white;
       border: 2px solid #e5e5e5;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover::before {
+      border-color: #283645;
+      transition: 0.2s;
+    }
   }
 
   &--radio {
@@ -89,6 +100,48 @@
       border-radius: 2px;
     }
   }
+}
+
+.checkbox + .label--checkbox .icon-yes {
+  display: none;
+}
+
+.radio + .label--radio::after {
+  display: none;
+}
+
+.checkbox + .label--checkbox:active::before,
+.radio + .label--radio:active::before {
+  border-color: #d22856;
+}
+
+.checkbox + .label--checkbox:active .icon-yes,
+.checkbox:checked + .label--checkbox .icon-yes {
+  position: absolute;
+  display: block;
+
+  top: 9px;
+  left: 5px;
+
+  fill: #d22856;
+
+  transition: 0.5s;
+}
+
+.radio + .label--radio:active::after,
+.radio:checked + .label--radio::after {
+  display: block;
+  position: absolute;
+  content: "";
+
+  width: 15px;
+  height: 15px;
+
+  top: 12px;
+  left: 12px;
+
+  background-color: #d22856;
+  border-radius: 50%;
 }
 
 .textarea-text {
