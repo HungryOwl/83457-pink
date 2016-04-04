@@ -177,21 +177,49 @@
 
     &__science {
       display: block;
-
       position: relative;
 
       min-height: 183px;
       width: 320px;
 
+      /* margin: 0 auto; */
+
       padding-top: 139px;
       padding-left: 310px;
       padding-bottom: 67px;
 
-      margin: 0 auto;
-
-      background-image: url("../img/icon-editor-diagram-fill.svg");
+      background-image: url("../img/icon-editor-diagram-fill.svg"),
+                        url("../img/icon-timer.svg");
       background-repeat: no-repeat;
-      background-position: 0 125px;
+      background-position: 18px 158px, 0 102px;
+      background-size: 204px 204px, 241px 278px;
+
+      &::before {
+        position: absolute;
+        content: "";
+
+        width: 175px;
+        height: 175px;
+
+        top: 173px;
+        left: 33px;
+
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      &::after {
+        position: absolute;
+        content: "24";
+
+        font-size: 96px;
+        line-height: 96px;
+        font-weight: bold;
+        color: #d22856;
+
+        left: 63px;
+        top: 205px;
+      }
 
       h3 {
         font-size: 30px;
@@ -270,7 +298,7 @@
     }
 
     &__item:first-of-type .about__title:first-of-type {
-      margin-top: 52px;
+      margin-top: 56px;
     }
 
     &__item:last-of-type .about__title:last-of-type {
@@ -348,14 +376,33 @@
       font-size: 18px;
       line-height: 30px;
 
-      /* padding-left: 32px;
-      padding-right: 32px; */
+      padding-left: 32px;
+      padding-right: 32px;
     }
 
     &__science {
       width: auto;
-      padding-top: 161px;
+      padding-top: 157px;
       padding-left: 365px;
+
+      background-size: 253px 253px, 298px 345px;
+      background-position: 23px 136px, 0 66px;
+
+      &::before {
+        width: 220px;
+        height: 220px;
+
+        left: 39px;
+        top: 151px;
+      }
+
+      &::after {
+        font-size: 120px;
+        line-height: 120px;
+
+        left: 80px;
+        top: 196px;
+      }
 
       h3 {
         width: auto;
@@ -369,6 +416,7 @@
         margin-bottom: 31px;
 
         padding-right: 45px;
+        padding-left: 0;
 
         font-size: 18px;
         line-height: 30px;
