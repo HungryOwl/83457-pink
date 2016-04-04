@@ -1,0 +1,21 @@
+.icon-yes,
+.icon-no {
+  display: none;
+}
+
+.icon-yes {
+  fill: #3dc644;
+}
+
+.icon-no {
+  fill: #f25b26;
+}
+
+@media ($tablet-width) {
+  .icon-yes,
+  .icon-no {
+    display: block;
+    width: 31px;
+    margin: 0 auto;
+  }
+}
