@@ -18,16 +18,11 @@
   margin-top: 32px;
 }
 
-
-
 .logo {
   height: 22px;
   width: 75px;
 
   font-size: 0;
-
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  background-repeat: no-repeat;
 
   &--page-header {
     position: absolute;
@@ -52,6 +47,17 @@
     position: static;
 
     margin-bottom: 37px;
+  }
+
+  &:hover .logo-pink-white-mobile {
+    fill: #d22856;
+    transition: 0.1s;
+  }
+
+  &:active .logo-pink-white-mobile {
+    fill: #fff;
+    opacity: 0.3;
+    transition: 0.1s;
   }
 }
 

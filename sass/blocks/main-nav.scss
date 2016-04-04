@@ -27,8 +27,9 @@
     outline: none;
 
     top: 0;
+    right: 0;
 
-    width: 100%;
+    width: 200px;
     min-height: 66px;
 
     font-size: 0;
@@ -47,6 +48,11 @@
       fill: #ffffff;
     }
 
+    &:hover .icon-menu {
+      fill: #d22856;
+      transition: 0.1s;
+    }
+
     .icon-menu--cross {
       display: none;
     }
@@ -59,10 +65,6 @@
       .icon-menu--cross {
         display: block;
       }
-    }
-
-    &:hover .icon-menu {
-      fill: #d22856;
     }
 
     &:active .icon-menu {
