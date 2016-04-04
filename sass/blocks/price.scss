@@ -127,35 +127,6 @@
   }
 }
 
-#price-radio-1:checked ~ .price__list {
-  transform: translateX(0px);
-  transition: 0.5s;
-}
-
-#price-radio-1:checked ~ .price__nav label[for="price-radio-1"] {
-  background-color: white;
-  border: 3px solid #283645;
-}
-
-#price-radio-2:checked ~ .price__list {
-  transform: translateX(-280px);
-  transition: 0.5s;
-}
-
-#price-radio-2:checked ~ .price__nav label[for="price-radio-2"] {
-  background-color: white;
-  border: 3px solid #283645;
-}
-
-#price-radio-3:checked ~ .price__list {
-  transform: translateX(-560px);
-  transition: 0.5s;
-}
-
-#price-radio-3:checked ~ .price__nav label[for="price-radio-3"] {
-  background-color: white;
-  border: 3px solid #283645;
-}
 
 @media ($mobile-width-only) {
   .price__field--empty {
@@ -169,6 +140,28 @@
 
     background-color: transparent;
     border: none;
+  }
+
+    #price-radio-1:checked ~ .price__list {
+    transform: translateX(0px);
+    transition: 0.5s;
+  }
+
+  #price-radio-2:checked ~ .price__list {
+    transform: translateX(-280px);
+    transition: 0.5s;
+  }
+
+  #price-radio-3:checked ~ .price__list {
+    transform: translateX(-560px);
+    transition: 0.5s;
+  }
+
+  #price-radio-1:checked ~ .price__nav label[for="price-radio-1"],
+  #price-radio-2:checked ~ .price__nav label[for="price-radio-2"],
+  #price-radio-3:checked ~ .price__nav label[for="price-radio-3"] {
+    background-color: white;
+    border: 3px solid #283645;
   }
 }
 
