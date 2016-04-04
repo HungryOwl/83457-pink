@@ -24,6 +24,7 @@
     position: absolute;
 
     border: none;
+    outline: none;
 
     top: 0;
 
@@ -37,31 +38,40 @@
 
     z-index: 100;
 
-    &::after {
-      content:"";
-
+    .icon-menu-burger {
       position: absolute;
 
-      width: 50px;
-
-      top: 0;
+      top: 21px;
       right: 0;
-      bottom: 0;
-    }
 
-    &--closed {
-      &::after {
-        background-image: url("../img/icon-menu-burger.svg");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
+      fill: #ffffff;
+
+      &:hover {
+        fill: #d22856;
       }
     }
 
-    &--opened {
-      &::after {
-        background-image: url("../img/icon-menu-cross.svg");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
+    .icon-menu-cross {
+      position: absolute;
+      display: none;
+
+      top: 21px;
+      right: 0;
+
+      fill: #ffffff;
+
+      &:hover {
+        fill: #d22856;
+      }
+    }
+
+    &--closed {
+      .icon-menu-burger {
+        display: none;
+      }
+
+      .icon-menu-cross {
+        display: block;
       }
     }
   }
