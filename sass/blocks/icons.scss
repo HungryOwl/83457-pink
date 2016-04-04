@@ -97,6 +97,30 @@
 
 
 @media ($tablet-width) {
+  .crop,
+  .fill,
+  .contrast {
+    fill: #d22856;
+  }
+
+  .crop {
+    width: 24px;
+    height: 24px;
+  }
+
+  .fill {
+    width: 26px;
+    height: 24px;
+  }
+
+  .contrast {
+    width: 16px;
+    height: 16px;
+
+    top: 0;
+    left: 0;
+  }
+
   .icon-yes,
   .icon-no {
     display: block;
@@ -122,5 +146,20 @@
   .logo-pink-white-desktop,
   .logo-pink-blue-desktop {
     display: block;
+  }
+
+  .crop {
+    width: 49px;
+    height: 48px;
+  }
+
+  .fill {
+    width: 49px;
+    height: 48px;
+  }
+
+  .contrast {
+    width: 32px;
+    height: 32px;
   }
 }
