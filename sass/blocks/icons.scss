@@ -1,3 +1,25 @@
+.svg-triangle-decor {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  /* background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  z-index: 10000; */
+  z-index: 1000;
+}
+
+.bg-triangle-white-footer {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: auto;
+
+}
+
 .crop,
 .fill,
 .contrast {
