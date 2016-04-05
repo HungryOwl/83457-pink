@@ -50,6 +50,10 @@
   }
 }
 
+.inner-page .page-header__wrapper--index {
+  padding-top: 0;
+}
+
 @media ($tablet-width) {
   .page-header {
     min-height: 440px;

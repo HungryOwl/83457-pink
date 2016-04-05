@@ -1,3 +1,26 @@
+.form-btn {
+  overflow: hidden;
+
+  min-width: 280px;
+
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  color: white;
+
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
 .btn {
   padding-left: 37px;
   padding-right: 33px;
@@ -251,6 +274,11 @@
 }
 
 @media ($tablet-width) {
+  .form-btn {
+    min-width: 300px;
+    margin-top: 20px;
+  }
+
   .btn {
     padding-left: 46px;
     padding-right: 45px;

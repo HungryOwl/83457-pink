@@ -5,9 +5,9 @@ var toggle = document.querySelector('.main-nav__toggle');
 var pageheaderwrapper = document.querySelector('.page-header__wrapper');
 
 nav.classList.add('main-nav__wrapper--top');
-pageheaderwrapper.classList.add('page-header__wrapper--index');
-
 nav.classList.toggle('main-nav__wrapper--closed');
+
+pageheaderwrapper.classList.add('page-header__wrapper--index');
 
 toggle.addEventListener('click', function() {
   console.log('Алерт!');
