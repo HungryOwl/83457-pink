@@ -9,7 +9,6 @@ var mqpacker = require('css-mqpacker');
 var minify = require('gulp-csso');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
-var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var del = require('del');
 var server = require('browser-sync');
@@ -26,6 +25,11 @@ gulp.task('fonts', function() {
 gulp.task('html', function() {
   return gulp.src('*.html')
   .pipe(gulp.dest('build'))
+});
+
+gulp.task('js', function() {
+  return gulp.src('js/*.js')
+  .pipe(gulp.dest('build/js'))
 });
 
 gulp.task('style', function() {
@@ -74,10 +78,8 @@ gulp.task('serve', ['style'], function() {
     ui: false
   });
 
-  gulp.watch('css/**/*.{css}', ['style']);
+  gulp.watch('sass/**/*.scss', ['style']);
   gulp.watch('*.html').on('change', server.reload);
 });
 
-gulp.task('build', function() {
-
-});
+gulp.task('build', ['clean', 'fonts', 'html', 'js', 'style', 'images', 'symbols']);
