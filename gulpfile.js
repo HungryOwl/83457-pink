@@ -11,7 +11,12 @@ var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
+var del = require('del');
 var server = require('browser-sync');
+
+gulp.task('clean', function() {
+  del('build');
+});
 
 gulp.task('fonts', function() {
   return gulp.src('fonts/**/*.{woff, woff2}')
