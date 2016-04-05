@@ -27,6 +27,11 @@ gulp.task('html', function() {
   .pipe(gulp.dest('build'))
 });
 
+gulp.task('js', function() {
+  return gulp.src('js/*.js')
+  .pipe(gulp.dest('build/js'))
+});
+
 gulp.task('style', function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
@@ -77,5 +82,5 @@ gulp.task('serve', ['style'], function() {
   gulp.watch('*.html').on('change', server.reload);
 });
 
-gulp.task('build', ['clean', 'fonts', 'html', 'style', 'images', 'symbols']);
+gulp.task('build', ['clean', 'fonts', 'html', 'js', 'style', 'images', 'symbols']);
 
