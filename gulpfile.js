@@ -5,6 +5,7 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var csso = require('gulp-csso');
 var server = require("browser-sync");
 
 gulp.task("style", function() {
@@ -20,11 +21,17 @@ gulp.task("style", function() {
         "last 2 Edge versions"
       ]})
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest('build/css'))
     .pipe(server.reload({stream: true}));
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task('minify', function () {
+    return gulp.src('build/css/style.css')
+        .pipe(csso())
+        .pipe(gulp.dest('build/css/style.css'));
+});
+
+gulp.task("serve", ["style, minify"], function() {
   server.init({
     server: ".",
     notify: false,
