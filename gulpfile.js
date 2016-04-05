@@ -13,6 +13,16 @@ var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var server = require('browser-sync');
 
+gulp.task('fonts', function() {
+  return gulp.src('fonts/**/*.{woff, woff2}')
+  .pipe(gulp.dest('build/fonts'))
+});
+
+gulp.task('html', function() {
+  return gulp.src('*.html')
+  .pipe(gulp.dest('build'))
+});
+
 gulp.task('style', function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
@@ -51,7 +61,7 @@ gulp.task('symbols', function() {
   .pipe(gulp.dest('build/img'));
 });
 
-gulp.task('serve', ['style', 'images', 'symbols'], function() {
+gulp.task('serve', ['fonts', 'html', 'style', 'images', 'symbols'], function() {
   server.init({
     server: './build',
     notify: false,
