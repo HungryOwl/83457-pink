@@ -83,4 +83,3 @@ gulp.task('serve', ['style'], function() {
 });
 
 gulp.task('build', ['clean', 'fonts', 'html', 'js', 'style', 'images', 'symbols']);
-
