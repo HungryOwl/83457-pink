@@ -30,7 +30,7 @@
   },
   "scripts": {
     "test": "editorconfig-tools check *",
-    "build": "gulp style",
+    "build": "gulp build",
     "start": "gulp serve"
   },
   "engines": {
