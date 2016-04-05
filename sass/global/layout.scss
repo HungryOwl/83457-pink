@@ -12,21 +12,3 @@ body {
 
   background-color: $bg-main;
 }
-
-body {
-  /* background: $bg-main url("../img/pink-index-mobile.jpg") no-repeat center 6px scroll; */
-}
-
-@media ($tablet-width) {
-  body {
-    /* background: $bg-main url("../img/pink-index-tablet.jpg") no-repeat center 6px scroll; */
-
-  }
-}
-
-@media ($desktop-width) {
-  body {
-    /* background: $bg-main url("../img/pink-index-desktop.jpg") no-repeat center 6px scroll; */
-
-  }
-}
