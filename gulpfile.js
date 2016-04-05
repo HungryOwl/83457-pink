@@ -1,44 +1,64 @@
-"use strict";
+'use strict';
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var csso = require('gulp-csso');
-var server = require("browser-sync");
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var plumber = require('gulp-plumber');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var mqpacker = require('css-mqpacker');
+var minify = require('gulp-csso');
+var rename = require('gulp-rename');
+var imagemin = require('gulp-imagemin');
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
+var server = require('browser-sync');
 
-gulp.task("style", function() {
+gulp.task('style', function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer({browsers: [
-        "last 1 version",
-        "last 2 Chrome versions",
-        "last 2 Firefox versions",
-        "last 2 Opera versions",
-        "last 2 Edge versions"
-      ]})
+        'last 1 version',
+        'last 2 Chrome versions',
+        'last 2 Firefox versions',
+        'last 2 Opera versions',
+        'last 2 Edge versions'
+      ]}),
+      mqpacker({
+        sort: true
+      })
     ]))
+    .pipe(gulp.dest('build/css'))
+    .pipe(minify())
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css'))
     .pipe(server.reload({stream: true}));
 });
 
-gulp.task('minify', function () {
-    return gulp.src('build/css/style.css')
-        .pipe(csso())
-        .pipe(gulp.dest('build/css/style.css'));
+gulp.task('images', function() {
+  return gulp.src('img/**/*.{png, jpg, gif}')
+    .pipe(imagemin({
+      optimizationLevel: 3,
+      progressive: true
+    }))
+  .pipe(gulp.dest('build/img'));
 });
 
-gulp.task("serve", ["style, minify"], function() {
+gulp.task('symbols', function() {
+  return gulp.src('img/*.svg')
+  .pipe(svgmin())
+  .pipe(gulp.dest('build/img'));
+});
+
+gulp.task('serve', ['style', 'images', 'symbols'], function() {
   server.init({
-    server: ".",
+    server: './build',
     notify: false,
     open: true,
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch('css/**/*.{css}', ['style']);
+  gulp.watch('*.html').on('change', server.reload);
 });
