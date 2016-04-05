@@ -66,7 +66,7 @@ gulp.task('symbols', function() {
   .pipe(gulp.dest('build/img'));
 });
 
-gulp.task('serve', ['clean', 'fonts', 'html', 'style', 'images', 'symbols'], function() {
+gulp.task('serve', ['style'], function() {
   server.init({
     server: './build',
     notify: false,
@@ -76,4 +76,8 @@ gulp.task('serve', ['clean', 'fonts', 'html', 'style', 'images', 'symbols'], fun
 
   gulp.watch('css/**/*.{css}', ['style']);
   gulp.watch('*.html').on('change', server.reload);
+});
+
+gulp.task('build', function() {
+
 });
