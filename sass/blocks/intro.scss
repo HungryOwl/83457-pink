@@ -1,15 +1,19 @@
 .intro {
-  position: relative;
-
   text-align: center;
 
-  background-color: rgba(128, 0, 0, 0.3);
+  &__wrapper {
+    @include container;
+
+    position: relative;
+  }
 
   &--index {
     min-height: 207px;
 
     padding-top: 28px;
-    padding-bottom: 36px;
+    padding-bottom: 30px;
+
+    background-color: $bg-darkblue;
   }
 
   &__header {
@@ -31,20 +35,19 @@
     }
   }
 
-  &--image {
-    &::before {
-      content: "";
+  &__download {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
 
-      position: absolute;
+    min-height: 213px;
+  }
 
-      width: 258px;
-      height: 286px;
-
-      left: 0;
-      top: -286px;
-
-      background-image: url("../img/iphone-hand-mobile.png");
-    }
+  &__content {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -58,11 +61,18 @@
 
 @media ($tablet-width) {
   .intro {
+    background-color: transparent;
+
     &--index {
+      @include container;
       min-height: 555px;
-      width: 300px;
 
       padding-top: 28px;
+    }
+
+    &__wrapper--index {
+      width: 300px;
+      margin-left: 0;
     }
 
     &::before {
@@ -80,18 +90,32 @@
 
       padding: 0 36px;
 
-      &--index {
-        font-size: 40px;
-        line-height: 56px;
-      }
-
       &:first-child {
         padding-top: 70px;
+        margin-bottom: 31px;
+      }
+
+      &--index {
+        font-size: 40px;
+        line-height: 48px;
+      }
+
+      &--index:first-child {
+        padding-top: 65px;
       }
 
       &--toggle {
         display: block;
       }
+    }
+
+    &__content {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__download {
+      min-height: 240px;
     }
   }
 
@@ -104,11 +128,31 @@
   .intro {
     clear: both;
 
-    &__header:first-child {
-      padding-top: 63px;
+    &__header {
+      &:first-child {
+        padding-top: 64px;
+      }
+
+      &--index:first-child {
+        padding-top: 80px;
+        margin-bottom: 52px;
+      }
     }
 
-    &--index {
-      width: 370px;}
+    &__header--photo {
+      padding-left: 215px;
+      padding-right: 215px;
+    }
+
+    &__header {
+      &--index {
+        font-size: 50px;
+        line-height: 60px;
+      }
+    }
+
+    &__download {
+      min-height: 280px;
+    }
   }
 }

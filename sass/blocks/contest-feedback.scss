@@ -296,6 +296,44 @@
         order: 0;
       }
     }
+
+    &__submit {
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+
+   &__list-item--tel,
+   &__list-item--email {
+     position: relative;
+
+     &::after {
+       position: absolute;
+       content: "";
+
+       width: 20px;
+       height: 19px;
+     }
+   }
+
+    &__list-item--tel::after {
+
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 19px;
+
+      top: 22px;
+      right: 22px;
+    }
+
+    &__list-item--email::after {
+
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 19px;
+
+      top: 22px;
+      right: 22px;
+    }
   }
 }
 

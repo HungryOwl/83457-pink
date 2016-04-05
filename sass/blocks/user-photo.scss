@@ -1,1 +1,223 @@
+.user-photo {
+    margin-left: 0;
+    margin-right: 0;
 
+    padding-bottom: 20px;
+
+  &--of-the-day {
+    position: relative;
+  }
+
+  &__mobile-image {
+    display: block;
+  }
+
+  &__mobile-panoram {
+    display: block;
+
+    width: 100%;
+
+    background-color: #e5e5e5;
+  }
+
+  &__caption--wrapper {
+    @include container;
+
+    box-sizing: border-box;
+
+    background-color: #f2f2f2;
+  }
+
+  &__view-of-the-day-wrapper {
+    @include container;
+    position: relative;
+  }
+
+  &__view-of-the-day {
+    position: absolute;
+
+    padding-left: 23px;
+    padding-right: 23px;
+
+    padding-top: 7px;
+    padding-bottom: 6px;
+
+    right: 0;
+    top: 0;
+
+    font-size: 12px;
+    line-height: 24px;
+
+    color: white;
+    text-transform: uppercase;
+
+    background-color: #d22856;
+  }
+
+  &__caption {
+    padding-top: 18px;
+    padding-bottom: 20px;
+    padding-left: 19px;
+    padding-right: 19px;
+
+    color: #283645;
+    background-color: #f2f2f2;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    font-weight: bold;
+
+    color: #283645;
+
+    span {
+      font-size: 12px;
+
+      color: #283645;
+
+      text-transform: uppercase;
+      font-weight: lighter;
+    }
+  }
+
+  &__content {
+    margin-top: 0;
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__footer {
+    position: relative;
+
+    padding-left: 31px;
+
+    font-size: 12px;
+    line-height: 24px;
+
+    color: #d22856;
+
+    text-transform: uppercase;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 14px;
+      height: 14px;
+
+      left: 0;
+      top: 4px;
+
+      background-image: url("../img/icon-heart.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media ($tablet-width) {
+  .user-photo {
+    flex-basis: 300px;
+
+    &--of-the-day {
+      padding-bottom: 50px;
+    }
+
+    &__view-of-the-day {
+      top: 57px;
+    }
+
+    &__caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      min-height: 111px;
+      padding-top: 24px;
+
+      padding-left: 29px;
+      padding-right: 29px;
+    }
+
+    &__caption--wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      min-height: auto;
+
+      padding-top: 24px;
+      padding-bottom: 15px;
+
+      flex-direction: row;
+      align-content: flex-start;
+    }
+
+    &__caption--wrapper .user-photo__content {
+      order: 1;
+    }
+
+    &__footer {
+      margin-top: auto;
+
+      padding-left: 0;
+
+      &::before {
+        position: static;
+
+        width: 0;
+        height: 0;
+
+        background-image: none;
+      }
+    }
+
+    &__footer--panoram {
+      margin-top: 0;
+      margin-left: auto;
+    }
+
+    &__counter-like {
+      padding-right: 32px;
+
+      &::after {
+        position: absolute;
+        content: "";
+
+        width: 14px;
+        height: 14px;
+
+        right: 0;
+        top: 4px;
+
+        background-image: url("../img/icon-heart.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .user-photo {
+    padding-bottom: 0;
+
+    &--of-the-day {
+      padding-bottom: 50px;
+    }
+
+    &__view-of-the-day {
+      top: 54px;
+    }
+  }
+}

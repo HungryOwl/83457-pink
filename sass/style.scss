@@ -5,11 +5,9 @@
 @import "global/forms.scss";
 @import "global/layout.scss";
 @import "global/type.scss";
+@import "blocks/icons.scss";
 @import "blocks/about.scss";
-@import "blocks/btn.scss";
 @import "blocks/contest-feedback.scss";
-@import "blocks/controls.scss";
-@import "blocks/email.scss";
 @import "blocks/intro.scss";
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
@@ -22,6 +20,4 @@
 @import "blocks/slider-items.scss";
 @import "blocks/social-links.scss";
 @import "blocks/user-photo.scss";
-@import "blocks/wrapper.scss";
-/* @import "blocks/outlines.scss";
- */
+@import "blocks/pop-up.scss";

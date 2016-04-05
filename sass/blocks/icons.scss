@@ -1,0 +1,182 @@
+.svg-triangle-decor {
+  position: relative;
+}
+
+.bg-triangle-white-footer {
+  display: block;
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: auto;
+
+  fill: red;
+
+  z-index: 1000;
+}
+
+.crop,
+.fill,
+.contrast {
+  fill: #283645;
+}
+
+.contrast {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+}
+
+.logo-pink-white-mobile,
+.logo-pink-white-tablet,
+.logo-pink-white-desktop {
+  fill: #ffffff;
+}
+
+.logo-htmlacademy {
+  fill: #d22856;
+}
+
+.logo-pink-blue-mobile,
+.logo-pink-blue-desktop {
+  fill: #283645;
+}
+
+.logo-pink-white-tablet,
+.logo-pink-white-desktop,
+.logo-pink-blue-desktop {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+
+  fill: #bec2c7;
+  top: 0;
+
+  z-index: 10;
+}
+
+.reviews__toggle--prev .arrow {
+  left: 0;
+}
+
+.reviews__toggle--next .arrow {
+  right: 0;
+}
+
+.reviews__toggle .arrow:hover {
+  fill: #7e868f;
+}
+
+.reviews__toggle:active .arrow {
+  opacity: 0.1;
+}
+
+.social-icon {
+  position: absolute;
+
+  fill: #d22856;
+
+  &--twitter {
+    left: 16px;
+    top: 16px;
+  }
+
+  &--facebook {
+    left: 19px;
+    top: 13px;
+  }
+
+  &--youtube {
+    left: 17px;
+    top: 16px;
+  }
+}
+
+.price .icon-yes,
+.price .icon-no {
+  display: none;
+}
+
+.price .icon-yes {
+  fill: #3dc644;
+}
+
+.price .icon-no {
+  fill: #f25b26;
+}
+
+
+/* .checkbox + .label--checkbox::before {
+  background-image: url("");
+} */
+
+
+@media ($tablet-width) {
+  .crop,
+  .fill,
+  .contrast {
+    fill: #d22856;
+  }
+
+  .crop {
+    width: 24px;
+    height: 24px;
+  }
+
+  .fill {
+    width: 26px;
+    height: 24px;
+  }
+
+  .contrast {
+    width: 16px;
+    height: 16px;
+
+    top: 0;
+    left: 0;
+  }
+
+  .price .icon-yes,
+  .price .icon-no {
+    display: block;
+    width: 31px;
+    margin: 0 auto;
+  }
+
+  .logo-pink-white-mobile {
+    display: none;
+  }
+
+  .logo-pink-white-tablet {
+    display: block;
+  }
+}
+
+@media ($desktop-width) {
+  .logo-pink-white-tablet,
+  .logo-pink-blue-mobile {
+    display: none;
+  }
+
+  .logo-pink-white-desktop,
+  .logo-pink-blue-desktop {
+    display: block;
+  }
+
+  .crop {
+    width: 49px;
+    height: 48px;
+  }
+
+  .fill {
+    width: 49px;
+    height: 48px;
+  }
+
+  .contrast {
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,11 +1,28 @@
+.logo-apple,
+.logo-android,
+.logo-microsoft {
+  display: inline-block;
+  vertical-align: middle;
+
+ align-self: baseline;
+
+  margin-top: 20px;
+}
+
+.logo-android {
+    margin-left: 34px;
+    margin-right: 37px;
+}
+
+.logo-apple {
+  margin-top: 32px;
+}
+
 .logo {
   height: 22px;
   width: 75px;
 
   font-size: 0;
-
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  background-repeat: no-repeat;
 
   &--page-header {
     position: absolute;
@@ -14,13 +31,22 @@
     left: 0;
 
     z-index: 100;
+
+    &:hover .logo-pink-white-mobile {
+      fill: #d22856;
+      transition: 0.1s;
+    }
+
+    &:active .logo-pink-white-mobile {
+      fill: #fff;
+      opacity: 0.3;
+      transition: 0.1s;
+    }
   }
 
   &--big {
     width: 147px;
     height: 40px;
-
-    background-image: url("../img/logo-pink-blue-mobile.svg");
   }
 
   &--copyright {
@@ -30,6 +56,17 @@
     position: static;
 
     margin-bottom: 37px;
+
+    &:hover .logo-pink-blue-mobile {
+      fill: #d22856;
+      transition: 0.2s;
+    }
+
+    &:active .logo-pink-blue-mobile {
+      fill: #283645;
+      opacity: 0.3;
+      transition: 0.1s;
+    }
   }
 }
 
@@ -38,7 +75,20 @@
     width: 147px;
     height: 40px;
 
-    background-image: url("../img/logo-pink-blue-mobile.svg");
+    &--page-header {
+      top: 27px;
+
+      &:hover .logo-pink-white-tablet {
+        fill: #d22856;
+        transition: 0.1s;
+      }
+
+      &:active .logo-pink-white-tablet {
+        fill: #fff;
+        opacity: 0.3;
+        transition: 0.1s;
+      }
+    }
 
     &--copyright {
       margin-bottom: 0;
@@ -55,6 +105,30 @@
 
     &--copyright {
       margin-top: 0;
+
+      &:hover .logo-pink-blue-desktop {
+        fill: #d22856;
+        transition: 0.1s;
+      }
+
+      &:active .logo-pink-blue-desktop {
+        fill: #283645;
+        opacity: 0.3;
+        transition: 0.1s;
+      }
+    }
+
+    &--page-header {
+      &:hover .logo-pink-white-desktop {
+        fill: #d22856;
+        transition: 0.1s;
+      }
+
+      &:active .logo-pink-white-desktop {
+        fill: #fff;
+        opacity: 0.3;
+        transition: 0.1s;
+      }
     }
   }
 }

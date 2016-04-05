@@ -29,23 +29,10 @@
     padding-top: 81px;
 
     background-color: $bg-lightgray;
-    /* СВГ треугольничек
-
-    position: relative;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-
-      width: 100%;
-      height: 32px;
-
-      top: 0;
-
-      background-image: url("../img/bg-triangle-white.svg");
-
-    } */
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    background-position: 50% 0;
   }
 
   &__items *:first-child {
@@ -64,26 +51,20 @@
 
       background-image: url("../img/iphone-screen-mobile.png");
       background-repeat: no-repeat;
-      background-position: 50% 140px;
+      background-position: 50% 148px;
+      background-size: 157px auto;
+
+      @media
+        (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+          background-image: url("../img/iphone-screen-mobile@2x.png");
+          background-size: 157px auto;
+      }
     }
   }
 
   &__item:first-of-type .about__title:first-of-type {
       margin-top: 0;
-  }
-
-  /* &__item:last-of-type .about__content:last-of-type,
-  &__item:last-of-type .about__title:last-of-type {
-      margin-bottom: 0;
-  } */
-
-  &__image {
-    width: 157px;
-    height: 278px;
-
-    background-image: url("../img/iphone-screen-mobile.png");
-
-    margin: 0 auto;
   }
 
   &__item-image {
@@ -106,10 +87,6 @@
     margin-top: 12px;
     margin-bottom: 12px;
     margin-bottom: 12px;
-
-    /*& :last-of-type {
-      margin-bottom: 0;
-    } */
   }
 
   &__science {
@@ -127,10 +104,6 @@
 .about__wrapper *:first-child {
   margin-top: 0;
 }
-
-/* .about__wrapper *:last-child {
-  margin-bottom: 0;
-} */
 
 @media ($tablet-width) {
   .about {
@@ -171,11 +144,17 @@
         left: 0;
         top: -70px;
 
-        background-image: url("../img/iphone-screen-mobile.png");
+        background-image: url("../img/iphone-screen-tablet-3@1x.png");
         background-repeat: no-repeat;
         background-position: 25% 0;
-
         background-size: 268px auto;
+
+        @media
+        (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+          background-image: url("../img/iphone-screen-tablet-3@2x.png");
+          background-size: 268px auto;
+        }
       }
     }
 
@@ -185,7 +164,6 @@
     }
 
     &__item {
-
       margin-left: 300px;
       padding-left: 10px;
 
@@ -199,21 +177,49 @@
 
     &__science {
       display: block;
-
       position: relative;
 
       min-height: 183px;
       width: 320px;
 
+      /* margin: 0 auto; */
+
       padding-top: 139px;
       padding-left: 310px;
       padding-bottom: 67px;
 
-      margin: 0 auto;
-
-      background-image: url("../img/icon-editor-diagram-fill.svg");
+      background-image: url("../img/icon-editor-diagram-fill.svg"),
+                        url("../img/icon-timer.svg");
       background-repeat: no-repeat;
-      background-position: 0 125px;
+      background-position: 18px 158px, 0 102px;
+      background-size: 204px 204px, 241px 278px;
+
+      &::before {
+        position: absolute;
+        content: "";
+
+        width: 175px;
+        height: 175px;
+
+        top: 173px;
+        left: 33px;
+
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      &::after {
+        position: absolute;
+        content: "24";
+
+        font-size: 96px;
+        line-height: 96px;
+        font-weight: bold;
+        color: #d22856;
+
+        left: 63px;
+        top: 205px;
+      }
 
       h3 {
         font-size: 30px;
@@ -250,7 +256,7 @@
     }
 
     &__slogan:last-of-type {
-      margin-bottom: 80px;
+      margin-bottom: 76px;
     }
 
     &__items {
@@ -259,8 +265,6 @@
       padding-bottom: 46px;
 
       width: auto;
-
-      background-image: none;
     }
 
     &__items-wrapper {
@@ -280,14 +284,13 @@
     &__item {
       text-align: center;
 
-
       flex-basis: 300px;
 
       margin-left: 0;
     }
 
      &__title {
-      margin-top: 52px;
+      margin-top: 56px;
       margin-bottom: 24px;
 
       font-size: 30px;
@@ -295,7 +298,7 @@
     }
 
     &__item:first-of-type .about__title:first-of-type {
-      margin-top: 52px;
+      margin-top: 56px;
     }
 
     &__item:last-of-type .about__title:last-of-type {
@@ -314,33 +317,92 @@
 
       position: relative;
 
-      background-color: rgba(128, 128, 128, 0.1);
-
       &::after {
         content: "";
 
         position: absolute;
 
-        width: 100%;
-        height: 320px;
+        width: 292px;
+        height: 302px;
 
         top: 0;
         left: 0;
+      }
+    }
 
-        background-image: url("../img/iphone-screen-mobile.png");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
+    &__item-image--black-white {
+      background-image: url("../img/iphone-screen-desktop-1@1x.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 292px auto;
+
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-screen-desktop-1@2x.png");
+        background-size: 292px auto;
+      }
+    }
+
+    &__item-image--pink {
+      background-image: url("../img/iphone-screen-desktop-2@1x.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 292px auto;
+
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-screen-desktop-2@2x.png");
+        background-size: 292px auto;
+      }
+    }
+
+    &__item-image--smile {
+      background-image: url("../img/iphone-screen-desktop-3@1x.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 292px auto;
+
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-screen-desktop-3@2x.png");
+        background-size: 292px auto;
       }
     }
 
     &__content {
       font-size: 18px;
       line-height: 30px;
+
+      padding-left: 32px;
+      padding-right: 32px;
     }
 
     &__science {
       width: auto;
       padding-top: 157px;
+      padding-left: 365px;
+
+      background-size: 253px 253px, 298px 345px;
+      background-position: 23px 136px, 0 66px;
+
+      &::before {
+        width: 220px;
+        height: 220px;
+
+        left: 39px;
+        top: 151px;
+      }
+
+      &::after {
+        font-size: 120px;
+        line-height: 120px;
+
+        left: 80px;
+        top: 196px;
+      }
 
       h3 {
         width: auto;
@@ -354,6 +416,7 @@
         margin-bottom: 31px;
 
         padding-right: 45px;
+        padding-left: 0;
 
         font-size: 18px;
         line-height: 30px;

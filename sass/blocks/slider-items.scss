@@ -1,12 +1,18 @@
 .slider-items {
-    display: block;
+    display: flex;
 
-    width: 100px;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    min-width: 59px;
     min-height: 12px;
 
     margin: 0 auto;
 
-    padding-top: 9px;
+
+    padding-top: 20px;
     padding-bottom: 21px;
 
   &.price__nav{
@@ -23,17 +29,25 @@
     width: 6px;
     height: 6px;
 
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-right: 20px;
 
     background-color: #bec2c7;
 
     border-radius: 50%;
 
-    /* &--active {
-      background-color: transparent;
-      border: 3px solid #283645;
-    } */
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 22px;
+    }
+
+    &:hover {
+      background-color: #7e868f;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -45,7 +59,6 @@
 
     &.reviews__nav {
       padding-bottom: 0;
-      padding-top: 9px;
     }
   }
 }
@@ -56,5 +69,4 @@
       display: none;
     }
   }
-
 }

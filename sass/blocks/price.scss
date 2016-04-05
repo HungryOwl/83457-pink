@@ -1,8 +1,12 @@
 .price {
-  padding-top: 89px;
+  padding-top: 91px;
   padding-bottom: 19px;
 
   background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
 
   &__wrapper {
     width: 100%;
@@ -16,7 +20,7 @@
   &__list {
     width: 840px;
     box-sizing: border-box;
-    transform: translateX(-240px);
+    transform: translateX(-280px);
   }
 
   &__list-head {
@@ -41,7 +45,13 @@
     background-color: white;
   }
 
+  &__hit {
+    position: absolute;
+    display: none;
+  }
+
   &__value {
+    position: relative;
     box-sizing: border-box;
     min-width: 278px;
 
@@ -53,6 +63,38 @@
     &:nth-child(2) {
        border-left: none;
     }
+
+    &--flag {
+    .price__hit {
+      display: block;
+
+      top: 0;
+      left: -2px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "хит";
+
+      height: 10px;
+      width: 28px;
+
+      top: 20px;
+      left: 9px;
+
+      font-size: 14px;
+      line-height: 14px;
+
+      text-align: center;
+      vertical-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #d22856;
+      transform: rotate(-45deg);
+
+      z-index: 10;
+    }
+  }
 
     &--empty {
       min-width: 0;
@@ -69,34 +111,22 @@
   }
 
   &__field {
-      box-sizing: border-box;
+    box-sizing: border-box;
 
-      padding-top: 16px;
-      padding-bottom: 13px;
-      padding-left: 22px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 22px;
 
-      font-size: 14px;
-      line-height: 30px;
+    font-size: 14px;
+    line-height: 30px;
 
-      text-transform: uppercase;
+    text-transform: uppercase;
 
-      border: 2px solid #e5e5e5;
-      border-top: none;
-
-    /* &--empty {
-      min-width: 0;
-
-      margin: 0;
-      padding: 0;
-
-      font-size: 0;
-      line-height: 0;
-
-      background-color: transparent;
-      border: none;
-    } */
+    border: 2px solid #e5e5e5;
+    border-top: none;
   }
 }
+
 
 @media ($mobile-width-only) {
   .price__field--empty {
@@ -110,6 +140,28 @@
 
     background-color: transparent;
     border: none;
+  }
+
+    #price-radio-1:checked ~ .price__list {
+    transform: translateX(0px);
+    transition: 0.5s;
+  }
+
+  #price-radio-2:checked ~ .price__list {
+    transform: translateX(-280px);
+    transition: 0.5s;
+  }
+
+  #price-radio-3:checked ~ .price__list {
+    transform: translateX(-560px);
+    transition: 0.5s;
+  }
+
+  #price-radio-1:checked ~ .price__nav label[for="price-radio-1"],
+  #price-radio-2:checked ~ .price__nav label[for="price-radio-2"],
+  #price-radio-3:checked ~ .price__nav label[for="price-radio-3"] {
+    background-color: white;
+    border: 3px solid #283645;
   }
 }
 
@@ -132,7 +184,7 @@
     }
 
     &__value {
-      min-width: auto;
+      min-width: 0;
 
       padding-top: 12px;
       padding-bottom: 7px;
@@ -156,6 +208,20 @@
       }
     }
 
+    &__value--flag {
+      .price__hit {
+        display: block;
+
+        top: -10px;
+        left: -2px;
+      }
+
+      &::before {
+        top: 13px;
+        left: 2px;
+      }
+    }
+
     &__field {
       min-width: 154px;
 
@@ -175,8 +241,6 @@
       }
 
       &--cancel {
-        padding-left: 0;
-
         font-size: 0;
         line-height: 0;
       }
@@ -204,12 +268,27 @@
       }
     }
 
+    &__value--flag {
+      .price__hit {
+        display: block;
+
+        top: 0px;
+        left: -2px;
+      }
+
+      &::before {
+        top: 20px;
+        left: 9px;
+      }
+    }
+
     &__field {
       min-width: 233px;
 
       padding-top: 13px;
       padding-bottom: 16px;
       padding-left: 24px;
+      padding-right: 24px;
 
       &--empty {
         font-size: 18px;
