@@ -66,7 +66,7 @@ gulp.task('symbols', function() {
   .pipe(gulp.dest('build/img'));
 });
 
-gulp.task('serve', ['build', 'fonts', 'html', 'style', 'images', 'symbols'], function() {
+gulp.task('serve', ['clean', 'fonts', 'html', 'style', 'images', 'symbols'], function() {
   server.init({
     server: './build',
     notify: false,
