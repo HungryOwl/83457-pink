@@ -11,8 +11,11 @@
     position: relative;
   }
 
-  &__wrapper {
+  &__wrapper--top {
     position: absolute;
+  }
+
+  &__wrapper {
     width: 100%;
 
     top: 0;
@@ -116,7 +119,6 @@
     margin: 0;
 
     &__wrapper {
-      position: absolute;
       width: 100%;
 
       top: 0;
