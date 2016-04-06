@@ -19,6 +19,18 @@
   border: none;
   border-radius: 3px;
   outline: none;
+
+  &:hover {
+    background-color: #1c9b5e;
+    border-color: #1c9b5e;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    transition: 0.1s;
+    outline: none;
+  }
 }
 
 .btn {
@@ -36,6 +48,17 @@
 
   border: 3px solid white;
   border-radius: 30px;
+}
+
+.btn:hover {
+  color: #d22856;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.btn:active {
+  color: rgba(210, 40, 86, 0.3);
+  background-color: white;
 }
 
 .text,
