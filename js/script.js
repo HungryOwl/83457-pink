@@ -10,7 +10,6 @@ nav.classList.toggle('main-nav__wrapper--closed');
 pageheaderwrapper.classList.add('page-header__wrapper--index');
 
 toggle.addEventListener('click', function() {
-  console.log('Алерт!');
   nav.classList.toggle('main-nav__wrapper--closed');
   toggle.classList.toggle('main-nav__toggle--closed');
 });
