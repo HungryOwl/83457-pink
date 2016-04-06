@@ -1,8 +1,4 @@
 .photo-load {
-  &__wrapper {
-
-  }
-
   &__content-wrapper {
     @include container;
   }
@@ -146,13 +142,40 @@
 
     border: 3px solid #d22856;
     border-radius: 30px;
+
+    &:hover {
+      background-color: #d22856;
+      color: white;
+
+      transition: 0.2s;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      transition: 0.1s;
+    }
   }
 
   &__button--reset {
-    color: rgba(0, 0, 0, 0.1);
+    color: rgba(40, 54, 69, 0.1);
 
-    border: 3px solid rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(40, 54, 69, 0.1);
     border-radius: 30px;
+
+    &:hover {
+      color: rgba(40, 54, 69, 0.3);
+      border-color: rgba(40, 54, 69, 0.3);
+
+      transition: 0.2s;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(40, 54, 69, 0.3);
+      border-color: #b5b9be;
+      transition: 0.1s;
+    }
   }
 }
 

@@ -57,6 +57,17 @@
     text-decoration: none;
   }
 
+  &__mail-link:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &__mail-link:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
+
+
   &__map {
     height: 200px;
 

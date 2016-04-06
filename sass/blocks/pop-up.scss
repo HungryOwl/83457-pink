@@ -64,7 +64,6 @@
 
 @media ($tablet-width) {
   .pop-up {
-
     box-sizing: border-box;
     width: 460px;
 
@@ -118,6 +117,12 @@
 }
 
 @media ($desktop-width) {
+  .pop-up {
+   &__wrapper {
+      width: auto;
+    }
+  }
+
   .pop-up--success {
     width: 780px;
     margin-left: -390px;
