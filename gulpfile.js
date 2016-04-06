@@ -14,22 +14,22 @@ var del = require('del');
 var server = require('browser-sync');
 
 gulp.task('clean', function() {
-  del('build');
+  del('build/**/*.*');
 });
 
 gulp.task('fonts', function() {
-  return gulp.src('fonts/**/*.{woff, woff2}')
-  .pipe(gulp.dest('build/fonts'))
+  return gulp.src('fonts/**/*.*')
+  .pipe(gulp.dest('build/fonts'));
 });
 
 gulp.task('html', function() {
   return gulp.src('*.html')
-  .pipe(gulp.dest('build'))
+  .pipe(gulp.dest('build'));
 });
 
 gulp.task('js', function() {
   return gulp.src('js/*.js')
-  .pipe(gulp.dest('build/js'))
+  .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('style', function() {
@@ -56,7 +56,7 @@ gulp.task('style', function() {
 });
 
 gulp.task('images', function() {
-  return gulp.src('img/**/*.{png, jpg, gif}')
+  return gulp.src('img/**/*.*')
     .pipe(imagemin({
       optimizationLevel: 3,
       progressive: true
@@ -72,7 +72,7 @@ gulp.task('symbols', function() {
 
 gulp.task('serve', ['style'], function() {
   server.init({
-    server: './build',
+    server: '.',
     notify: false,
     open: true,
     ui: false
