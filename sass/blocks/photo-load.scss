@@ -319,6 +319,7 @@
       height: 400px;
 
       margin-left: 80px;
+      margin-right: 90px;
       flex-shrink: 0;
     }
 
@@ -332,8 +333,6 @@
 
       justify-content: flex-start;
       align-content: space-between;
-
-      margin-left: 90px;
     }
 
     &__tool {
