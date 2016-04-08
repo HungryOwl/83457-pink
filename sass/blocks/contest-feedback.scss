@@ -215,6 +215,8 @@
 
         .contest-feedback__list-item {
           display: flex;
+          flex-wrap: wrap;
+
           align-items: center;
 
           margin-bottom: 52px;
@@ -386,6 +388,7 @@
 
       &--app {
         width: 100%;
+        flex-shrink: 0;
 
         padding-left: 0;
         padding-right: 0;
