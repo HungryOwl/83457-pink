@@ -433,27 +433,34 @@
       }
 
       &--achievements {
-        padding-bottom: 53px;
-        padding-right: 28px;
+        padding-bottom: 30px;
+        padding-right: 0;
 
         .contest-feedback__list {
           display: flex;
           flex-wrap: wrap;
 
-          flex-direction: column;
+          flex-direction: row;
 
-          height: 141px;
 
           justify-content: space-between;
           align-content: space-between;
+
+          &::after {
+            content: "";
+            width: 257px;
+          }
         }
 
         .contest-feedback__list-item {
           padding-top: 20px;
+          margin-bottom: 23px;
 
           &:first-child {
             padding-top: 20px;
           }
+
+          width: 257px;
         }
       }
 
