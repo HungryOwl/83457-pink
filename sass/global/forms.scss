@@ -329,8 +329,6 @@
 
   .label {
     &--caption {
-      flex-shrink: 0;
-
       padding-left: 0;
       padding-right: 22px;
 
@@ -399,6 +397,9 @@
     &__toggle--contrast {
       left: 295px;
     }
+  }
 
+  .label--checkbox {
+    margin-right: 5px;
   }
 }

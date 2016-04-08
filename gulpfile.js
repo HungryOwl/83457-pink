@@ -17,6 +17,11 @@ gulp.task('clean', function() {
   del('build/**/*.*');
 });
 
+gulp.task('readme', function() {
+  return gulp.src('READMEPLEASE.md')
+  .pipe(gulp.dest('build/'));
+});
+
 gulp.task('fonts', function() {
   return gulp.src('fonts/**/*.*')
   .pipe(gulp.dest('build/fonts'));
@@ -82,4 +87,4 @@ gulp.task('serve', ['style'], function() {
   gulp.watch('*.html').on('change', server.reload);
 });
 
-gulp.task('build', ['clean', 'fonts', 'html', 'js', 'style', 'images', 'symbols']);
+gulp.task('build', ['clean', 'readme', 'fonts', 'html', 'js', 'style', 'images', 'symbols']);
