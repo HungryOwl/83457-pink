@@ -314,9 +314,15 @@
 
     &__img {
       width: 300px;
+      height: 400px;
 
       margin-left: 80px;
       flex-shrink: 0;
+    }
+
+    &__picture {
+      width: 300px;
+      height: 400px;
     }
 
     &__tools {
@@ -373,7 +379,7 @@
   }
 
   .photo-load__content:first-of-type {
-    padding-top: 58px;
+    padding-top: 5px;
   }
 
   .photo-load__content:last-of-type {

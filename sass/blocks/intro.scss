@@ -5,6 +5,28 @@
     @include container;
 
     position: relative;
+
+    &--index::before {
+      position: absolute;
+      content: "";
+
+      width: 258px;
+      height: 286px;
+
+      top: -314px;
+      left: -20px;
+
+      background-image: url("../img/iphone-hand-mobile.png");
+      background-repeat: no-repeat;
+      background-size: 258px 286px;
+
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-hand-mobile@2x.png");
+        background-size: 258px 286px;
+      }
+    }
   }
 
   &--index {
@@ -23,7 +45,7 @@
     line-height: 29px;
 
     &:first-child {
-      padding-top: 26px;
+      padding-top: 30px;
     }
 
     &--index:first-child {
@@ -65,14 +87,36 @@
 
     &--index {
       @include container;
+      position: relative;
+
       min-height: 555px;
 
       padding-top: 28px;
+      padding-bottom: 36px;
+
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-size: 700px 545px;
+      background-position: -40px 74px;
+
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-hand-tablet@2x.png");
+        background-size: 700px 545px;
+        background-position: -40px 74px;
+      }
     }
 
     &__wrapper--index {
       width: 300px;
       margin-left: 0;
+    }
+
+    &__wrapper--index::before {
+      background-image: none;
+      width: 0;
+      height: 0;
     }
 
     &::before {
@@ -127,6 +171,23 @@
 @media ($desktop-width) {
   .intro {
     clear: both;
+
+    &--index {
+      padding-bottom: 123px;
+
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-size: 1050px 645px;
+      background-position: 18px 98px;
+
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+        background-size: 1050px 645px;
+        background-position: 18px 98px;
+      }
+    }
 
     &__wrapper--index {
       width: 300px;

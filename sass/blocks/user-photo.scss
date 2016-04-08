@@ -8,8 +8,16 @@
     position: relative;
   }
 
+  &__image {
+    width: 280px;
+    height: 180px;
+  }
+
   &__mobile-image {
     display: block;
+
+    width: 280px;
+    height: 180px;
   }
 
   &__mobile-panoram {
@@ -134,6 +142,16 @@
       padding-bottom: 50px;
     }
 
+    &__image {
+      width: 300px;
+      height: 300px;
+    }
+
+    &__mobile-image {
+      width: 300px;
+      height: 300px;
+    }
+
     &__view-of-the-day {
       top: 57px;
     }
@@ -210,10 +228,20 @@
 
 @media ($desktop-width) {
   .user-photo {
-    padding-bottom: 0;
+    padding-bottom: 54px;
 
     &--of-the-day {
       padding-bottom: 50px;
+    }
+
+    &__image {
+      width: 300px;
+      height: 400px;
+    }
+
+    &__mobile-image {
+      width: 300px;
+      height: 400px;
     }
 
     &__view-of-the-day {
