@@ -314,9 +314,15 @@
 
     &__img {
       width: 300px;
+      height: 400px;
 
       margin-left: 80px;
       flex-shrink: 0;
+    }
+
+    &__picture {
+      width: 300px;
+      height: 400px;
     }
 
     &__tools {
