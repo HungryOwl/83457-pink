@@ -129,6 +129,12 @@
 
 
 @media ($mobile-width-only) {
+  .price__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .price__field--empty {
     min-width: 0;
 
@@ -142,18 +148,18 @@
     border: none;
   }
 
-    #price-radio-1:checked ~ .price__list {
-    transform: translateX(0px);
+  #price-radio-1:checked ~ .price__list {
+    transform: translateX(280px);
     transition: 0.5s;
   }
 
   #price-radio-2:checked ~ .price__list {
-    transform: translateX(-280px);
+    transform: translateX(0px);
     transition: 0.5s;
   }
 
   #price-radio-3:checked ~ .price__list {
-    transform: translateX(-560px);
+    transform: translateX(-280px);
     transition: 0.5s;
   }
 
