@@ -6,19 +6,46 @@
     @include container;
   }
 
+  &__items {
+    position: relative;
+    min-height: 290px;
+    overflow: hidden;
+  }
+
   &__item .reviews__title:first-of-type {
     margin-top: 0;
   }
 
   &__item {
+    position: absolute;
     text-align: center;
-    display: none;
+
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition-property: opacity;
+    transition: 0.2s ease-out;
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: 0;
+
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   #reviews-radio-1:checked ~ .reviews__item--review-peter,
   #reviews-radio-2:checked ~ .reviews__item--review-vasya,
   #reviews-radio-3:checked ~ .reviews__item--review-kolya {
-    display: block;
+    position: static;
+    padding-bottom: 30px;
+
+    visibility: visible;
+    opacity: 1;
   }
 
   #reviews-radio-1:checked ~ .reviews__nav label[for="reviews-radio-1"],
@@ -63,7 +90,10 @@
 
     &__item {
       text-align: center;
-      display: none;
+      //display: none;
+
+      visibility: hidden;
+      opacity: 0;
     }
 
     #reviews-radio-1:checked ~ .reviews__item--review-peter,
@@ -71,6 +101,9 @@
     #reviews-radio-3:checked ~ .reviews__item--review-kolya {
       display: flex;
       flex-direction: column;
+
+      visibility: visible;
+      opacity: 1;
     }
 
     #reviews-radio-1:checked ~ .reviews__nav label[for="reviews-radio-1"],
